@@ -859,6 +859,40 @@ On rejette donc $H_0$
 \noindent
 Puisqu'on ne peut pas conclure que les deux variable on une distribution similaire nous feront tourner les modèles de régression avec les deux variables et nous interpréterons les résultats en conséquence.\\
 \subsection{Variable d'intérêt : Self Rated Health (SRH)}
+\noindent
+La santé perçue est décrit dans la litterature comme un bon indicateur de la mortalité. Il s'agit d'une mesure subjective puisque le sujet s'auto-évalue : il est son propre témoin.\\
+Dans le questionnaire d'inclusion il est demandé au sujets d'indiquer par une note comprise entre 0 et 10 leur état de santé tel qu'il le ressente: 0 pour mauvais et 10 pour excellent.\\
+
+\begin{center}
+\setlength\arrayrulewidth{.6pt}
+\arrayrulecolor{black}
+\begin{tabular}{|c||c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+ & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & NA\\
+ \hline
+ \hline
+Effectfs & 11 & 166 &  30  & 85 & 194 & 901 & 828 & 2175 & 3309 & 1698 &  734 &  26\\ 
+\hline
+Effectifs cumulés & 11 &  177  & 207 &  292 &  486 & 1387 & 2215 & 4390&  7699 & 9397 &10131 &10157\\ 
+\hline
+\end{tabular}
+\end{center}
+
+\noindent
+On remarque que globalement les sujets de la cohorte EPP3 s'estiment en bonne santé.\\
+Du fait du grand nombre de classe de cette variable, il peut être interessante de la binariser. On choisi de couper la variable à la médiane : ainsi les niveaux de santé perçue entre 0 et 7 inclus sont considérés comme mauvais et de 8 à 10 comme bon : \\
+\begin{center}
+\setlength\arrayrulewidth{.6pt}
+\arrayrulecolor{black}
+\begin{tabular}{|c|c|c|}
+\hline
+  0  &  1& NA \\
+  \hline
+  \hline 
+4390& 5741&   26\\
+\hline 
+\end{tabular}
+\end{center}
 \subsection{Variables d'ajustement et facteurs de confusion}
 \subsection{Gestion des données manquantes}
 

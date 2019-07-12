@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.9.20)  12 JUL 2019 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.9.20)  12 JUL 2019 16:48
 entering extended mode
 **./rap_stg.tex
 (rap_stg.tex
@@ -1242,7 +1242,7 @@ LaTeX Font Info:    Redeclaring math symbol \braceru on input line 909.
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 944.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 946.
 ))
-No file rap_stg.aux.
+(rap_stg.aux)
 \openout1 = `rap_stg.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -1258,7 +1258,7 @@ LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 47.
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Info: Redefining \degres on input line 47.
@@ -1506,15 +1506,22 @@ rm.jpg> <./logo_parcc.jpg> <./logo_ueve_saclay.png> <./Epidemiologie_logo_r.png
 >] [2
 
 ]
-No file rap_stg.toc.
+(rap_stg.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 1.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 1.
+ [1
+
+])
 \tf@toc=\write4
 \openout4 = `rap_stg.toc'.
 
-[1
+ [2] [3] [4] [1
 
-] [2] [3] [4
-
-] [1]
+]
 Underfull \hbox (badness 10000) in paragraph at lines 113--131
 
  []
@@ -1552,12 +1559,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--203
 
  []
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 204.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 204.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 204.
 [5]
 Underfull \hbox (badness 10000) in paragraph at lines 232--234
 
@@ -1802,12 +1803,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 853--861
 
  []
 
-[21] [22] [23] [24] [25] [26
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 862--865
+
+ []
+
+
+Overfull \hbox (30.30049pt too wide) in paragraph at lines 869--879
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 881--884
+
+ []
+
+[22] [23] [24] [25] [26
 
 ] [27] (rap_stg.aux) ) 
 Here is how much of TeX's memory you used:
- 16647 strings out of 493323
- 307252 string characters out of 3139066
+ 16651 strings out of 493323
+ 307296 string characters out of 3139066
  361789 words of memory out of 3000000
  19775 multiletter control sequences out of 15000+200000
  77361 words of font info for 90 fonts, out of 3000000 for 9000
@@ -1833,7 +1849,7 @@ am Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Program Files/MiKTeX 2
 public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on rap_stg.pdf (33 pages, 564674 bytes).
+Output written on rap_stg.pdf (33 pages, 567724 bytes).
 PDF statistics:
  235 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
