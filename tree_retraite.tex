@@ -1,0 +1,75 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[french]{babel}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{colordvi}
+\begin{document}
+
+
+%:-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/Arbre/
+\begin{center}
+% Racine à Gauche, développement vers la droite
+\begin{tikzpicture}[xscale=1,yscale=1]
+% Styles (MODIFIABLES)
+\tikzstyle{fleche}=[->,>=latex,thick]
+\tikzstyle{noeud}=[fill=yellow!60,circle,minimum size = 1.5 cm, draw]
+\tikzstyle{feuille}=[fill=yellow!60,circle,minimum size = 1.5 cm, draw]
+\tikzstyle{etiquette}=[midway,fill=white,draw]
+\tikzstyle{commentaire}=[right,black]
+% Dimensions (MODIFIABLES)
+\def\DistanceInterNiveaux{3}
+\def\DistanceInterFeuilles{2}
+% Dimensions calculées (NON MODIFIABLES)
+\def\NiveauA{(0)*\DistanceInterNiveaux}
+\def\NiveauB{(1.6666666666666665)*\DistanceInterNiveaux}
+\def\NiveauC{(3)*\DistanceInterNiveaux}
+\def\NiveauD{(4)*\DistanceInterNiveaux}
+\def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+% Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+\node[noeud] (R) at ({\NiveauA},{(4)*\InterFeuilles}) {$Retraites$};
+\node[noeud] (Ra) at ({\NiveauB},{(1)*\InterFeuilles}) {$N98N$};
+\node[noeud] (Raa) at ({\NiveauC},{(0.5)*\InterFeuilles}) {$0$};
+\node[feuille] (Raaa) at ({\NiveauD},{(0)*\InterFeuilles}) {$77$};
+\draw (Raaa.east) node[commentaire] {$1$};
+\node[feuille] (Raab) at ({\NiveauD},{(1)*\InterFeuilles}) {$32/36$};
+\draw (Raab.east) node[commentaire] {$$};
+\node[feuille] (Rab) at ({\NiveauC},{(2)*\InterFeuilles}) {$4$};
+\draw (Rab.east) node[commentaire] {$$};
+\node[noeud] (Rb) at ({\NiveauB},{(4)*\InterFeuilles}) {$NN8N$};
+\node[feuille] (Rba) at ({\NiveauC},{(3)*\InterFeuilles}) {$0$};
+\draw (Rba.east) node[commentaire] {$$};
+\node[noeud] (Rbb) at ({\NiveauC},{(4.5)*\InterFeuilles}) {$4$};
+\node[feuille] (Rbba) at ({\NiveauD},{(4)*\InterFeuilles}) {$77$};
+\draw (Rbba.east) node[commentaire] {$$};
+\node[feuille] (Rbbb) at ({\NiveauD},{(5)*\InterFeuilles}) {$32/36$};
+\draw (Rbbb.east) node[commentaire] {$2$};
+\node[noeud] (Rc) at ({\NiveauB},{(7)*\InterFeuilles}) {$NN87$};
+\node[noeud] (Rca) at ({\NiveauC},{(6.5)*\InterFeuilles}) {$0$};
+\node[feuille] (Rcaa) at ({\NiveauD},{(6)*\InterFeuilles}) {$77$};
+\draw (Rcaa.east) node[commentaire] {$3$};
+\node[feuille] (Rcab) at ({\NiveauD},{(7)*\InterFeuilles}) {$32/36$};
+\draw (Rcab.east) node[commentaire] {$$};
+\node[feuille] (Rcb) at ({\NiveauC},{(8)*\InterFeuilles}) {$4$};
+\draw (Rcb.east) node[commentaire] {$$};
+% Arcs (MODIFIABLES : Styles)
+\draw[fleche] (R)--(Ra) node[etiquette] {$1$};
+\draw[fleche] (Ra)--(Raa) node[etiquette] {$1$};
+\draw[fleche] (Raa)--(Raaa) node[etiquette] {$1$};
+\draw[fleche] (Raa)--(Raab) node[etiquette] {$0$};
+\draw[fleche] (Ra)--(Rab) node[etiquette] {$0$};
+\draw[fleche] (R)--(Rb) node[etiquette] {$3$};
+\draw[fleche] (Rb)--(Rba) node[etiquette] {$0$};
+\draw[fleche] (Rb)--(Rbb) node[etiquette] {$3$};
+\draw[fleche] (Rbb)--(Rbba) node[etiquette] {$0$};
+\draw[fleche] (Rbb)--(Rbbb) node[etiquette] {$3$};
+\draw[fleche] (R)--(Rc) node[etiquette] {$1$};
+\draw[fleche] (Rc)--(Rca) node[etiquette] {$1$};
+\draw[fleche] (Rca)--(Rcaa) node[etiquette] {$1$};
+\draw[fleche] (Rca)--(Rcab) node[etiquette] {$0$};
+\draw[fleche] (Rc)--(Rcb) node[etiquette] {$0$};
+\end{tikzpicture}
+\end{center}
+%:-+-+-+-+- Fin
+\end{document}
