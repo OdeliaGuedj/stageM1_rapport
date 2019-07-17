@@ -16,24 +16,24 @@
 \contentsline {subsubsection}{\numberline {3.1.2}ACM et CAH}{7}
 \contentsline {subsubsection}{\numberline {3.1.3}Comparaisons des deux codages}{14}
 \contentsline {subsection}{\numberline {3.2}Variable d'int\IeC {\'e}r\IeC {\^e}t : Self Rated Health (SRH)}{22}
-\contentsline {subsection}{\numberline {3.3}Variables d'ajustement et facteurs de confusion}{22}
-\contentsline {subsection}{\numberline {3.4}Gestion des donn\IeC {\'e}es manquantes}{22}
-\contentsline {section}{\numberline {4}Statistiques}{23}
-\contentsline {subsection}{\numberline {4.1}Analyses univari\IeC {\'e}es}{23}
-\contentsline {subsubsection}{\numberline {4.1.1}Variables qualitatives}{23}
-\contentsline {subsubsection}{\numberline {4.1.2}Variables quantitatives}{23}
-\contentsline {subsection}{\numberline {4.2}Analyses multivari\IeC {\'e}es}{23}
-\contentsline {subsubsection}{\numberline {4.2.1}R\IeC {\'e}gression logistique}{23}
-\contentsline {subsubsection}{\numberline {4.2.2}R\IeC {\'e}gression lin\IeC {\'e}aire}{23}
-\contentsline {subsubsection}{\numberline {4.2.3}R\IeC {\'e}gression polytomique}{23}
-\contentsline {subsection}{\numberline {4.3}Analyse en sous-groupes}{23}
-\contentsline {subsubsection}{\numberline {4.3.1}D\IeC {\'e}pression}{23}
-\contentsline {subsubsection}{\numberline {4.3.2}Pathologies lourdes}{23}
-\contentsline {subsubsection}{\numberline {4.3.3}Sexe}{23}
-\contentsline {subsubsection}{\numberline {4.3.4}\IeC {\^A}ge}{23}
-\contentsline {section}{\numberline {5}Perspectives}{24}
-\contentsline {subsection}{\numberline {5.1}Le monde professionnel}{24}
-\contentsline {subsection}{\numberline {5.2}Nouveaux outils}{24}
-\contentsline {subsection}{\numberline {5.3}Les donn\IeC {\'e}es : th\IeC {\'e}orie vs pratique}{24}
+\contentsline {subsection}{\numberline {3.3}Variables d'ajustement et facteurs de confusion}{23}
+\contentsline {subsection}{\numberline {3.4}Gestion des donn\IeC {\'e}es manquantes}{23}
+\contentsline {section}{\numberline {4}Statistiques}{24}
+\contentsline {subsection}{\numberline {4.1}Analyses univari\IeC {\'e}es}{24}
+\contentsline {subsubsection}{\numberline {4.1.1}Variables qualitatives}{24}
+\contentsline {subsubsection}{\numberline {4.1.2}Variables quantitatives}{24}
+\contentsline {subsection}{\numberline {4.2}Analyses multivari\IeC {\'e}es}{24}
+\contentsline {subsubsection}{\numberline {4.2.1}R\IeC {\'e}gression logistique}{24}
+\contentsline {subsubsection}{\numberline {4.2.2}R\IeC {\'e}gression lin\IeC {\'e}aire}{24}
+\contentsline {subsubsection}{\numberline {4.2.3}R\IeC {\'e}gression polytomique}{24}
+\contentsline {subsection}{\numberline {4.3}Analyse en sous-groupes}{24}
+\contentsline {subsubsection}{\numberline {4.3.1}D\IeC {\'e}pression}{24}
+\contentsline {subsubsection}{\numberline {4.3.2}Pathologies lourdes}{24}
+\contentsline {subsubsection}{\numberline {4.3.3}Sexe}{24}
+\contentsline {subsubsection}{\numberline {4.3.4}\IeC {\^A}ge}{24}
+\contentsline {section}{\numberline {5}Perspectives}{25}
+\contentsline {subsection}{\numberline {5.1}Le monde professionnel}{25}
+\contentsline {subsection}{\numberline {5.2}Nouveaux outils}{25}
+\contentsline {subsection}{\numberline {5.3}Les donn\IeC {\'e}es : th\IeC {\'e}orie vs pratique}{25}
 \contentsline {section}{\numberline {6}Annexes}{27}
 \contentsline {section}{\numberline {7}Bibliographie}{27}

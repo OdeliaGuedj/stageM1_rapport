@@ -18,6 +18,7 @@
 \usepackage{mathrsfs}
 \usepackage{colortbl}
 \usepackage{mathabx}
+%\usepackage{txfonts}
 
 %%%% Pour toc %%%%
 \addtocounter{tocdepth}{3}
@@ -26,6 +27,9 @@
 \addcontentsline{toc}{section}{Remerciements}
 \addcontentsline{toc}{section}{Citations}
 \renewcommand{\thesection}{\arabic{section}}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%% Page de Garde %%%%%%%%%%%%%%%%%%%%
 \title{%
@@ -857,30 +861,14 @@ Au niveau de confiance 95 \% le $\chi ^2$ à 3 degrés de liberté vaux 12.84.\\
 On rejette donc $H_0$
 \\
 \noindent
-Puisqu'on ne peut pas conclure que les deux variable on une distribution similaire nous feront tourner les modèles de régression avec les deux variables et nous interpréterons les résultats en conséquence.\\
+Puisqu'on ne peut pas conclure que les deux variable ont une distribution similaire nous feront tourner les modèles de régression avec les deux variables et nous interpréterons les résultats en conséquence.\\
 \subsection{Variable d'intérêt : Self Rated Health (SRH)}
 \noindent
 La santé perçue est décrit dans la litterature comme un bon indicateur de la mortalité. Il s'agit d'une mesure subjective puisque le sujet s'auto-évalue : il est son propre témoin.\\
 Dans le questionnaire d'inclusion il est demandé au sujets d'indiquer par une note comprise entre 0 et 10 leur état de santé tel qu'il le ressente: 0 pour mauvais et 10 pour excellent.\\
 
-\begin{center}
-\setlength\arrayrulewidth{.6pt}
-\arrayrulecolor{black}
-\begin{tabular}{|c||c|c|c|c|c|c|c|c|c|c|c|c|}
-\hline
- & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & NA\\
- \hline
- \hline
-Effectfs & 11 & 166 &  30  & 85 & 194 & 901 & 828 & 2175 & 3309 & 1698 &  734 &  26\\ 
-\hline
-Effectifs cumulés & 11 &  177  & 207 &  292 &  486 & 1387 & 2215 & 4390&  7699 & 9397 &10131 &10157\\ 
-\hline
-\end{tabular}
-\end{center}
 
-\noindent
-On remarque que globalement les sujets de la cohorte EPP3 s'estiment en bonne santé.\\
-Du fait du grand nombre de classe de cette variable, il peut être interessante de la binariser. On choisi de couper la variable à la médiane : ainsi les niveaux de santé perçue entre 0 et 7 inclus sont considérés comme mauvais et de 8 à 10 comme bon : \\
+Globalement les sujets de la cohorte EPP3 s'estiment en bonne santé avec une médiane à 7.\\ En choisissant ce cut off on crée une variable binaire de santé perçue:
 \begin{center}
 \setlength\arrayrulewidth{.6pt}
 \arrayrulecolor{black}
@@ -895,9 +883,72 @@ Du fait du grand nombre de classe de cette variable, il peut être interessante 
 \end{center}
 
 \noindent
-La première chose à faire est de confirmer l'intuition sur laquelle repose le projet, à savoir l'existence d'un lien entre l'activité professionnelle des sujets. 
+\textbf{Test du $\chi^2$ d'indépendance entre la santé perçue et l'activité professionnel des sujets de la cohorte EPP3.}\\
+On note:\\
+X la v.a qualitative à l modalités.\\
+Y le v.a qualitative à c modalités.\\
+$\forall (i,j) \in \ldbrack 0,5 \rdbrack \times \ldbrack 0,11 \rdbrack$ :\\
+$n_{i,j}$ = Nombre de sujets présentant la modalité $i$ de la variable X et la modalité $j$ de la variable Y.
+$n_{i.} = \sum_{j = 1} ^c n_{ij}$ : nb total individus dans la classe i de la v.a X.\\
+$n_{.j} = \sum_{i = 1} ^l n_{ij}$ : nb total d'individus dans la classe j de la v.a Y.\\
+$n = \sum _{i = 1} ^ l \sum_{j = 1} ^c n_{ij}$ : nb total d'individus.\\
+
+\noindent
+On teste $H0 : X \perp Y $ contre $H1 = \overline{H_0}$\\
+\noindent
+Statistique de test : 
+\begin{equation}
+Q = {\sum _{i = 1} ^l \sum_{j = 1} ^c {{(n_{ij} - {{n_{i.}.n_{.j}}\over{n}})^2}} \over {{n_{i.}.n_{.j}}\over{n}}}
+\end{equation}
+
+\noindent
+On a : \\
+\begin{equation}
+Q \underset {\small{H_0}}{\large{\sim}} \chi ^{2} ((l-1)(c-1))
+\end{equation}
+\noindent
+On pose :\\
+\begin{equation}
+e_{ij} = { {n_{i.}.n_ {.j} } \over {n} }
+\end{equation}
+C'est l'effectif théorique sous $H_0$ c'est à dire le nombre de sujets présentant les modalités i et j (resp. des v.a X et Y) auxquelles on s'attend sous $H_0$.\\
+
+\noindent
+Règle de décision :\\
+Si $Q_{calc} \geq Q_{th}$ on rejette $H_0$ (où $Q_{th}$ est le quantile de la loi du $\chi ^2$ à $((l-1)(c-1))$ degrés de libertés pour un niveau de confiance $\alpha$ fixé.\\
+
+\noindent
+Le test du $\chi ^2$ d'indépendance n'est applicable que lorsque $\forall (i,j) \in \ldbrack 1,l \rdbrack \times \ldbrack 1,c \rdbrack : e_{ij} \geq 5 ~et ~n_{ij} \geq 50.$\\
+\noindent
+Application numérique:\\
+Le tableau de contingence des variables activproManuelle et srh présente des cases dont les effectifs sont inférieurs à 5. Pour effectuer le test on se base donc sur la version binarisée de la variable de santé perçue.\\\\
+\noindent
+On pose :\\
+\noindent
+X v.a qualitative à 11 modalités représentant la santé perçue des sujets.\\
+\noindent
+Y v.a qualitative à 5 modalités représentant l'activité professionnelle des sujets.\\
+
+\noindent
+On trouve $Q_{calc} = 31.71$ et $\chi ^2 _ {4 ~dll, \alpha = 5 \%} = 9.49$ donc on rejette $H_0$ avec une \textbf{p-valeur de $2.19 ~10^{-6}$}.\\
+Autrement dit il existe un lien fort entre l'activité professionnelle et la santé perçue des sujets de la cohorte EPP3.\\
+\noindent
+Lorsque l'on fait le test avec la variable activproCAH plutôt que activproManuelle (en retirant la classe NSP puisqu'elle est évidement vide) on obtient également une p-valeur significative ($Q_{calc} = 21.51$, $Q_{th} = 7.81$ et $p= 8.24 ~10^{-6}$.
 
 \subsection{Variables d'ajustement et facteurs de confusion}
+Liste des variables à traiter:
+age
+sexe
+tabac
+alcool
+bmi
+entourage
+penibilité au travail
+pathologies lourdes
+depression
+score epice de précarité
+diabète
+pression arterielle
 \subsection{Gestion des données manquantes}
 
 \newpage
