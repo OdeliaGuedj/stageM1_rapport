@@ -20,6 +20,24 @@
 \usepackage{mathabx}
 %\usepackage{txfonts}
 
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+
+
+
+
+
 %%%% Pour toc %%%%
 \addtocounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
@@ -881,7 +899,9 @@ Globalement les sujets de la cohorte EPP3 s'estiment en bonne santé avec une m�
 \hline 
 \end{tabular}
 \end{center}
-
+\begin{center}
+\includegraphics[scale=.5]{activpro_srh_boxplot.png}
+\end{center}
 \noindent
 \textbf{Test du $\chi^2$ d'indépendance entre la santé perçue et l'activité professionnel des sujets de la cohorte EPP3.}\\
 On note:\\
@@ -936,21 +956,178 @@ Autrement dit il existe un lien fort entre l'activité professionnelle et la san
 Lorsque l'on fait le test avec la variable activproCAH plutôt que activproManuelle (en retirant la classe NSP puisqu'elle est évidement vide) on obtient également une p-valeur significative ($Q_{calc} = 21.51$, $Q_{th} = 7.81$ et $p= 8.24 ~10^{-6}$.
 
 \subsection{Variables d'ajustement et facteurs de confusion}
-Liste des variables à traiter:
-age
-sexe
-tabac
-alcool
-bmi
-entourage
-penibilité au travail
-pathologies lourdes
-depression
-score epice de précarité
-diabète
-pression arterielle
+\noindent
+Rappelons qu'un facteur de confusion est une variable à la fois liée à l'exposition et à la variable d'intérêt.
+Notre variable d'exposition est l'activité professionnelle des sujets et la variable d'intérêt leur santé perçue.\\
+
+\noindent
+Le facteur de confusion le plus évident est donc l'âge du sujet puisque celui ci est determinant dans l'exercice d'une activité pro mais joue également un rôle dans la perception qu'ont les sujets de leur santé.\\
+
+\noindent
+Les autres variables d'ajustement sont choisies en se basant sur la littérature : sexe, alcool, tabac, score de dépression, statut marital, activité professionnelle, indice de masse corporel, diabète, activité sportive et niveau d'éducation.\\
+
+
+\noindent
+Rappelons que l'indice de masse corporel est le rapport entre le poids et la taille carrée des individus. \\
+
+
+\noindent
+Le score de dépression est quant à lui la somme de 13 variables binaires :
+\baselineskip 1pt
+\begin{enumerate}
+\item En ce moment ma vie me semble vide.
+\item J'ai du mal à me débarrasser des mauvaises pensées qui me passent par la tête.
+\item Je suis sans énergie.
+\item Je me sens bloqué(e) ou empêché(e) devant la moindre chose à faire.
+\item Je suis déçu(e) et dégouté(e) de moi-même.
+\item Je suis obligé(e) de me forcer pour faire quoi que ce soit.
+\item J'ai du mal à faire les choses que j'avais l'habitude de faire.
+\item En ce moment je suis triste.
+\item J'ai l'esprit moins clair que d'habitude.
+\item J'aime moins qu'avant faire les choses qi me plaisent ou m'intéressent.
+\item Ma mémoire me semble moins bonne que d'habitude.
+\item Je suis sans espoir pour l'avenir.
+\item En ce moment je me sens moins heureux(se) que la plupart des gens.
+\end{enumerate}
+
+\noindent
+On considère qu'un sujet est déprimé si son score de dépression est supérieur ou égal à 7 ou s'il déclare prendre des antidépresseurs.\\
+
+\smallskip
+
+\noindent
+J'ai également choisi d'ajouter quelques autres variables qui m'ont semblé pertinentes: maladie cardiovasculaire, cancer, indice de précarité de vie ainsi que trois variables permettant de rendre compte des conditions de travail des sujets : la pénibilité due au lieu de travail, celle liée aux horaires de travail et enfin les nuisances chimiques ou sonores auxquelles les sujets peuvent être exposés pendant leurs heures de travail.\\
+
+\bigskip
+\noindent
+Le score EPICE est un score Evaluant de la Précarité et des Inégalités de santé dans les Centres d'Examens
+de santé) prenant en compte diverses informations :
+\begin{enumerate}
+\item Rencontrez-vous parfois un travailleur social (assistante sociale, éducateur) ? coeff = 10,06
+\item Bénéficiez-vous d'une assurance maladie complémentaire (mutuelle) coeff = -11,83
+\item Vivez-vous en couple ? coeff = -8,28
+\item Etes-vous propriétaire de votre logement (ou accédant à la propriété) ? coeff = -8,28
+\item Y-a-t-il des périodes dans le mois où vous rencontrez de réelles difficultés financières à faire face à vos besoins (alimentation, loyer, EDF…) ? coeff = 14,80
+\item Vous est-il arrivé de faire du sport au cours des 12 derniers mois ? coeff = -6,51
+\item Etes-vous allé au spectacle (cinéma, théâtre…) au cours des 12 derniers mois ? coeff = -7,10
+\item Etes-vous parti en vacances au cours des 12 derniers mois ? coeff = -7,10
+\item Au cours des 6 derniers mois, avez-vous eu des contacts avec des membres de votre famille autres que vos parents ou vos enfants coeff = -9,47
+\item En cas de difficultés (financières, familiales, de santé…) y-a-t-il dans votre entourage des personnes sur qui vous puissiez compter pour vous héberger quelques jours en cas de besoin ? coeff = -9,47
+\item En cas de difficultés (financières, familiales, de santé…), y-a-t-il dans votre entourage des personnes sur qui vous puissiez compter pour vous apporter une aide matérielle (y compris un prêt) ? coeff = -7,10
+\end{enumerate}
+Lorsque la réponse à une des questions est oui on ajoute le coefficient correspondant au score consatnt qui vaut 75.14. On considère un seuil de 30.17 au delà duquel le sujet est considéré comme vulnérable tout âge confondus. Ce seuil n'a de sens que si les 13 questions sont renseignées.\\
+
+Voici une description visuelle de la cohorte EPP3 en fonction des variables préalablement citées:\\
+
+\begin{enumerate}
+\item Variables Socio-Administratives
+\begin{center}
+\includegraphics[scale=.45]{tab_var_socio_ad.png}
+\end{center}
+On observe ainsi que la cohorte EPP3 est masculine à plus de 60 $\%$. De plus pres de 70 $\%$ des individus déclarent vivre en couple tandis que 30 $\%$  déclarent vivre seuls et moins de 10 $\%$ en famille.\\
+Sans surprise l'histogramme des ages nous indique que les sujets sont globalement âgés de 50 à 75 ans (c'était un des critères d'inclusion). 50 $\%$ de la population a moins de 59 ans et 75 $\%$ moins de 63. Il n'est donc pas étonnant d'observer un peu plus de 25 $\%$ de Retraités contre un peu moins de 60 $\%$ de Travailleurs Actifs.\\
+Il est à noté que la distribution de l'âge ne semble pas suivre une lois normale. Cette hypothèse est confirmée apr un test de Shapiro effectué sur des échantillons aléatoires d'individus de 5000 sujets.\\
+Enfin la cohorte EPP3 se situe majoritairement dans les catégories socio professionnelles élevée et intermédiaires.
+Ils semble de plus avoir un bon niveau d'éducation puisqu'à peine moins de 6 $\%$ se déclarent sans diplômes.\\
+
+\item Variables Santé Physique
+\begin{center}
+\includegraphics[scale=.45]{tab_var_sante_phys.png}
+\end{center}
+La cohorte EPP3 est dans l'ensemble en bonne santé puisque globalement non diabètique (> 96 $\%$) et non cancéreuse (> 96 $\%$.\\
+De plus une large majorité des sujets ne fume pas ou plus tandis que 70 $\%$ déclarent boire au plus 2 verres d'alcool par jours (tout alcool confondus).\\
+Cependant une part non négligeable des sujets est hypertendue mais très peu d'individus déclarent être atteint d'une maladie cardiovasculaire.\\
+\item Variables Santé Psychique
+\begin{center}
+\includegraphics[scale=.45]{tab_var_sante_psy.png}
+\end{center}
+Enfin, on observe que très peu d'individus sont dépressifs mais que plus de 20 $\%$ sont en situation de précarité.
+\end{enumerate}
+
+
+
+\begin{center}
+\setlength\arrayrulewidth{.6pt}
+\arrayrulecolor{black}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+ & Min & Mean & Max & Q1 & Median & Q3 & NA \\
+ \hline
+ \hline
+ Âge &  48.53 & 59.62 & 86.24 & 54.47 & 59.11 & 63.66 & 0\\
+ \hline
+ Indice de Masse Corporelle & 14.50 & 25.19 & 51.06 & 22.66 &  24.91 & 27.34 & 0\\
+ \hline
+ Score EPICE de précarité & 0 & 18.31 & 100 & 0 & 13.61 & 30.17 & 756\\
+ \hline
+\end{tabular}
+\end{center}
+
+ 
+%Parler de la dif ci dessous, afficher table de contingence, conclure sur le biais évident des mesures subjectives !!!! 
+%La variable dépression prend en compte à la fois le score de dépression (si sup à 7) et les antidépresseurs que les sujets déclarent prendre. 
+%D'autre part il est demandé aux sujets s'ils ont déjà été diagnostiqué  par un médecin. Lorsque l'on compare les 2 variables on constate un écart de 1267 sujets.
+ 
+ 
 \subsection{Gestion des données manquantes}
 
+
+\noindent
+Ci dessous, le tableau du nombre de données manquantes pour chacune des variables de l'analyse.\\
+\bigskip
+
+\begin{center}
+\begin{tabular}{rrl}
+\toprule
+Nb Na & \% NA & Variables\\
+\midrule
+8613 & 84.80 & Tentative de Suicide\\
+8612 & 84.79 & Pontage/Angioplastie/Stent\\
+1744 & 17.17 & Alcool (Nb de verres)\\
+756 & 7.44 & Score Epice de Précarité\\
+137 & 1.35 & Sport\\
+\addlinespace
+119 & 1.17 & Cancer\\
+108 & 1.06 & Niveau d'Education\\
+79 & 0.78 & Hypertension Arterielle\\
+74 & 0.73 & Maladie des Artères\\
+68 & 0.67 & Autre Pb Cardiaque\\
+\addlinespace
+68 & 0.67 & Phlébite\\
+68 & 0.67 & Embolie Pulmonaire\\
+66 & 0.65 & AVC\\
+65 & 0.64 & Angine de Poitrine\\
+58 & 0.57 & Infarctus du Myocarde\\
+\addlinespace
+46 & 0.45 & Depression\\
+42 & 0.41 & Situation Familliale\\
+41 & 0.40 & Diabète\\
+30 & 0.30 & Catégorie Socio-Professionnelle\\
+29 & 0.29 & Activité Professionnelle (CAH)\\
+\addlinespace
+26 & 0.26 & Tabac\\
+26 & 0.26 & Activité Professionnelle (clasif Manuelle)\\
+26 & 0.26 & nepp3\\
+20 & 0.20 & Sexe\\
+16 & 0.16 & Âge\\
+\addlinespace
+0 & 0.00 & Indice de Masse Corporelle\\
+0 & 0.00 & Santé Perçue\\
+0 & 0.00 & Santé Perçue Binaire\\
+0 & 0.00 & Santé Perçue numerique\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\bigskip
+\noindent
+On remarque un taux élevé de données manquantes pour les variables Tentative de Suicide et Pontage/Angioplastie/Stent (presque 85 $\%$). Plutôt que de supprimer totalement ces variables nous effectuerons plus loin une analyse en sous groupes en comparant l'impact de l'activité professionnelle sur la santé perçue des individus ayant fait une TS et ceux qui n'en n'ont pas fait. La même démarche sera effectuée pour les pathologies cardiovasculaires. \\
+
+Voici le flowchart de l'étude menée:
+%\includegraphics[scale=1]{flowchart.png}
+
+% Faire test de comparaison des populations avec tt le monde et population sans les exlus
+outliers !!!
 \newpage
 \section{Statistiques}
 \subsection{Analyses univariées}
