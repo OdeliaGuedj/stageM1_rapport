@@ -3,37 +3,35 @@
 \contentsline {section}{Citations}{1}
 \select@language {french}
 \contentsline {section}{\numberline {1}Contexte}{2}
-\contentsline {subsection}{\numberline {1.1}L'Inserm U970 Equipe 4}{2}
-\contentsline {subsection}{\numberline {1.2}L'Etude Parisienne Prospective 3 (EPP3)}{2}
-\contentsline {subsection}{\numberline {1.3}Sujet de stage : D\IeC {\'e}finition et limites}{2}
-\contentsline {section}{\numberline {2}Bref aper\IeC {\c c}u de l'\IeC {\'e}pid\IeC {\'e}miologie}{3}
-\contentsline {subsection}{\numberline {2.1}Histoire et d\IeC {\'e}finition}{3}
-\contentsline {subsection}{\numberline {2.2}Vocabulaire indispensable (analogie avec le vocabulaire "orient\IeC {\'e} math\IeC {\'e}matiques")}{3}
-\contentsline {subsection}{\numberline {2.3}Principaux biais et indicateurs de l'\IeC {\'e}pid\IeC {\'e}miologie}{3}
-\contentsline {section}{\numberline {3}Description et explication des donn\IeC {\'e}es}{4}
-\contentsline {subsection}{\numberline {3.1}Variable d'expostion : activpro}{4}
-\contentsline {subsubsection}{\numberline {3.1.1}Codage manuel}{5}
-\contentsline {subsubsection}{\numberline {3.1.2}ACM et CAH}{7}
-\contentsline {subsubsection}{\numberline {3.1.3}Comparaisons des deux codages}{14}
-\contentsline {subsection}{\numberline {3.2}Variable d'int\IeC {\'e}r\IeC {\^e}t : Self Rated Health (SRH)}{22}
-\contentsline {subsection}{\numberline {3.3}Variables d'ajustement et facteurs de confusion}{23}
-\contentsline {subsection}{\numberline {3.4}Gestion des donn\IeC {\'e}es manquantes}{27}
-\contentsline {section}{\numberline {4}Statistiques}{29}
-\contentsline {subsection}{\numberline {4.1}Analyses univari\IeC {\'e}es}{29}
-\contentsline {subsubsection}{\numberline {4.1.1}Variables qualitatives}{29}
-\contentsline {subsubsection}{\numberline {4.1.2}Variables quantitatives}{29}
-\contentsline {subsection}{\numberline {4.2}Analyses multivari\IeC {\'e}es}{29}
-\contentsline {subsubsection}{\numberline {4.2.1}R\IeC {\'e}gression logistique}{29}
-\contentsline {subsubsection}{\numberline {4.2.2}R\IeC {\'e}gression lin\IeC {\'e}aire}{29}
-\contentsline {subsubsection}{\numberline {4.2.3}R\IeC {\'e}gression polytomique}{29}
-\contentsline {subsection}{\numberline {4.3}Analyse en sous-groupes}{29}
-\contentsline {subsubsection}{\numberline {4.3.1}D\IeC {\'e}pression}{29}
-\contentsline {subsubsection}{\numberline {4.3.2}Pathologies lourdes}{29}
-\contentsline {subsubsection}{\numberline {4.3.3}Sexe}{29}
-\contentsline {subsubsection}{\numberline {4.3.4}\IeC {\^A}ge}{29}
-\contentsline {section}{\numberline {5}Perspectives}{30}
-\contentsline {subsection}{\numberline {5.1}Le monde professionnel}{30}
-\contentsline {subsection}{\numberline {5.2}Nouveaux outils}{30}
-\contentsline {subsection}{\numberline {5.3}Les donn\IeC {\'e}es : th\IeC {\'e}orie vs pratique}{30}
-\contentsline {section}{\numberline {6}Annexes}{33}
-\contentsline {section}{\numberline {7}Bibliographie}{33}
+\contentsline {subsection}{\numberline {1.1}L'Inserm U970 \IeC {\'E}quipe 4}{2}
+\contentsline {subsection}{\numberline {1.2}L'\IeC {\'e}tude Parisienne Prospective 3 (EPP3)}{2}
+\contentsline {subsection}{\numberline {1.3}Sujet de stage : D\IeC {\'e}finition et limites}{3}
+\contentsline {section}{\numberline {2}Bref aper\IeC {\c c}u de l'\IeC {\'e}pid\IeC {\'e}miologie}{4}
+\contentsline {subsection}{\numberline {2.1}Histoire et d\IeC {\'e}finition}{4}
+\contentsline {subsection}{\numberline {2.2}Vocabulaire indispensable (analogie avec le vocabulaire "orient\IeC {\'e} math\IeC {\'e}matiques")}{4}
+\contentsline {subsection}{\numberline {2.3}Principaux biais et indicateurs de l'\IeC {\'e}pid\IeC {\'e}miologie}{4}
+\contentsline {section}{\numberline {3}Description et explication des donn\IeC {\'e}es}{5}
+\contentsline {subsection}{\numberline {3.1}Variable d'exposition : Activit\IeC {\'e} Professionnelle}{5}
+\contentsline {subsubsection}{\numberline {3.1.1}Codage manuel}{6}
+\contentsline {subsubsection}{\numberline {3.1.2}ACM et CAH}{8}
+\contentsline {subsubsection}{\numberline {3.1.3}Comparaisons des deux codages}{15}
+\contentsline {subsection}{\numberline {3.2}Variable d'int\IeC {\'e}r\IeC {\^e}t : Self Rated Health (SRH)}{20}
+\contentsline {subsection}{\numberline {3.3}Variables d'ajustement et facteurs de confusion}{21}
+\contentsline {subsection}{\numberline {3.4}Gestion des donn\IeC {\'e}es manquantes}{24}
+\contentsline {section}{\numberline {4}Statistiques}{26}
+\contentsline {subsection}{\numberline {4.1}Flowchart}{26}
+\contentsline {subsection}{\numberline {4.2}Analyses univari\IeC {\'e}es}{26}
+\contentsline {subsection}{\numberline {4.3}Analyses multivari\IeC {\'e}es}{30}
+\contentsline {subsubsection}{\numberline {4.3.1}R\IeC {\'e}gression logistique}{30}
+\contentsline {subsubsection}{\numberline {4.3.2}S\IeC {\'e}lection et diagnostique du mod\IeC {\`e}le}{39}
+\contentsline {subsection}{\numberline {4.4}Analyse en sous-groupes}{39}
+\contentsline {subsubsection}{\numberline {4.4.1}D\IeC {\'e}pression/Tentative de Suicide}{39}
+\contentsline {subsubsection}{\numberline {4.4.2}Maladies Cardio - Vasculaires}{39}
+\contentsline {subsubsection}{\numberline {4.4.3}Score pr\IeC {\'e}carit\IeC {\'e}}{39}
+\contentsline {subsubsection}{\numberline {4.4.4}\IeC {\^A}ge}{39}
+\contentsline {section}{\numberline {5}Perspectives}{40}
+\contentsline {subsection}{\numberline {5.1}Le monde professionnel}{40}
+\contentsline {subsection}{\numberline {5.2}Plus value perso}{40}
+\contentsline {subsection}{\numberline {5.3}Les donn\IeC {\'e}es : th\IeC {\'e}orie vs pratique}{40}
+\contentsline {section}{\numberline {6}Annexes}{43}
+\contentsline {section}{\numberline {7}Bibliographie}{43}
