@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {2}Bref aper\IeC {\c c}u de l'\IeC {\'e}pid\IeC {\'e}miologie}{4}
 \contentsline {subsection}{\numberline {2.1}Histoire et d\IeC {\'e}finition}{4}
 \contentsline {subsection}{\numberline {2.2}Notions de base, vocabulaire}{5}
-\contentsline {subsection}{\numberline {2.3}Principaux biais et indicateurs de l'\IeC {\'e}pid\IeC {\'e}miologie}{6}
+\contentsline {subsection}{\numberline {2.3}Principaux biais de l'\IeC {\'e}pid\IeC {\'e}miologie}{6}
 \contentsline {section}{\numberline {3}Description et explication des donn\IeC {\'e}es}{7}
 \contentsline {subsection}{\numberline {3.1}Variable d'exposition : Activit\IeC {\'e} Professionnelle}{7}
 \contentsline {subsubsection}{\numberline {3.1.1}Codage manuel}{8}

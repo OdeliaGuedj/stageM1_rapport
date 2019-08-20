@@ -263,6 +263,16 @@ Enfin il appelle la dernière ère, l'ère de l'éco-épidémiologie caractéris
 
 
 \subsection{Notions de base, vocabulaire}
+L'épidémiologie utilise des méthodes statistiques afin de décrire une maladie ou d'en rechercher les causes. Cependant, le vocabulaire utilisé diffère quelque peu de celui utilisé en mathématiques.\\
+Ainsi la variable à expliquer $Y$ est souvent appelée variable d'intérêt. 
+De plus en épidémiologie les variables explicatives, ou covariables, sont classées dans plusieurs groupes:\\
+\begin{itemize}
+\item Il y a d'une part la variable d'exposition c'est à dire la variable explicative principale. 
+\item Les facteurs de confusions: ce sont les covariables qui sont inclues de façon (quasi) systématiques dans les modèles statistiques pour des raisons cliniques. Ces variables sont décrites dans la littérature et varient selon la branche médicale. On y retrouve souvent l'âge, le sexe, l'indice de masse corporelle des sujets ainsi que leur habitudes de vie: tabac, alcool, score de dépression, statut marital...\\
+Les facteurs de confusion sont des variables à la fois liées au facteur de risque et à la variable d'intérêt.
+\item Enfin les autres variables explicatives sont appelées variables d'ajustement: il s'agit d'autres facteur pouvant participer, avec la variable d'exposition, à l'explication de la variable d'intérêt.
+\end{itemize} 
+
 \noindent
 L'épidémiologie a deux champs principaux d'application:
 \begin{itemize}
@@ -283,23 +293,32 @@ Une étude épidémiologique peut se faire deux manières :
 \item En contrôlant les conditions d'exposition à ces facteurs de risque : on parle d'étude expérimentale.\\
 L'étude est dite randomisée si le hasard seul est responsable de l'appartenance d'un sujet à un groupe. On parle d'une étude ouverte quand le traitement est connu des sujets et des investigateurs, en simple aveugle quand seuls les investigateurs connaissent le traitement et en double aveugle lorsque ni les sujets ni les investigateurs ne connaissent le traitement.\\
 Cependant les études expérimentales sont presque toujours irréalisables car non éthiques : une étude expérimentale sur le lien entre le tabac et l'apparition d'un cancer du poumon supposerait en effet d'exposer une partie de la population étudiée au tabac puis d'étudier les conséquences sur leur poumon.\\
-
 \end{itemize}
 
+Lorsque l'on fait de l'épidémiologie descriptive on peut faire deux sortes d'études:\\
+\begin{itemize}
+\item Étudier la \textit{prévalence} d'un phénomène de santé, c'est à dire la fréquence de survenue de ce phénomène dans une certaine population à un temps donné. Dans ce type d'étude l'évolution temporelle n'existe pas, c'est une mesure effectuée à un temps donné: on parle d'\textit{étude transversale}.
+\item Étudier l'\textit{incidence} d'un phénomène de santé, c'est à dire étudier les modifications de l'état de santé d'un ou de plusieurs groupes de sujets sur une période donnée. Ici c'est bien l'évolution dans le temps d'un état qui importe: on parle d'\textit{étude longitudinale}.
+\end{itemize}
 
+Par ailleurs lorsque le but de l'étude épidémiologique est à visée étiologique on dénombre deux grandes familles d'étude:\\
+\begin{itemize}
+\item \textit{L'étude de cohorte}: Étude d'un groupe de personnes étant ou pouvant être exposé à un facteur de risque. C'est l'étude épidémiologique la plus exhaustive.
+\item \textit{L'étude cas-témoin}: elle étudie la comparaison entre deux groupes : les malades appelés cas et les non-malades appelés témoins. Le but est de déterminer si la réponse à l'exposition à un facteur est similaire dans les deux sous-groupes et ainsi d'établir un lien facteur/maladie.
+\end{itemize}
 
+Une étude peut être \textit{prospective} si  l'information concernant l'exposition des sujets à un facteur est recueillie avant la survenu d'un phénomène de  santé, ou \textit{rétrospective} si l'information concernant l'exposition des sujets à un facteur est recueillie après  la survenu d'un phénomène de  santé chez certains sujets.
 
-Insérer fichier word de notes prises pdt stg sur epidemio.\\
-Ajouter def de :
-analyse en brut/univarié/multivarié/stratifier/variable d'interet/variable d'exposition/variable d'ajustement/outcome/facteurs de confusion...\\
-Faire l'analogie entre ces termes (ou groupes de termes) avec ceux qu'on utilise en maths. 
-\subsection{Principaux biais et indicateurs de l'épidémiologie}
+\subsection{Principaux biais de l'épidémiologie}
 \noindent
-Biais de sélection. Quel autre biais ??\\
-OR\\
-coefficients bêta\\
-!!!! cette partie ne doit pas dépasser 2 pages, pas d'exposé exhaustif juste une idée d'ensemble du vocabulaire pour prof stat non épidémiologistes!!!!!\\
-\newpage
+Un biais est une erreur de méthodologie commise le plus souvent durant l'inclusion des sujets dans l'étude et conduisant à une mauvaise estimation des paramètres étudiés.\\
+Il en existe 3 principaux:\\
+\begin{itemize}
+\item Le \textit{biais de sélection}: : Intervient lors de la constitution de l'échantillon d'enquête. C'est le biais induit par la manière dont les sujets sont choisis au sein de la population. 
+\item Le \textit{biais de mesure}: due à une mauvaise mesure du facteur d'exposition.
+\item Le \textit{biais de confusion}: due à la mauvaise analyse de la relation d'un facteur avec une issue. Un tel facteur est appelé facteur de confusion.
+\end{itemize}
+
 \section{Description et explication des données}
 \noindent
 Le but de cette analyse est d'établir l'existence d'un lien entre l'activité professionnelle des sujets et la manières dont ils perçoivent leur santé. Si cette dernière fait l'objet d'une question claire dans le questionnaire d'inclusion, ce n'est pas le cas de l'activité professionnelle. J'ai ainsi dû créer une nouvelle variable en extrayant de l'information de plusieurs questions grâce à des méthodes de classifications non supervisée.\\
