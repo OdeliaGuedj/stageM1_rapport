@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.9.20)  30 JUL 2019 10:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.9.20)  20 AUG 2019 14:04
 entering extended mode
 **./rap_stg.tex
 (rap_stg.tex
@@ -1645,13 +1645,13 @@ Overfull \hbox (38.99998pt too wide) in paragraph at lines 102--106
 rm.jpg> <./logo_parcc.jpg> <./logo_ueve_saclay.png> <./Epidemiologie_logo_im.pn
 g>] [2
 
-] (rap_stg.toc [1
-
-])
+] (rap_stg.toc)
 \tf@toc=\write4
 \openout4 = `rap_stg.toc'.
 
- [2]
+ [1
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
@@ -1671,245 +1671,218 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--134
 
  []
 
-[3] [4] [1
+[2] [3] [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 179--182
+Underfull \hbox (badness 10000) in paragraph at lines 174--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--186
+Underfull \hbox (badness 10000) in paragraph at lines 177--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 191--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--227
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--227
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--227
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--227
+Underfull \hbox (badness 10000) in paragraph at lines 209--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--227
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 228--234
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 239--245
+Underfull \hbox (badness 10000) in paragraph at lines 224--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--248
+Underfull \hbox (badness 10000) in paragraph at lines 224--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--260
+Underfull \hbox (badness 10000) in paragraph at lines 224--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--242
+
+ []
+
+[2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 247--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--263
 
  []
 
 [4]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 271.
+Underfull \hbox (badness 10000) in paragraph at lines 283--286
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--302
+
+ []
+
+[5] [6]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 313.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 271.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 313.
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--313
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 331--335
+Underfull \hbox (badness 10000) in paragraph at lines 353--355
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--335
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 351--371
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 373--377
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--371
+Underfull \hbox (badness 10000) in paragraph at lines 373--377
 
  []
 
-<activpro_barplot_manuel.png, id=60, 376.40625pt x 237.13594pt>
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 393--413
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--413
+
+ []
+
+<activpro_barplot_manuel.png, id=67, 376.40625pt x 237.13594pt>
 File: activpro_barplot_manuel.png Graphic file (type png)
 <use activpro_barplot_manuel.png>
-Package pdftex.def Info: activpro_barplot_manuel.png  used on input line 374. o
-n input line 374.
+Package pdftex.def Info: activpro_barplot_manuel.png  used on input line 416. o
+n input line 416.
 Package pdftex.def Info: Requested size: 376.40532pt x 237.13535pt on input lin
-e 374.
-[7 <./activpro_barplot_manuel.png>]
-<plot_grid_hist_age_activproBis.png, id=66, 317.68687pt x 216.81pt>
+e 416.
+[9 <./activpro_barplot_manuel.png>]
+<plot_grid_hist_age_activproBis.png, id=72, 317.68687pt x 216.81pt>
 File: plot_grid_hist_age_activproBis.png Graphic file (type png)
 <use plot_grid_hist_age_activproBis.png>
 Package pdftex.def Info: plot_grid_hist_age_activproBis.png  used on input line
- 380. on input line 380.
+ 422. on input line 422.
 Package pdftex.def Info: Requested size: 412.99287pt x 281.85295pt on input lin
-e 380.
+e 422.
 
-Overfull \hbox (0.13408pt too wide) in paragraph at lines 394--395
+Overfull \hbox (0.13408pt too wide) in paragraph at lines 436--437
 []\T1/lmr/m/n/10 Les va-riables Adm12a et Adm11 ap-portent glo-ba-le-ment la mê
 me in-for-ma-tion, co-hé-rent puisque
  []
 
-[8 <./plot_grid_hist_age_activproBis.png>]
-<ACM_var.png, id=71, 414.04688pt x 301.125pt>
+[10 <./plot_grid_hist_age_activproBis.png>]
+<ACM_var.png, id=77, 414.04688pt x 301.125pt>
 File: ACM_var.png Graphic file (type png)
 <use ACM_var.png>
-Package pdftex.def Info: ACM_var.png  used on input line 399. on input line 399
+Package pdftex.def Info: ACM_var.png  used on input line 441. on input line 441
 .
 Package pdftex.def Info: Requested size: 414.04585pt x 301.12425pt on input lin
-e 399.
+e 441.
 
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 402.
+(amsmath)                 on input line 444.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 402.
+LaTeX Warning: Command \' invalid in math mode on input line 444.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--403
-
- []
-
-[9 <./ACM_var.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 404--406
+Underfull \hbox (badness 10000) in paragraph at lines 443--445
 
  []
 
-<ACM_var_ind.png, id=80, 526.96875pt x 451.6875pt>
+[11 <./ACM_var.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 446--448
+
+ []
+
+<ACM_var_ind.png, id=86, 526.96875pt x 451.6875pt>
 File: ACM_var_ind.png Graphic file (type png)
 <use ACM_var_ind.png>
-Package pdftex.def Info: ACM_var_ind.png  used on input line 407. on input line
- 407.
+Package pdftex.def Info: ACM_var_ind.png  used on input line 449. on input line
+ 449.
 Package pdftex.def Info: Requested size: 421.57556pt x 361.35048pt on input lin
-e 407.
+e 449.
 
-Overfull \hbox (6.57094pt too wide) in paragraph at lines 407--408
+Overfull \hbox (6.57094pt too wide) in paragraph at lines 449--450
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 407--408
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--414
+Underfull \hbox (badness 10000) in paragraph at lines 451--456
 
  []
 
-[10 <./ACM_var_ind.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 415--418
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 419--422
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--424
-
- []
-
-<dendro_inertie_cah.png, id=85, 489.32813pt x 263.48438pt>
-File: dendro_inertie_cah.png Graphic file (type png)
-<use dendro_inertie_cah.png>
-Package pdftex.def Info: dendro_inertie_cah.png  used on input line 425. on inp
-ut line 425.
-Package pdftex.def Info: Requested size: 489.32692pt x 263.48372pt on input lin
-e 425.
-
-Overfull \hbox (74.3223pt too wide) in paragraph at lines 425--428
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 425--428
-
- []
-
-<cah_ind_cluster.png, id=86, 808.52063pt x 373.395pt>
-File: cah_ind_cluster.png Graphic file (type png)
-<use cah_ind_cluster.png>
-Package pdftex.def Info: cah_ind_cluster.png  used on input line 429. on input 
-line 429.
-Package pdftex.def Info: Requested size: 404.25932pt x 186.69704pt on input lin
-e 429.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11 <./dendro_inertie_cah.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 431--434
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 435--441
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 442--444
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--452
+[12 <./ACM_var_ind.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 457--460
 
  []
 
@@ -1919,421 +1892,478 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--464
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--468
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
 
-[12 <./cah_ind_cluster.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 470--472
+<dendro_inertie_cah.png, id=91, 489.32813pt x 263.48438pt>
+File: dendro_inertie_cah.png Graphic file (type png)
+<use dendro_inertie_cah.png>
+Package pdftex.def Info: dendro_inertie_cah.png  used on input line 467. on inp
+ut line 467.
+Package pdftex.def Info: Requested size: 489.32692pt x 263.48372pt on input lin
+e 467.
 
+Overfull \hbox (74.3223pt too wide) in paragraph at lines 467--470
+[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 503--507
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
 
  []
 
+<cah_ind_cluster.png, id=92, 808.52063pt x 373.395pt>
+File: cah_ind_cluster.png Graphic file (type png)
+<use cah_ind_cluster.png>
+Package pdftex.def Info: cah_ind_cluster.png  used on input line 471. on input 
+line 471.
+Package pdftex.def Info: Requested size: 404.25932pt x 186.69704pt on input lin
+e 471.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13]
-Underfull \hbox (badness 10000) in paragraph at lines 543--548
+ [13 <./dendro_inertie_cah.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 473--476
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 572--576
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 598--602
+Underfull \hbox (badness 10000) in paragraph at lines 477--483
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 608--612
+Underfull \hbox (badness 10000) in paragraph at lines 484--486
 
  []
 
-<comp_codages_activpro_pourcentage.png, id=106, 376.40625pt x 237.13594pt>
-File: comp_codages_activpro_pourcentage.png Graphic file (type png)
-<use comp_codages_activpro_pourcentage.png>
-Package pdftex.def Info: comp_codages_activpro_pourcentage.png  used on input l
-ine 613. on input line 613.
-Package pdftex.def Info: Requested size: 376.40532pt x 237.13535pt on input lin
-e 613.
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--494
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--506
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--510
+
+ []
+
+[14 <./cah_ind_cluster.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 512--514
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--549
+
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15]
-Underfull \hbox (badness 10000) in paragraph at lines 637--639
+Underfull \hbox (badness 10000) in paragraph at lines 585--590
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 652--658
+Underfull \hbox (badness 10000) in paragraph at lines 614--618
 
  []
 
-[16 <./comp_codages_activpro_pourcentage.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 740--748
-
- []
-
-[17]
-Overfull \hbox (41.60188pt too wide) in paragraph at lines 852--883
- [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 953--958
-
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 960--963
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 640--644
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 964--972
+Underfull \hbox (badness 10000) in paragraph at lines 650--654
+
+ []
+
+<comp_codages_activpro_pourcentage.png, id=112, 376.40625pt x 237.13594pt>
+File: comp_codages_activpro_pourcentage.png Graphic file (type png)
+<use comp_codages_activpro_pourcentage.png>
+Package pdftex.def Info: comp_codages_activpro_pourcentage.png  used on input l
+ine 655. on input line 655.
+Package pdftex.def Info: Requested size: 376.40532pt x 237.13535pt on input lin
+e 655.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 679--681
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 987--995
+Underfull \hbox (badness 10000) in paragraph at lines 694--700
 
  []
 
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 1017.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 1017.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1020--1028
+[18 <./comp_codages_activpro_pourcentage.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 782--790
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1052
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1053--1055
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1056--1059
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1067
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1068--1070
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1077--1079
-
- []
-
-
-LaTeX Font Warning: Command \large invalid in math mode on input line 1080.
-
-
-LaTeX Font Warning: Command \large invalid in math mode on input line 1080.
-
-
-LaTeX Font Warning: Command \large invalid in math mode on input line 1080.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 1080.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1081--1084
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1086--1088
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1089--1092
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1095
-
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1099
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1100--1106
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1114--1117
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1118--1120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1123
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1125--1127
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1148--1150
-
- []
-
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 1153--1155
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1183--1186
-
- []
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1191
-
- []
-
-<tab_var_socio_ad.png, id=136, 1081.03876pt x 440.39531pt>
-File: tab_var_socio_ad.png Graphic file (type png)
-<use tab_var_socio_ad.png>
-Package pdftex.def Info: tab_var_socio_ad.png  used on input line 1195. on inpu
-t line 1195.
-Package pdftex.def Info: Requested size: 432.40784pt x 176.155pt on input line 
-1195.
-
-Overfull \hbox (27.40324pt too wide) in paragraph at lines 1195--1196
+Overfull \hbox (41.60188pt too wide) in paragraph at lines 894--925
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1197--1198
+Underfull \hbox (badness 10000) in paragraph at lines 995--1000
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1005
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1199--1201
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1014
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1202--1204
+Underfull \hbox (badness 10000) in paragraph at lines 1029--1037
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1205--1207
+LaTeX Font Warning: Command \small invalid in math mode on input line 1059.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1059.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1070
 
  []
 
-<tab_var_sante_phys.png, id=137, 1021.56656pt x 496.10344pt>
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1094
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1095--1097
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1102--1109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1119--1121
+
+ []
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 1122.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 1122.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 1122.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1122.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1123--1126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1128--1130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1135--1137
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 1138--1141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1142--1148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1156--1159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1160--1162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1163--1165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1190--1192
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 1195--1197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1225--1228
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 1231--1233
+
+ []
+
+<tab_var_socio_ad.png, id=142, 1081.03876pt x 440.39531pt>
+File: tab_var_socio_ad.png Graphic file (type png)
+<use tab_var_socio_ad.png>
+Package pdftex.def Info: tab_var_socio_ad.png  used on input line 1237. on inpu
+t line 1237.
+Package pdftex.def Info: Requested size: 432.40784pt x 176.155pt on input line 
+1237.
+
+Overfull \hbox (27.40324pt too wide) in paragraph at lines 1237--1238
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1239--1240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1241--1243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1244--1246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1247--1249
+
+ []
+
+<tab_var_sante_phys.png, id=143, 1021.56656pt x 496.10344pt>
 File: tab_var_sante_phys.png Graphic file (type png)
 <use tab_var_sante_phys.png>
-Package pdftex.def Info: tab_var_sante_phys.png  used on input line 1211. on in
-put line 1211.
+Package pdftex.def Info: tab_var_sante_phys.png  used on input line 1253. on in
+put line 1253.
 Package pdftex.def Info: Requested size: 459.70071pt x 223.24448pt on input lin
-e 1211.
+e 1253.
 
-Overfull \hbox (54.69612pt too wide) in paragraph at lines 1211--1212
+Overfull \hbox (54.69612pt too wide) in paragraph at lines 1253--1254
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23 <./tab_var_socio_ad.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1214--1216
+ [25 <./tab_var_socio_ad.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1256--1258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1217--1219
+Underfull \hbox (badness 10000) in paragraph at lines 1259--1261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1220--1222
+Underfull \hbox (badness 10000) in paragraph at lines 1262--1264
 
  []
 
-<pie_epice.png, id=142, 381.67593pt x 237.13594pt>
+<pie_epice.png, id=149, 381.67593pt x 237.13594pt>
 File: pie_epice.png Graphic file (type png)
 <use pie_epice.png>
-Package pdftex.def Info: pie_epice.png  used on input line 1227. on input line 
-1227.
+Package pdftex.def Info: pie_epice.png  used on input line 1269. on input line 
+1269.
 Package pdftex.def Info: Requested size: 114.50366pt x 71.14133pt on input line
- 1227.
-<barPlot_TS.png, id=143, 381.67593pt x 237.13594pt>
+ 1269.
+<barPlot_TS.png, id=150, 381.67593pt x 237.13594pt>
 File: barPlot_TS.png Graphic file (type png)
 <use barPlot_TS.png>
-Package pdftex.def Info: barPlot_TS.png  used on input line 1228. on input line
- 1228.
+Package pdftex.def Info: barPlot_TS.png  used on input line 1270. on input line
+ 1270.
 Package pdftex.def Info: Requested size: 114.50366pt x 71.14133pt on input line
- 1228.
-<pie_deptot.png, id=144, 381.67593pt x 237.13594pt>
+ 1270.
+<pie_deptot.png, id=151, 381.67593pt x 237.13594pt>
 File: pie_deptot.png Graphic file (type png)
 <use pie_deptot.png>
-Package pdftex.def Info: pie_deptot.png  used on input line 1229. on input line
- 1229.
+Package pdftex.def Info: pie_deptot.png  used on input line 1271. on input line
+ 1271.
 Package pdftex.def Info: Requested size: 114.50366pt x 71.14133pt on input line
- 1229.
+ 1271.
 
 Underfull \vbox (badness 3189) has occurred while \output is active []
 
- [24 <./tab_var_sante_phys.png (PNG copy)> <./pie_epice.png> <./barPlot_TS.png>
+ [26 <./tab_var_sante_phys.png (PNG copy)> <./pie_epice.png> <./barPlot_TS.png>
  <./pie_deptot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1313
+Underfull \hbox (badness 10000) in paragraph at lines 1352--1355
 
  []
 
-[25]
-<FLOWCHART.png, id=155, 2390.17969pt x 1222.5675pt>
+[27]
+<FLOWCHART.png, id=161, 2390.17969pt x 1222.5675pt>
 File: FLOWCHART.png Graphic file (type png)
 <use FLOWCHART.png>
-Package pdftex.def Info: FLOWCHART.png  used on input line 1322. on input line 
-1322.
+Package pdftex.def Info: FLOWCHART.png  used on input line 1364. on input line 
+1364.
 Package pdftex.def Info: Requested size: 597.54346pt x 305.64113pt on input lin
-e 1322.
+e 1364.
 
-Overfull \hbox (167.53883pt too wide) in paragraph at lines 1322--1323
+Overfull \hbox (167.53883pt too wide) in paragraph at lines 1364--1365
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1327--1332
+Underfull \hbox (badness 10000) in paragraph at lines 1369--1374
 
  []
 
-[26 <./FLOWCHART.png>] [27] [28] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 1528--1530
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1532--1534
-
- []
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 1571--1574
-
- []
-
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 1577--1579
+[28 <./FLOWCHART.png>] [29] [30] [31]
+Underfull \hbox (badness 10000) in paragraph at lines 1570--1572
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1619--1620
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1623--1625
+Underfull \hbox (badness 10000) in paragraph at lines 1574--1576
 
  []
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 1688--1691
+Underfull \hbox (badness 10000) in paragraph at lines 1622--1625
 
  []
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1692--1695
+Underfull \hbox (badness 10000) in paragraph at lines 1628--1630
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1699--1701
+Underfull \hbox (badness 10000) in paragraph at lines 1670--1671
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1703--1705
+Underfull \hbox (badness 10000) in paragraph at lines 1674--1676
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 1739--1742
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1746
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1753--1754
-
- []
-
-[34] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 1820--1823
+Underfull \hbox (badness 10000) in paragraph at lines 1750--1752
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1825--1827
+Underfull \hbox (badness 10000) in paragraph at lines 1754--1756
 
  []
 
 
-LaTeX Warning: Command \c invalid in math mode on input line 1863.
+Underfull \hbox (badness 10000) in paragraph at lines 1804--1805
 
-[36] [37] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1986--1990
+ []
+
+[36] [37]
+Underfull \hbox (badness 10000) in paragraph at lines 1871--1874
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1993--1996
-
- []
-
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 2019--2034
+Underfull \hbox (badness 10000) in paragraph at lines 1876--1878
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2036--2041
+LaTeX Warning: Command \c invalid in math mode on input line 1914.
+
+[38] [39] [40]
+Underfull \hbox (badness 10000) in paragraph at lines 2037--2041
 
  []
 
-[40] [41] [42
 
-] [43] (rap_stg.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 2044--2047
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 2070--2085
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2087--2092
+
+ []
+
+[42] [43] [44
+
+] [45] (rap_stg.aux) ) 
 Here is how much of TeX's memory you used:
  17741 strings out of 493323
  321334 string characters out of 3139066
- 398263 words of memory out of 3000000
+ 398310 words of memory out of 3000000
  20809 multiletter control sequences out of 15000+200000
  70151 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2361,9 +2391,9 @@ iKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
 sy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on rap_stg.pdf (49 pages, 961273 bytes).
+Output written on rap_stg.pdf (51 pages, 972053 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
+ 329 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
