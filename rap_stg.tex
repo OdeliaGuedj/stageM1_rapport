@@ -321,7 +321,7 @@ Il en existe 3 principaux:\\
 
 \section{Description et explication des données}
 \noindent
-Le but de cette analyse est d'établir l'existence d'un lien entre l'activité professionnelle des sujets et la manières dont ils perçoivent leur santé. Si cette dernière fait l'objet d'une question claire dans le questionnaire d'inclusion, ce n'est pas le cas de l'activité professionnelle. J'ai ainsi dû créer une nouvelle variable en extrayant de l'information de plusieurs questions grâce à des méthodes de classifications non supervisée.\\
+Le but de cette analyse est d'établir l'existence d'un lien entre l'activité professionnelle des sujets d'EPP3 et la manières dont ils perçoivent leur santé. Si cette dernière fait l'objet d'une question claire dans le questionnaire d'inclusion, ce n'est pas le cas de l'activité professionnelle. J'ai ainsi dû créer une nouvelle variable en extrayant de l'information de plusieurs questions grâce à des méthodes de classifications non supervisée.\\
 La description des méthodes utilisées à la mise en forme de l'ensemble des variables utiles à l'analyse fait l'objet de cette section.
 \subsection{Variable d'exposition : Activité Professionnelle}
 \noindent
@@ -370,7 +370,7 @@ La réponse à cette question est du texte libre. Après la récupération des q
 \end{small}
 
 \noindent
-L'encodage de la variable Adm10 introduit une première source potentielle d'erreur du fait de la difficulté d'interpréter du texte libre d'une part et des possibles erreurs de "classification humaine" d'autre part. J'ai été confronté à ces dernières lors du codage de ma variable d'exposition. Nous y reviendrons au paragraphe suivant. Il faut également noter qu'un des sujets a un code travail de 88 et que ce code ne correspond à aucune des professions de la liste IPC (en annexe).\\
+L'encodage de la variable Adm10 introduit une première source potentielle d'erreur du fait de la difficulté d'interpréter du texte libre d'une part et des possibles erreurs de "classification humaine" d'autre part. Il faut également noter qu'un des sujets a un code travail de 88 et que ce code ne correspond à aucune des professions de la liste IPC (en annexe).\\
 
 \noindent
 Une autre difficulté est due à la possibilité qu'ont les sujet de cocher plusieurs réponses par question. Il en résulte un grand nombre de classes dans chaque variable ce qui a compliqué le codage de la variable activité professionnelle.
@@ -380,7 +380,7 @@ Une autre difficulté est due à la possibilité qu'ont les sujet de cocher plus
 L'objectif du projet étant d'étudier l'impact de l'activité professionnelle sur la santé perçue des sujets, il faut tout d'abord résumer l'information contenue dans les 3 variables citées précédemment en une seule variable.
 
 \noindent
-J'ai donc créer une variable catégorielle nommée activpro qui comporte 5 classes:
+J'ai donc créer une variable catégorielle qui comporte 5 classes:
 \begin{itemize}[label=\textbullet, font=\small \color{black} ]
 \item R pour retraités
 \item T pour travailleur
@@ -434,11 +434,11 @@ Finalement on obtient la répartition suivante : \\
 \begin{center}
 \includegraphics[scale=1]{activpro_barplot_manuel.png}
 \end{center}
-\newpage
+
 \noindent
 Pour vérifier la cohérence des classes obtenues on peut tracer les distributions de l'âge dans chaque classe.
 
-\includegraphics[scale=1.3]{plot_grid_hist_age_activproBis.png}\\
+\includegraphics[scale=.5]{plot_grid_hist_age_activproBis.png}\\
 \noindent
 On remarque que 1116 sujets classés Travailleurs ont moins de 60 ans (on peut raisonnablement supposer que l'âge de la retraire est 60 ans car les sujets de la cohorte ont, à l'inclusion, un âge compris entre 50 et 75 ans).
 De même, 134 sujets sont classés en tant que Retraités et ont moins de 60 ans.\\
@@ -461,11 +461,11 @@ On s'attend donc à ce que la CAH effectuée sur les résultats de l'ACM produis
 
 \noindent
 \textbf{NB:}Les faibles pourcentages d'inertie sont tout à fait normaux dans le cadre d'une ACM. En effet, comme l'explique Jérôme Pagès dans son livre "Analyse factorielle multiple avec R", si les variables étaient toutes identiques dans le cas d'une ACP la première dimension aurait 100\% d'inertie alors que dans une ACM la première dimension aurait au maximum $100\over{(nb_modalités - 1)}$ \% d'inertie.\\
-\newpage
+
 \noindent
 Sur le graphe suivant on affiche les individus ainsi que les 15 modalités ayant la plus grande contribution. Ces 15 modalités sont affichées selon un gradient de couleur en fonction de leur $\cos^2$. \\
 
-\includegraphics[scale = .8]{ACM_var_ind.png}\\
+\includegraphics[scale = .4]{ACM_var_ind.png}\\
 
 \noindent
 On voit de façon assez claire trois groupes distincts : le premier en bas à droite est certainement celui des sujets retraités, on y retrouve les modalités 1,3,4 de Adm11 (ne travaille plus depuis resp, moin de 1 an, deux ans, trois ans et plus), 74 de Adm 10 (Ancien cadre), NN8N de Adm12a (Retraité).\\
@@ -481,7 +481,13 @@ La deuxième chose à noter est l'absence d'un quatrième groupe qui aurait repr
 La question que je me suis ensuite posée est celle de l'allure qu'aurait ma classification si elle était effectuée par un algorithme. De plus, il serait intéressant d'analyser la classification des individus que je n'ai pas su classer.
 Pour cela j'ai effectué une Classification Ascendante Hiérarchique avec le package FactomineR de R en choisissant la distance du chi-deux et le critère d'agrégation de Ward.\\
 
-Ajouter formule distance du khi2 et explication maths du critère d'aggregation de Wald.\\
+
+La distance entre un individu $i$ et un individus $j$ représentés par $p$ variables ayant $m_1$, $m_2$, $m_P$ modalités est donnée par:
+\begin{equation}
+d_{\chi^2}(i,j) = \sqrt{\sum_k{{np \over n_{.k}} {( {x_{ik}-x_{jk}\over p})^2}}}
+\end{equation}
+La distance du $\chi^2$ traduit le fat que deux individus ayant en commun une modalité rare sont plus proches que deux individus ayant en commun une modalité fréquente.
+
 
 \includegraphics[scale = 1]{dendro_inertie_cah.png}
 \noindent
@@ -671,7 +677,7 @@ On remarque que l'emplacement des Clusters dans le plan factoriel (cf graphe) co
 Tout d'abord on classe comme NA tous les sujets qui avaient une valeurs manquante pour au moins une des quatre variables ayant servies à la classification (n = 29).\\
 On a alors : \\
 
-\includegraphics[scale=1]{comp_codages_activpro_pourcentage.png}
+\includegraphics[scale=.4]{comp_codages_activpro_pourcentage.png}
 
 \begin{center}
 \setlength\arrayrulewidth{.5pt}
@@ -1216,7 +1222,7 @@ J'ai également choisi d'ajouter quelques autres variables qui m'ont semblé per
 
 \bigskip
 \noindent
-Le score EPICE est un score Evaluant de la Précarité et des Inégalités de santé dans les Centres d'Examens
+Le score EPICE est un score Évaluant de la Précarité et des Inégalités de santé dans les Centres d'Examens
 de santé) prenant en compte diverses informations :
 \begin{enumerate}
 \item Rencontrez-vous parfois un travailleur social (assistante sociale, éducateur) ?\\
@@ -1267,7 +1273,7 @@ Enfin la cohorte EPP3 se situe majoritairement dans les catégories socio-profes
 Ils semblent de plus avoir un bon niveau d'éducation puisqu'à peine moins de 6 $\%$ se déclarent sans diplômes.\\
 
 \bigskip
-\item Variables Santé Physique
+\item Variables Style de vie
 \begin{center}
 \includegraphics[scale=.45]{tab_var_sante_phys.png}
 \end{center}
@@ -1284,12 +1290,7 @@ Cependant une part non négligeable des sujets est hypertendue mais très peu d'
 \bigskip
 \item Variables Santé Psychique
 \begin{center}
-\begin{tabular}{ccc}
-\includegraphics[scale=.3]{pie_epice.png} &
-\includegraphics[scale=.3]{barPlot_TS} &
-\includegraphics[scale=.3]{pie_deptot}
-\end{tabular}
-%\includegraphics[scale=.45]{tab_var_sante_psy.png}
+\includegraphics[scale=.45]{tab_var_sante_psy.png}
 \end{center}
 Enfin, on observe que très peu d'individus sont dépressifs mais que plus de 20 $\%$ sont en situation de précarité.
 \end{enumerate}
@@ -1319,7 +1320,7 @@ Enfin, on observe que très peu d'individus sont dépressifs mais que plus de 20
 %D'autre part il est demandé aux sujets s'ils ont déjà été diagnostiqué  par un médecin. Lorsque l'on compare les 2 variables on constate un écart de 1267 sujets.
  
  
-\subsection{Gestion des données manquantes}
+\subsection{Données Manquantes}
 
 \begin{center}
 \noindent
@@ -1330,57 +1331,43 @@ Ci dessous, le tableau du nombre de données manquantes pour chacune des variabl
 \toprule
 Nb Na & \% NA & Variables\\
 \midrule
-8613 & 84.80 & Tentative de Suicide\\
-8612 & 84.79 & Pontage/Angioplastie/Stent\\
+
 1744 & 17.17 & Alcool (Nb de verres)\\
 756 & 7.44 & Score Epice de Précarité\\
 137 & 1.35 & Sport\\
-\addlinespace
+
 134 & 1.32 & Maladies Cardiovasculaires\\
 119 & 1.17 & Cancer\\
 108 & 1.06 & Niveau d'Education\\
 79 & 0.78 & Hypertension Arterielle\\
-74 & 0.73 & Maladie des Artères\\
-\addlinespace
-68 & 0.67 & Autre Pb Cardiaque\\
-68 & 0.67 & Phlébite\\
-68 & 0.67 & Embolie Pulmonaire\\
-66 & 0.65 & AVC\\
-65 & 0.64 & Angine de Poitrine\\
-\addlinespace
-58 & 0.57 & Infarctus du Myocarde\\
+
 46 & 0.45 & Depression\\
 42 & 0.41 & Situation Familliale\\
 41 & 0.40 & Diabète\\
 30 & 0.30 & Catégorie Socio-Professionnelle\\
-\addlinespace
+
 29 & 0.29 & Activité Professionnelle (CAH)\\
 26 & 0.26 & Santé Perçue Binaire\\
 20 & 0.20 & Tabac\\
-16 & 0.16 & Activité Professionnelle (clasif Manuelle)\\
+16 & 0.16 & Activité Professionnelle (Codage Manuel)\\
 1 & 0.01 & Âge\\
-\addlinespace
-0 & 0.00 & nepp3\\
+
 0 & 0.00 & Sexe\\
 0 & 0.00 & Indice de Masse Corporelle(Classes)\\
 \bottomrule
 \end{tabular}
 \end{center}
 
-\bigskip
-\noindent
-On remarque un taux élevé de données manquantes pour les variables Tentative de Suicide et Pontage/Angioplastie/Stent (presque 85 $\%$).\\
-Plutôt que de supprimer totalement ces variables nous effectuerons plus loin une analyse en sous groupes en comparant l'impact de l'activité professionnelle sur la santé perçue des individus ayant fait une TS et ceux qui n'en n'ont pas fait. La même démarche sera effectuée pour les pathologies cardiovasculaires. \\
+Le nombre de données manquantes par variable de dépasse jamais les 20 $\%$, j'ai donc décider d'exclure les individus ayant au oins une des variables ci-dessus non renseignée.\\
+On a dés lors une population de n =  individus.
+Faire test de comparaison des populations avec tt le monde et population sans les exlus
 
-
-% Faire test de comparaison des populations avec tt le monde et population sans les exlus
-%outliers !!!
 \newpage
 \section{Statistiques}
 \subsection{Flowchart}
 
 \begin{center}
-\includegraphics[scale=.25]{FLOWCHART.png}
+\includegraphics[scale=.25]{flowchart.png}
 \end{center}
 
 
@@ -1395,6 +1382,7 @@ Enfin, le score de précarité a un seul officiel, comme expliqué plus haut les
 \noindent
 Ici insérer equations du modèle logit avec rappel sur méthode de calcul de l'estimateur, quels tests sont effectués, interprétation OR ...
 
+\newpage
 
     \begin{longtable}{lcccc}\caption{Summary descriptives table by groups of `srhBin'}\\
     \hline  
@@ -1465,30 +1453,6 @@ $\qquad$ Fumeurs & 733 (16.7\%)  & 790 (13.8\%)  & 0.84 [0.75;0.94] &  0.002 \\
 Diabète: &              &              &                  &        \\ 
 $\qquad$Non & 4132 (94.3\%) & 5537 (96.7\%) &       Ref.       &  Ref.  \\ 
 $\qquad$Oui & 250 (5.71\%)  & 187 (3.27\%)  & 0.56 [0.46;0.68] & $<$0.001 \\ 
-Infarctus du Myocarde: &              &              &                  &        \\ 
-$\qquad$Non & 4336 (99.3\%) & 5708 (99.8\%) &       Ref.       &  Ref.  \\ 
-$\qquad$Oui &  31 (0.71\%)  &  14 (0.24\%)  & 0.35 [0.18;0.64] &  0.001 \\ 
-Angine de Poitrine: &              &              &                  &        \\ 
-$\qquad$Non & 4318 (98.9\%) & 5687 (99.5\%) &       Ref.       &  Ref.  \\ 
-$\qquad$Oui &  49 (1.12\%)  &  28 (0.49\%)  & 0.43 [0.27;0.69] & $<$0.001 \\ 
-Pontage: &              &              &                  &        \\ 
-$\qquad$Non & 569 (99.5\%)  & 960 (99.7\%)  &       Ref.       &  Ref.  \\ 
-$\qquad$Oui &  3 (0.52\%)   &  3 (0.31\%)   & 0.59 [0.10;3.46] &  0.542 \\ 
-Autre problème cardiovasculaire: &              &              &                  &        \\ 
-$\qquad$Non & 4072 (93.3\%) & 5481 (95.9\%) &       Ref.       &  Ref.  \\ 
-$\qquad$Oui & 294 (6.73\%)  & 232 (4.06\%)  & 0.59 [0.49;0.70] & $<$0.001 \\ 
-Maladie des artères: &              &              &                  &        \\ 
-$\qquad$Non & 4257 (97.6\%) & 5672 (99.3\%) &       Ref.       &  Ref.  \\ 
-$\qquad$Oui & 104 (2.38\%)  &  40 (0.70\%)  & 0.29 [0.20;0.41] & $<$0.001 \\ 
-Phlébite: &              &              &                  &        \\ 
-$\qquad$Non & 4178 (95.7\%) & 5560 (97.3\%) &       Ref.       &  Ref.  \\ 
-$\qquad$Oui & 189 (4.33\%)  & 152 (2.66\%)  & 0.60 [0.49;0.75] & $<$0.001 \\ 
-Embolie Pulmonaire: &              &              &                  &        \\ 
-$\qquad$Non & 4330 (99.2\%) & 5691 (99.6\%) &       Ref.       &  Ref.  \\ 
-$\qquad$Oui &  35 (0.80\%)  &  23 (0.40\%)  & 0.50 [0.29;0.85] &  0.010 \\ 
-Accident Vasculaire Cérébral: &              &              &                  &        \\ 
-$\qquad$Non & 4306 (98.7\%) & 5677 (99.3\%) &       Ref.       &  Ref.  \\ 
-$\qquad$Oui &  58 (1.33\%)  &  40 (0.70\%)  & 0.52 [0.35;0.78] &  0.002 \\ 
 Activité Sportive: &              &              &                  &        \\ 
 $\qquad$Jamais & 2531 (58.4\%) & 2480 (43.7\%) &       Ref.       &  Ref.  \\ 
 $\qquad$1-2 fois par semaine & 1524 (35.2\%) & 2496 (44.0\%) & 1.67 [1.54;1.82] &  0.000 \\ 
@@ -1498,19 +1462,14 @@ $\qquad$Non & 2564 (58.9\%) & 3801 (66.7\%) &       Ref.       &  Ref.  \\
 $\qquad$Oui & 1792 (41.1\%) & 1898 (33.3\%) & 0.71 [0.66;0.78] & $<$0.001 \\ 
 Consommation d'alcool: &              &              &                  &        \\ 
 $\qquad$0 & 2262 (63.7\%) & 2922 (60.1\%) &       Ref.       &  Ref.  \\ 
-$\qquad$$>$10 &  22 (0.62\%)  &  14 (0.29\%)  & 0.49 [0.25;0.96] &  0.038 \\ 
 $\qquad$1-2 & 759 (21.4\%)  & 1205 (24.8\%) & 1.23 [1.11;1.37] & $<$0.001 \\ 
-$\qquad$3-5 & 418 (11.8\%)  & 618 (12.7\%)  & 1.14 [1.00;1.31] &  0.051 \\ 
-$\qquad$5-10 &  88 (2.48\%)  & 102 (2.10\%)  & 0.90 [0.67;1.20] &  0.465 \\ 
+$\qquad$3+ & 528 (14.9\%)  & 734 (15.1\%)  & 1.08 [0.95;1.22] &  0.248 \\ 
 Cancer: &              &              &                  &        \\ 
 $\qquad$Non & 3997 (91.9\%) & 5364 (94.5\%) &       Ref.       &  Ref.  \\ 
 $\qquad$Oui & 354 (8.14\%)  & 315 (5.55\%)  & 0.66 [0.57;0.78] & $<$0.001 \\ 
 Scors EPICE de précarité: &              &              &                  &        \\ 
 $\qquad$Situation non précaire & 2827 (69.5\%) & 4230 (79.5\%) &       Ref.       &  Ref.  \\ 
 $\qquad$Situation précaire & 1240 (30.5\%) & 1094 (20.5\%) & 0.59 [0.54;0.65] &  0.000 \\ 
-Tentative de Suicide: &              &              &                  &        \\ 
-$\qquad$Non & 562 (97.7\%)  & 946 (98.6\%)  &       Ref.       &  Ref.  \\ 
-$\qquad$Oui &  13 (2.26\%)  &  13 (1.36\%)  & 0.59 [0.27;1.31] &  0.195 \\ 
 Dépression: &              &              &                  &        \\ 
 $\qquad$Non & 3533 (80.7\%) & 5344 (93.4\%) &       Ref.       &  Ref.  \\ 
 $\qquad$Oui & 847 (19.3\%)  & 377 (6.59\%)  & 0.29 [0.26;0.33] &  0.000 \\ 
@@ -1542,19 +1501,15 @@ Sans surprise on observe que les sujets ayant une catégorie scio-professionnell
 Dans le même ordre d'idée les sujets de la cohorte se perçoive en meilleurs santé lorsqu'ils ont eu un parcours éducatif plus long. Ainsi les détenteurs d'un BAC+2 on t une santé perçue de 22 $\%$ supérieure à ceux ayant un CAP ou le brevet du collège. Cette augmentation passe à 45 $\%$ pour les détenteurs d'une licence ou d'un diplôme supérieur. Toutefois les sujets ne sachant ni lire ni écrire voient leur santé perçue baisser de plus de 20 $\%$ par rapport aux diplômés d'un CAP ou d'un Brevet des collèges.\\
 \bigskip
 
-\noindent
-A l'exception des pontages, toutes les maladies cardiovasculaire occasionnent une baisse significative de la santé perçue des sujets qui en sont atteints. Ceci est particulièrement vrai pour l'infarctus du myocarde (bisse de 65 $\%$) et les maladies des artères (baisse de 71 $\%$. \\
-La non significativité de la variable de pontage avec la santé perçue est sans doute due aux très faible nombre de sujet déclarant avoir subi cette intervention.\\
-\bigskip
 
 \noindent
-Si l'on reste dans les variables décrivant la santé réelle des sujets de l'étude, observons que les fumeurs ont une santé perçue de plus de 15 $\%$ inférieure à celle des non fumeurs. Il est intéressant de remarquer que les anciens fumeurs s'estiment en meilleur santé que ceux qui sont con fumeur (augmentation de 20 $\%$). Cela s'explique peut-être par le fait que ces individus ont vu un réel effet de l'arrêt du tabac sur leur corps et qu'ils s'estiment, par conséquent, en très bonne santé à présent qu'ils ne fument plus.\\
+Parmis les variables décrivant la santé réelle des sujets de l'étude, observons que les fumeurs ont une santé perçue de plus de 15 $\%$ inférieure à celle des non fumeurs. Il est intéressant de remarquer que les anciens fumeurs s'estiment en meilleur santé que ceux qui sont con fumeur (augmentation de 20 $\%$). Cela s'explique peut-être par le fait que ces individus ont vu un réel effet de l'arrêt du tabac sur leur corps et qu'ils s'estiment, par conséquent, en très bonne santé à présent qu'ils ne fument plus.\\
 Ce qui parait étonnant par contre c'est que les sujets déclarant être en période de sevrage ont une baisse de santé perçue plus importante que les les fumeurs par rapport aux sujets non fumeurs. La difficulté psychologique de l'arrêt de la cigarette ainsi que la prise de poids qui le suit souvent sont des explications probables.\\
 \bigskip
 
 \noindent
 L'un des résultats les plus étonnant de cette analyse est celui concernant la consommation quotidienne d'alcool (en nombre de verres).\\
-Tout d'abord on peut remarquer sans surprise que par rapport aux sujets abstinents, ceux consommant au moins 10 verres d'alcool par jour ont une santé perçue diminuée de moitié. Cependant, toujours par rapport aux abstinents, on trouve chez les sujets buvant entre 1 et 2 verres d'alcool par jour une augmentation de plus de 20 $\%$ de la santé perçue. On peut expliquer ce phénomène par le plaisir de boire un verre entre amis ou avec son conjoint. S'il est impossible de vérifier que les individus déclarant boire 1 à 2 verres par jour boivent seuls ou avec des amis ou de la famille, on peut cependant remarquer que la grande majorité de ces individus vivent en couple et qu'ils sont pour la plupart non dépressifs (ils ont donc probablement moins tendance à s'isoler et ont donc une vie sociale développée).
+Par rapport aux abstinents, on trouve chez les sujets buvant entre 1 et 2 verres d'alcool par jour une augmentation significative de plus de 20 $\%$ de la santé perçue. On pourrait expliquer ce phénomène par le plaisir de boire un verre entre amis ou avec son conjoint. S'il est impossible de vérifier que les individus déclarant boire 1 à 2 verres par jour boivent seuls ou avec des amis ou de la famille, on peut cependant remarquer que la grande majorité de ces individus vivent en couple et qu'ils sont pour la plupart non dépressifs (ils ont donc probablement moins tendance à s'isoler et ont donc une vie sociale développée).
 
 \begin{center}
 \setlength\arrayrulewidth{.1pt}
@@ -1591,7 +1546,7 @@ A présent que les analyses univariées sont faites, construisons un modèle exp
 
 \bigskip
 \noindent
-J'ai choisi de construite plusieurs modèle selon un groupement de variable qui faisait sens.\\
+J'ai choisi de construire plusieurs modèle selon un groupement de variable qui faisait sens.\\
 
 
 \begin{longtable}{lccc|ccc}\caption{Mod}\\
@@ -1645,53 +1600,13 @@ On observe également que le lien sexe - santé perçue est maintenu même en aj
 \bigskip
 \newpage
 \noindent
-Nous avions précédemment établi que l'âge était un facteur de confusion évident pour le lien entre la santé perçue et l'activité professionnelle. Le modèle suivant nous aide à nous en rendre compte:\\
-
-\begin{longtable}{lccc}\caption{Modèle 2}\\
-    \hline  
-		& \multirow{2}{*}{OR} & \multirow{2}{*}{IC}& \multirow{2}{*}{p}\\ 
-		 &    				    &    			    &                  \\ 
-   \hline
-    \hline     
-    \endfirsthead 
-    \multicolumn{4}{l}{\tablename\ \thetable{} \textit{-- continued from previous page}}\\ 
-    \hline
-		& \multirow{2}{*}{OR} & \multirow{2}{*}{IC}& \multirow{2}{*}{p}\\ 
-		&    				    &    			    &                  \\ 
-    \hline
-    \hline  
-    \endhead   
-    \hline
-    \multicolumn{4}{l}{\textit{continued on next page}} \\ 
-    \endfoot   
-    \multicolumn{4}{l}{}  \\ 
-    \endlastfoot  
-Intercept & 1.44 & $\left[1.33 ; 1.57 \right]$ & <2.2e-16\\
-Activité Professionnelle: &              &              &	\\ 
-$\qquad$Travailleurs 		&		Ref.		& 	Ref.		&	Ref.\\ 
-$\qquad$Retraités&1.06 &$\left[0.94 ; 1.20 \right]$ & 0.36\\ 
-$\qquad$Chômeurs & 0.81& $\left[0.70 ; 0.94\right]$& 0.004\\ 
-$\qquad$Inactifs  & 0.84& $\left[0.65 ; 1.08\right]$& 0.18\\ 
-$\qquad$Ne Sais Pas & 0.66& $\left[0.45 ; 0.97\right]$ & 0.03 \\ 
-Sexe: &              &              &                          \\ 
-$\qquad$Hommes &Ref. & Ref.& Ref.\\ 
-$\qquad$Femmes & 0.65& $\left[0.6 ; 0.71 \right]$ & <2.2 e-16\\
-Âge: &&&\\
-$\qquad$<54.5 &Ref.&Ref.&Ref.\\
-$\qquad$ $\left[54.5 ; 59.1 \right]$ &1.04& $\left[0.93 ; 1.16 \right]$& 0.53\\
-$\qquad$ $\left[59.1 ; 63.7\right]$ &1.18&$\left[1.04 ; 1.34 \right]$& 0.008\\
-$\qquad$ $\left[63.7 ; 86.2 \right]$&1.13&$\left[0.97 ; 1.31 \right]$&0.11\\
- 
-    \hline
-    \end{longtable} 
-
-
-On observe en effet que si le lien entre la Santé Perçue et le Sexe reste significatif, l'âge semble "cacher" celui entre la srh et de l'Activité Professionnelle puisque la classe d'âge $\left[59 ; 63\right]$ devient significative (augmentation de 20 $\%$) : précisément la classe d'âge où l'âge de la retraite est susceptible de se trouver. D'ailleurs on constate que plus de 40 $\%$ des sujets de cette classe sont retraités.\\
+Nous avions précédemment établi que l'âge était un facteur de confusion évident pour le lien entre la santé perçue et l'activité professionnelle. Le modèle 2 nous aide à nous en rendre compte.\\
+On observe en effet que si le lien entre la Santé Perçue et le Sexe reste significatif, l'âge semble masquer celui entre la srh et de l'Activité Professionnelle puisque la classe d'âge $\left[59 ; 63\right]$ devient significative (augmentation de 20 $\%$) : précisément la classe d'âge où l'âge de la retraite est susceptible de se trouver. D'ailleurs on constate que plus de 40 $\%$ des sujets de cette classe sont retraités.\\
 
 \bigskip
 
 \noindent
-Le troisième modèle considère toutes les variables traitant de la forme physique du sujet.\\
+Le troisième modèle considère toutes les variables traitant du style de vie des sujets.\\
 
 \begin{longtable}{lccc}\caption{Modèle 3}\\
     \hline  
@@ -2076,12 +1991,23 @@ on applique le modele precedent en comprant a caque fois deux populations : cell
 \section{Perspectives}
 
 \subsection{Le monde professionnel}
-le travail d'équipe\\
-la collaboration\\
-le monde de la recherche\\
-reviewer un article, le soumettre... la procédure à suivre\\
-la conciliation de personnes venant de plein de formations différentes: éviter le jargon, se rendre intelligible par des gens qui ne sont pas du métiers: vulgarisation mega intéressante, permet de se rendre compte si on a vraiment compris un sujet ou pas: stat quest is the best.\\
-le privé versus le public: en parler dans les fac pour que les étudiants aient le choix et qu'ils ne se retrouvent pas au pieds du mur!!
+Comme expliqué plus haut, j'ai effectué mon stage dans l'unité INSERM 970 qui est spécialisée dans les maladies cardiovasculaires.\\
+J'y ait passé cinq mois: du 01/04/2019 au 31/08/2019, durant lesquels j'ai beaucoup appris dans des domaines très variés.\\
+Tout d'abord j'ai découvert le monde de la recherche, qui m'a beaucoup plu. C'était un monde entièrement neuf pour moi et la longue durée de mon stage a été un atout non négligeable dans son succès: en effet j'ai eu le temps de m'adapter à l'environnement, aux us et coutumes, au jargon, à l'équipe.\\
+
+Cela m'a également donné le temps de me documenter sur l'épidémiologie: domaine qui m'était inconnu et qui, malgré sa ressemblance avec les statistique a ses propres règles, son propre vocabulaire.\\
+
+En m'intégrant dans l'équipe, j'ai découvert le travail de groupe nécessaire à la rédaction de chaque article scientifique et l'émulsion que cela occasionne.
+J'ai pu apprendre les grandes étapes de l'élaboration d'une étude épidémiologique, le cadre légal, le recrutement des individus, leur suivi ainsi que la saisie et le nettoyage des données.\\
+J'ai également participé au recueil de certaines données en appelant les hôpitaux pour récupérer des comptes redus hospitaliers de sujets de l'étude qui étaient utiles aux médecins investigateurs pour confirmer une pathologie déclarée par lesdits sujets dans les questionnaires de suivis. J'ai ainsi pu me confronter à l'épineux problème de la confidentialité des données de santé.\\
+J'ai également eu l'occasion de participer au reviewing d'un article (pas officiellement juste pour la pédagogie). J'ai ainsi pu apprendre toutes les étapes de la rédaction d'un article: le travail de recherche, la mise en forme des idée puis la recherche d'une revue susceptible de publier l'article, l'étape de relecture par des pairs et la prise en compte de leurs remarques...\\
+
+Au delà du monde de la recherche, j'ai dû apprendre à m'intégrer dans un groupe où il y avait une grande pluralité des parcours (médecins, statisticiens, attachés de recherches cliniques, ingénieurs...). Cela supposait de se rendre intelligible par tous, et parfois de verser dans une forme de vulgarisation de certains concepts statistiques ce qui m'a beaucoup enrichie\footnote{Voir les chaînes Youtube StatQuest et science4all (notamment la série de vidéo sur la formule de Bayes) qui ne se contentent pas d'expliquer vaguement quelques concepts très connu mais qui vont au fond des choses tout en les rendant accessibles au "grand publique"}.\\
+
+Au niveau des statistiques, plutôt que de me lancer dans de techniques "avancées", mon directeur de stage et moi avons décider de nous concentrer sur les bases comme la visualisation de données et la régression logistique. J'ai pris l'initiative de tenter des méthodes exploratoires comme l'ACM ou la CAH.\\
+Régulièrement l'équipe se réunissait pour des réunions de méthodologie durant lesquelles j'ai ou me familiariser avec d'autres notions dont j'espère étudier le versant mathématiques en M2 (modèles de suivi, méta-analyse, données répétées et GEE...).\\
+Ces réunions avaient pour support un article dont on faisant une lecture critique en tentant de comprendre d'une part les intérêts clinique de l'étude menée et d'autre part les méthodes statistiques mises en œuvre.\\
+
 
 
 
