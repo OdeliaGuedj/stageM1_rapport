@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.9.20)  26 AUG 2019 19:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.9.20)  26 AUG 2019 22:31
 entering extended mode
 **./rap_stg.tex
 (rap_stg.tex
@@ -2481,101 +2481,118 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 1801.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 1801.
- [34]
+ [34] [35]
+<linearite_stresse.png, id=192, 745.28438pt x 463.7325pt>
+File: linearite_stresse.png Graphic file (type png)
+<use linearite_stresse.png>
+Package pdftex.def Info: linearite_stresse.png  used on input line 1898. on inp
+ut line 1898.
+Package pdftex.def Info: Requested size: 521.69551pt x 324.61052pt on input lin
+e 1898.
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3 on input line 1892.
-
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 1895--1898
-
- []
-
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 1910--1913
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1914--1915
-
+Overfull \hbox (91.69089pt too wide) in paragraph at lines 1896--1900
+[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1916--1920
+Underfull \hbox (badness 10000) in paragraph at lines 1896--1900
+
+ []
+
+! Undefined control sequence.
+l.1905 $\forall i \in \ldbrack 1,n \lrbrack
+                                            $ on a :
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \vbox (badness 4660) has occurred while \output is active []
+
+ [36 <./linearite_stresse.png>] [37]
+Underfull \hbox (badness 10000) in paragraph at lines 1921--1924
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1921--1923
+Underfull \hbox (badness 10000) in paragraph at lines 1925--1926
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1924--1927
+Underfull \hbox (badness 10000) in paragraph at lines 1927--1931
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1930--1931
+Underfull \hbox (badness 10000) in paragraph at lines 1932--1934
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1935--1938
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1941--1942
 
  []
 
 
 Underfull \vbox (badness 4013) has occurred while \output is active []
 
- [37]
-[38] (rap_stg.bbl [39
+ [38]
+[39] [40
 
-] [40
+] (rap_stg.bbl [41] [42
 
-] [41]) [42]
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-(rap_stg.aux) ) 
+] [43]) [44] (rap_stg.aux) ) 
 Here is how much of TeX's memory you used:
- 17793 strings out of 493323
- 322165 string characters out of 3139066
+ 17798 strings out of 493323
+ 322289 string characters out of 3139066
  394046 words of memory out of 3000000
- 20842 multiletter control sequences out of 15000+200000
+ 20846 multiletter control sequences out of 15000+200000
  82181 words of font info for 89 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,54p,691b,524s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\odeli\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public
-\mathabx\dpi480\mathx10.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-r
-m.enc} <C:\Users\odeli\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\
-dpi600\matha8.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc} <C:\Users\odeli\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\matha5.pk> <C:\Users
-\odeli\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi420\mathx10.p
-k> <C:\Users\odeli\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi6
-00\mathb10.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc} <C
-:\Users\odeli\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\ma
-thx10.pk> <C:\Users\odeli\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\matha
-bx\dpi600\matha10.pk> <C:\Users\odeli\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
-public\mathabx\dpi600\matha7.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/euler/eufm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr5.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr
-i10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on rap_stg.pdf (48 pages, 974851 bytes).
+ <C:\Users\odeli\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\public\mathabx\dpi480\mathx10.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/
+dvips/lm/lm-rm.enc} <C:\Users\odeli\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\pu
+blic\mathabx\dpi600\matha8.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/l
+m-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc} <C:\Use
+rs\odeli\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\matha5.
+pk> <C:\Users\odeli\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi
+420\mathx10.pk> <C:\Users\odeli\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public
+\mathabx\dpi600\mathb10.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
+athsy.enc} <C:\Users\odeli\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\math
+abx\dpi600\mathx10.pk> <C:\Users\odeli\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\public\mathabx\dpi600\matha10.pk> <C:\Users\odeli\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\public\mathabx\dpi600\matha7.pk><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/euler/eufm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/lm/lmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
+lmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+lm/lmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm
+7.pfb>
+Output written on rap_stg.pdf (50 pages, 982099 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
+ 400 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 

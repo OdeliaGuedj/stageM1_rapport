@@ -1891,16 +1891,27 @@ Stresse &0.86& [0.85;0.88]& < 2.2e-16\\
 \hline
 \end{longtable}
 
-\subsubsection{Sélection et diagnostique du modèle}
-Dans le modèle final: on enlève les individus avec verre d'alcool sup à 10 on enleve le gars qui a 86 ans on ajoute une interraction entre csp et activpro car csp est basée sur adm10 (ou alors on fait une reggression ridge)
-les variables obligatoires: activpro evidement, sexe, age, alcool, tabac, diabete, hta; bmi, sporteducation, entourage, csp avec interraction. On ne met pas cancer ni cvd ni depression ni score préarité pour faire les analyses en sous groupe.
-Ensuite on regarde effet levier outliers... avec distances de cook.\\
+\subsubsection{Diagnostique du modèle}
 
-Quand le modele est fixé, on vérifie les hypotheses egarder et analyser es residus.
+\noindent
+Tout d'abord, vérifions le linéarité du lien entre la santé perçue binarisée est le stresse (unique covariable quantitative).\\
+\includegraphics[scale=.7]{linearite_stresse.png}
+Le Logit semble baisser lorsque le score de tresse augmente ce qui est logique puisque plus le PSS4 est élevé plus le sujet est considéré comme stressé.\\
+
+\bigskip
+\noindent
+%Le modèle final établi précédemment est adéquat. en effet on a: $deviance(modèle final) \over %ddl.deviance(modèle final)} = 1.28$ qui est assez proche de 1.
+\textbf{test des résidus de Pearson}\
+$\forall i \in \ldbrack 1,n \lrbrack $ on a :
+\begin{align*}
+e_i = {  {Y_i - \widehat{\pi(X_i)}} \over {}  }
+\end{align*}
+$H_0$: Le modèle est adéquat.\\
+$H_1$: Le modèle n'est pas adéquat.\
+
 \subsection{Analyse en sous-groupes}
 on applique le modele precedent en comprant a caque fois deux populations : celle qui possede un certain critere et celle qui ne le posse de pas.
-\subsubsection{Dépression/Tentative de Suicide}
-\subsubsection{Maladies Cardio - Vasculaires}
+\subsubsection{Pathologies lourdes}
 \subsubsection{Score précarité}
 \subsubsection{Âge}
 

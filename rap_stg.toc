@@ -22,12 +22,11 @@
 \contentsline {subsection}{\numberline {4.2}Analyses univari\IeC {\'e}es}{28}
 \contentsline {subsection}{\numberline {4.3}Analyses multivari\IeC {\'e}es}{33}
 \contentsline {subsubsection}{\numberline {4.3.1}R\IeC {\'e}gression logistique}{33}
-\contentsline {subsubsection}{\numberline {4.3.2}S\IeC {\'e}lection et diagnostique du mod\IeC {\`e}le}{36}
-\contentsline {subsection}{\numberline {4.4}Analyse en sous-groupes}{36}
-\contentsline {subsubsection}{\numberline {4.4.1}D\IeC {\'e}pression/Tentative de Suicide}{36}
-\contentsline {subsubsection}{\numberline {4.4.2}Maladies Cardio - Vasculaires}{36}
-\contentsline {subsubsection}{\numberline {4.4.3}Score pr\IeC {\'e}carit\IeC {\'e}}{36}
-\contentsline {subsubsection}{\numberline {4.4.4}\IeC {\^A}ge}{36}
-\contentsline {section}{\numberline {5}Perspectives : Ce que j'ai fait, d\IeC {\'e}couvert, appris}{37}
-\contentsline {section}{\numberline {6}Annexes}{39}
-\contentsline {section}{\numberline {7}Bibliographie}{39}
+\contentsline {subsubsection}{\numberline {4.3.2}Diagnostique du mod\IeC {\`e}le}{36}
+\contentsline {subsection}{\numberline {4.4}Analyse en sous-groupes}{37}
+\contentsline {subsubsection}{\numberline {4.4.1}Pathologies lourdes}{37}
+\contentsline {subsubsection}{\numberline {4.4.2}Score pr\IeC {\'e}carit\IeC {\'e}}{37}
+\contentsline {subsubsection}{\numberline {4.4.3}\IeC {\^A}ge}{37}
+\contentsline {section}{\numberline {5}Perspectives : Ce que j'ai fait, d\IeC {\'e}couvert, appris}{38}
+\contentsline {section}{\numberline {6}Annexes}{41}
+\contentsline {section}{\numberline {7}Bibliographie}{41}
