@@ -1459,29 +1459,25 @@ Le nombre de données manquantes par variable de dépasse jamais les 20 $\%$, j'
 \noindent
 Afin d'avoir une première idée des variables significativement liées à la santé perçue on effectue une régression logistique entre la santé perçue binarisée des sujets (on coupe à la médiane: si la santé perçue est > à 7 on la considère comme bonne) et chacune des variables explicatives.\\
 
-\bigskip
-\noindent
-J'ai choisi de catégoriser les 3 variables continues (IMC, âge et score épice de précarité afin de rendre l'interprétation des résultats plus évidente).\\
-Ainsi l'âge a été découpé en quartiles.\\
-Pour l'indice de masse corporelle, après discussion avec des médecins j'ai fixé à 25 le seuil de normalité et à 30 le seuil de sur poids. Au delà de 30 on parle d'obésité.\\
-Enfin, le score de précarité a un seul officiel, comme expliqué plus haut les sujets ayant un score supérieur à 30.17 sont considéré en situation de précarité.\\
 
 \newpage
 
 \noindent
 \textbf{La régression logistique:}
+\bigskip
 
 \noindent
 On cherche à modéliser la probabilité qu'une variable prenne une certaine valeur en fonction de variables explicatives.\\
-
-\noindent
 La spécificité de la régression logistique est le caractère dichotomique de la variables à expliquer. Cela permet de modéliser l'appartenance à une classe de la variable à expliquer par une loi de Bernouilli.\\
 
+\bigskip 
 
 \noindent
 Soit $Y$ la variables à expliquer et  $X_1, X_2,...X_p$ les $p$ variables explicatives.\\
 On note $Y_i$ l'observation de la variable $Y$ pour l'individu $i$, $i \in  \ldbrack 0,n \rdbrack $(où $n$ est le nombre total d'individus) et $X_i = {(X_{i1}, X_{i2}, ..., X_{ip})}^t$ le vecteur des variables explicatives pour le sujet.\\
-On note $\beta = {(\beta_0, \beta_1, \beta_2, ..., \beta_p)}^t$, le vecteur de dimension $p+1$ des paramètres du modèle.\\
+On note $\beta = {(\beta_0, \beta_1, \beta_2, ..., \beta_p)}^t$, le vecteur de dimension $p+1$ des paramètres du modèle.
+
+\bigskip
 
 \noindent
 Le modèle logistique ne fait qu'une seule hypothèse à priori: \\
@@ -1518,22 +1514,27 @@ Ainsi:
 - \log \left( 1 + e^{\beta_0 +  \sum_{k=1}^p {\beta_k X_{ik}}  } \right)
 \right]} \\
 \end{align*}
-Et donc $ \forall k \in \ldbrack 0,p \rdbrack :  $:
+Et donc $ \forall k \in \ldbrack 0,p \rdbrack :  $
 \begin{align*}
 {{\partial  \log \left( \mathfrak{L}(\beta) \right)} \over {\partial \beta_k} }= 
 \sum_{i=1}^n {X_{ik} \left( Y_i - {{e^{X_i^t \beta}} \over {1+ e^{X_i^t \beta}}} \right)}
 \end{align*}
 Avec $X_{i0} = 1 $ et $ X_i^t \beta = \sum_{k = 1}^p {\beta_k X_{ik}} $
 
+\bigskip
+
 \noindent
 L'équation $ {{\partial  \log \left( \mathfrak{L}(\beta) \right)} \over {\partial \beta} } = 0  $, qui permet d'obtenir $\hat{\beta}$, est résolue grâce à des algorithmes itératifs.\\
 
+\bigskip
 
 \noindent
 On a de plus $\forall k \in \ldbrack 0,p \rdbrack$ :
 \begin{align*}
 \hat{\beta_k} \underset{n \rightarrow \infty}{\sim} \mathcal{N} \left( \beta_k,\widehat{\mathbb{V}} \left(  \hat{\beta_j}\right) \right)
 \end{align*}
+
+\bigskip
 
 \noindent
 Ainsi au niveau de confiance $-\alpha$ on a :
@@ -1546,6 +1547,8 @@ IC \left( \beta_k \right) =
 
 \noindent
 Où $ z_{ {\alpha} \over {2}} $ est t.q $ \mathbb{P}\left( Z <  z_{ {\alpha} \over {2}} \right) = {{\alpha} \over {2}}$ pour $ Z \sim \mathcal{N}(0,1) $
+
+\bigskip
 
 \noindent
 On a alors les intervalles de confiance des odd ration pour chacune des variables:\\
@@ -1560,10 +1563,22 @@ e^{\hat{\beta_k} + |z_{{\alpha} \over {2}}| \sqrt{\widehat{\mathbb{V}}\left( \ha
 \right]
 \end{align*}
 
+\bigskip
+\noindent
+Ici la variable $Y$ est la santé perçue binarisée, les autres variables sont $p = 16 $ variables explicatives.
+
+\bigskip
+
+\noindent
+J'ai choisi de catégoriser 3 des variables continues (IMC, âge et score épice de précarité afin de rendre l'interprétation des résultats plus évidente).\\
+Ainsi l'âge a été découpé en quartiles.\\
+Pour l'indice de masse corporelle, après discussion avec des médecins j'ai fixé à 25 le seuil de normalité et à 30 le seuil de sur poids. Au delà de 30 on parle d'obésité.\\
+Enfin, le score de précarité a un seul officiel, comme expliqué plus haut les sujets ayant un score supérieur à 30.17 sont considéré en situation de précarité.\\
+
 
 \newpage
 
-    \begin{longtable}{lcccc}\caption{Summary descriptives table by groups of `srhBin'}\\
+    \begin{longtable}{lcccc}\caption{Analyses univariées}\\
     \hline  
      &      0       &      1       & \multirow{2}{*}{       OR       } & \multirow{2}{*}{p.ratio}\\ 
  &    N=4390    &    N=5741    &                  &         \\ 
@@ -1661,13 +1676,13 @@ Score de stresse perçu (PSS4)
 \bigskip
 
 \noindent
-On remarque un lien significatif entre l'activité professionnelle et la santé perçue et ce, que l'on considère la classification manuelle ou la classification ascendante hiérarchique de la variable activpro. Ansi, les retraité ont une santé perçue de 10 $\%$ supérieure aux travailleurs tandis que la srh des chômeurs est 40 $\%$ moins bonne et celle des inactifs 30 \$%$ moins bonne. \\
+On remarque un lien significatif entre l'activité professionnelle et la santé perçue et ce, que l'on considère la classification manuelle ou la classification ascendante hiérarchique de la variable activité professionnelle. Ainsi, les retraités ont une santé perçue de 10 $\%$ supérieure aux travailleurs tandis que la SRH des chômeurs est 40 $\%$ moins bonne et celle des inactifs 30 \$%$ moins bonne. \\
 
 \noindent
 Le groupe des individus non classés manuellement (NSP) s'apparente aux inactifs en terme de baisse de santé perçue. Ce résultat est cohérent avec l'observation faite plus haut : la CAH classe majoritairement ces individus en inactifs.\\
 \bigskip
 \noindent
-Les femmes ont une santé perçue de 35 $\%$ inférieure à celle des hommes. On peut peu-être expliquer cela par le fait que les grossesses rendent la santé des femmes plus fragile. De plus certaines études montrent que les femmes sont plus enclines à la dépression que les hommes. Or la santé perçue des sujets dépressifs est de 70 $\%$ inférieure à celle des sujets non dépressifs. (ajouter en ref article qui prouve le lien entre sexe et dépression).\\
+Les femmes ont une santé perçue de 35 $\%$ inférieure à celle des hommes. On peut peu-être expliquer cela par le fait que les grossesses rendent la santé des femmes plus fragile. De plus certaines études montrent que les femmes sont plus enclines à la dépression que les hommes \cite{nolen2001gender}. Or la santé perçue des sujets dépressifs est de 70 $\%$ inférieure à celle des sujets non dépressifs.\\
 \bigskip
 
 \noindent
@@ -1675,22 +1690,22 @@ Un résultat intéressant est le lien entre la santé perçue et l'entourage du 
 \bigskip
 
 \noindent
-Sans surprise on observe que les sujets ayant une catégorie scio-professionnelle basse se perçoivent en moins bonne santé que ceux de la classe intermédiaire ( de même que les inactifs comme nous l'avons déjà vu grâce à la variable d'activité pro), tandis que les sujets d'une csp élevée voit leur santé perçue augmentée de 50 $\%$. On peut facilement imaginer que plus on descend dans les catégories socio-professionnelle pro, plus l'accès au soin dans son sens le plus large (ne serait-ce que l'accès à l'information de santé et à la prévention) est difficile.\\
+Sans surprise on observe que les sujets ayant une catégorie scio-professionnelle basse se perçoivent en moins bonne santé que ceux de la classe intermédiaire (de même que les inactifs comme nous l'avons déjà vu grâce à la variable d'activité professionnelle), tandis que les sujets d'une CSP élevée voient leur santé perçue augmentée de 50 $\%$. On peut facilement imaginer que plus on descend dans les catégories socio-professionnelles, plus l'accès au soin dans son sens le plus large (ne serait-ce que l'accès à l'information de santé et à la prévention) est difficile.\\
 \bigskip
 
 \noindent
-Dans le même ordre d'idée les sujets de la cohorte se perçoive en meilleurs santé lorsqu'ils ont eu un parcours éducatif plus long. Ainsi les détenteurs d'un BAC+2 on t une santé perçue de 22 $\%$ supérieure à ceux ayant un CAP ou le brevet du collège. Cette augmentation passe à 45 $\%$ pour les détenteurs d'une licence ou d'un diplôme supérieur. Toutefois les sujets ne sachant ni lire ni écrire voient leur santé perçue baisser de plus de 20 $\%$ par rapport aux diplômés d'un CAP ou d'un Brevet des collèges.\\
+Dans le même ordre d'idée les sujets de la cohorte se perçoivent en meilleur santé lorsqu'ils ont eu un parcours éducatif plus long. Ainsi les détenteurs d'un BAC+2 ont une santé perçue de 22 $\%$ supérieure à ceux ayant un CAP ou le brevet des collèges. Cette augmentation passe à 45 $\%$ pour les détenteurs d'une licence ou d'un autre diplôme supérieur. Toutefois les sujets ne sachant ni lire ni écrire voient leur santé perçue baisser de plus de 20 $\%$ par rapport aux diplômés d'un CAP ou d'un Brevet des collèges.\\
 \bigskip
 
 
 \noindent
-Parmis les variables décrivant la santé réelle des sujets de l'étude, observons que les fumeurs ont une santé perçue de plus de 15 $\%$ inférieure à celle des non fumeurs. Il est intéressant de remarquer que les anciens fumeurs s'estiment en meilleur santé que ceux qui sont con fumeur (augmentation de 20 $\%$). Cela s'explique peut-être par le fait que ces individus ont vu un réel effet de l'arrêt du tabac sur leur corps et qu'ils s'estiment, par conséquent, en très bonne santé à présent qu'ils ne fument plus.\\
+Parmi les variables décrivant la santé réelle des sujets de l'étude, observons que les fumeurs ont une santé perçue de plus de 15 $\%$ inférieure à celle des non fumeurs. Il est intéressant de remarquer que les anciens fumeurs s'estiment en meilleur santé que ceux qui sont non fumeurs (augmentation de 20 $\%$). Cela s'explique peut-être par le fait que ces individus ont vu un réel effet de l'arrêt du tabac sur leur corps et qu'ils s'estiment, par conséquent, en très bonne santé à présent qu'ils ne fument plus.\\
 Ce qui parait étonnant par contre c'est que les sujets déclarant être en période de sevrage ont une baisse de santé perçue plus importante que les les fumeurs par rapport aux sujets non fumeurs. La difficulté psychologique de l'arrêt de la cigarette ainsi que la prise de poids qui le suit souvent sont des explications probables.\\
 \bigskip
 
 \noindent
-L'un des résultats les plus étonnant de cette analyse est celui concernant la consommation quotidienne d'alcool (en nombre de verres).\\
-Par rapport aux abstinents, on trouve chez les sujets buvant entre 1 et 2 verres d'alcool par jour une augmentation significative de plus de 20 $\%$ de la santé perçue. On pourrait expliquer ce phénomène par le plaisir de boire un verre entre amis ou avec son conjoint. S'il est impossible de vérifier que les individus déclarant boire 1 à 2 verres par jour boivent seuls ou avec des amis ou de la famille, on peut cependant remarquer que la grande majorité de ces individus vivent en couple et qu'ils sont pour la plupart non dépressifs (ils ont donc probablement moins tendance à s'isoler et ont donc une vie sociale développée).
+L'un des résultats les plus étonnants de cette analyse est celui concernant la consommation quotidienne d'alcool (en nombre de verres).\\
+Par rapport aux abstinents, on trouve chez les sujets buvant entre 1 et 2 verres d'alcool par jour une augmentation significative de plus de 20 $\%$ de la santé perçue. On pourrait expliquer ce phénomène par le plaisir de boire un verre entre amis ou avec son conjoint. S'il est impossible de vérifier que les individus déclarant boire 1 à 2 verres par jour boivent seuls ou avec des amis ou de la famille, on peut cependant remarquer que la grande majorité de ces individus vivent en couple et qu'ils sont pour la plupart non dépressifs (ils ont donc probablement moins tendance à s'isoler et ont donc plus probablement une vie sociale développée).
 
 \begin{center}
 \setlength\arrayrulewidth{.1pt}
@@ -1724,9 +1739,11 @@ NA & 3\\
 
 \noindent
 On prend en compte dans le modèle l'ensemble des variables décrites dans l'analyse univariée puisque cette dernière montre qu'elles sont toutes significatives.\\
-Nous avions précédemment établi que l'âge était un facteur de confusion évidet pour le lien entre la santé perçue et l'activité professionnelle: la comparaison des deux modèles suivants le montre assez clairement:
 
-\begin{longtable}{lccc|ccc}\caption{Mod}\\
+\noindent
+Nous avions précédemment établi que l'âge était un facteur de confusion évident pour le lien entre la santé perçue et l'activité professionnelle: la comparaison des deux modèles suivants le montre assez clairement:
+
+\begin{longtable}{lccc|ccc}\caption{Mise en évidence de l'âge comme facteur de confusion}\\
     \hline  
     		 & &    Modèle 1 &   &    &   Modèle 2    &\\
 		& \multirow{3}{*}{OR} & \multirow{3}{*}{IC}& \multirow{3}{*}{p} & \multirow{3}{*}{OR} & \multirow{3}{*}{IC}& \multirow{3}{*}{p}\\ 
@@ -1769,14 +1786,28 @@ $\qquad$ $\left[63.7 ; 86.2 \right]$&&&&1.13&$\left[0.97 ; 1.31 \right]$&0.11\\
     \hline
     \end{longtable} 
 
-Lorsque l'on n'ajuste pas le modèle sur l'âge, on montre que les retraités ont une meilleurs santé perçue que les travailleurs: augmentation de 15 $\%$ avec une p-valeur de 0.002. Dés lors que l'on ajuste sur l'âge cette information est masquée par l'augmentation de 18 $\%$ de la santé perçue des sujets dont l'âge est compris entre 59 et 64 ans: tranche d'âge de près d'un tiers des retraités (97 $\%$ ont plus de 59 ans).
+\noindent
+Lorsque l'on n'ajuste pas le modèle sur l'âge, on montre que les retraités ont une meilleurs santé perçue que les travailleurs: augmentation de 15 $\%$ avec une p-valeur de 0.002.\\
+Dés lors que l'on ajuste sur l'âge cette information est masquée par l'augmentation de 18 $\%$ de la santé perçue des sujets dont l'âge est compris entre 59 et 64 ans: tranche d'âge de près d'un tiers des retraités (97 $\%$ ont plus de 59 ans).
 
-Les variables considérées par l'étude peuvent être divisée en 3 catégories: celles qui traitent du style de vie des sujets (indice de masse corporelle, statut tabagique, diabète, pratique sportive, hypertension, consommation d'alcool), les variables "socio-administratives" (sexe, statut familiale, âge, niveau d'éducation, catégorie socio-professionnel, activité professionnelle) et celle traitant de la santé psychique des sujets (dépression, stresse).
+\bigskip
 
-J'ai fait une selection de variables dans chacun des trois blocs en me basant sur le critère AIC en incluant dans chaque modele l'activité professionelle qui est notre variable d'exposition, l'âge et le sexe. Chacun des trois modèles élimine l'âge et conserve toutes les autres variables.\\
-On inclue ces dernières dans le modèle final:
-  
-    \begin{longtable}{lccc}\caption{Summary descriptives table by groups of `srhBin'}\\
+\noindent
+Les variables considérées par l'étude peuvent être divisées en 3 catégories: celles qui traitent du style de vie des sujets (indice de masse corporelle, statut tabagique, diabète, pratique sportive, hypertension, consommation d'alcool), les variables "socio-administratives" (sexe, statut familiale, âge, niveau d'éducation, catégorie socio-professionnel, activité professionnelle) et celles traitant de la santé psychique des sujets (dépression, stresse).
+
+\bigskip
+
+\noindent
+J'ai fait une sélection de variables dans chacun des trois blocs en me basant sur le critère AIC \footnote{$AIC = -2 \log \left( \mathfrak{L} (\hat{\beta}) \right) + 2p $} (méthode stepwise) en incluant dans chaque modèle l'activité professionnelle qui est notre variable d'exposition, l'âge et le sexe. Chacun des trois modèles élimine l'âge et conserve toutes les autres variables.
+
+\bigskip
+
+\noindent
+On inclut ces dernières dans le modèle final:
+
+\newpage
+
+    \begin{longtable}{lccc}\caption{Modèle final}\\
     \hline  
      &                \multirow{2}{*}{OR}    & \multirow{2}{*}{IC} & \multirow{2}{*}{p}\\ 
  &     &                        &         \\ 
@@ -1827,7 +1858,7 @@ $\qquad$Licence/Maitrise/+   &1.11 & [0.97;1.27] & 0.12 \\
 $\qquad$Sans diplôme   &0.77 & [0.60;0.97] & 0.03\\
 
          
-Situation Familiale
+Situation Familiale&&&\\
 $\qquad$Couple&Ref.&Ref.&Ref.\\
 $\qquad$Famille&1.01& [0.76;1.35]& 0.95\\    
 $\qquad$Seul&0.94 & [0.84;1.05]& 0.26   \\
@@ -1838,7 +1869,7 @@ $\qquad$1-2 fois par semaine&1.47& [1.32;1.62]& 1.03e-13\\
 $\qquad$ $\geq$3 fois par semaine &2.38 &[1.99;2.84] &< 2.2e-16\\
                   
 
-Indice de Masse Corporelle
+Indice de Masse Corporelle&&&\\
 $\qquad$Normal &Ref.&Ref.&Ref.\\
 $\qquad$Sur-poids &0.80 &[0.72;0.89]& 3.07e-05\\ 
 $\qquad$Obésité&0.59& [0.49;0.70]& 1.03e-09\\ 
@@ -1847,7 +1878,7 @@ Hypertension Artérielle&&&\\
 $\qquad$Non& Ref.&Ref.&Ref.\\
 $\qquad$Oui &0.77 &[0.69;0.85]& 2.217e-07\\ 
 
-Statut Tabagique
+Statut Tabagique&&&\\
 $\qquad$Non fumeurs &Ref.&Ref.&Ref.\\
 $\qquad$Ancien Fumeur &1.09& [0.98;1.21]& 0.12\\    
 $\qquad$Arrêt en cours &0.56 &[0.35;0.88]& 0.01\\ 
