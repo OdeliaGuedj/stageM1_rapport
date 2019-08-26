@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {2}Bref aper\IeC {\c c}u de l'\IeC {\'e}pid\IeC {\'e}miologie}{4}
 \contentsline {subsection}{\numberline {2.1}Histoire et d\IeC {\'e}finition}{4}
 \contentsline {subsection}{\numberline {2.2}Notions de base, vocabulaire}{5}
-\contentsline {subsection}{\numberline {2.3}Principaux biais de l'\IeC {\'e}pid\IeC {\'e}miologie}{6}
+\contentsline {subsection}{\numberline {2.3}Principaux biais de l'\IeC {\'e}pid\IeC {\'e}miologie}{7}
 \contentsline {section}{\numberline {3}Description et explication des donn\IeC {\'e}es}{7}
 \contentsline {subsection}{\numberline {3.1}Variable d'exposition : Activit\IeC {\'e} Professionnelle}{7}
 \contentsline {subsubsection}{\numberline {3.1.1}Codage manuel}{8}
@@ -16,21 +16,18 @@
 \contentsline {subsubsection}{\numberline {3.1.3}Comparaisons des deux codages}{17}
 \contentsline {subsection}{\numberline {3.2}Variable d'int\IeC {\'e}r\IeC {\^e}t : Self Rated Health (SRH)}{22}
 \contentsline {subsection}{\numberline {3.3}Variables d'ajustement et facteurs de confusion}{23}
-\contentsline {subsection}{\numberline {3.4}Donn\IeC {\'e}es Manquantes}{26}
+\contentsline {subsection}{\numberline {3.4}Donn\IeC {\'e}es Manquantes}{27}
 \contentsline {section}{\numberline {4}Statistiques}{28}
 \contentsline {subsection}{\numberline {4.1}Flowchart}{28}
 \contentsline {subsection}{\numberline {4.2}Analyses univari\IeC {\'e}es}{28}
-\contentsline {subsection}{\numberline {4.3}Analyses multivari\IeC {\'e}es}{31}
-\contentsline {subsubsection}{\numberline {4.3.1}R\IeC {\'e}gression logistique}{31}
-\contentsline {subsubsection}{\numberline {4.3.2}S\IeC {\'e}lection et diagnostique du mod\IeC {\`e}le}{40}
-\contentsline {subsection}{\numberline {4.4}Analyse en sous-groupes}{40}
-\contentsline {subsubsection}{\numberline {4.4.1}D\IeC {\'e}pression/Tentative de Suicide}{40}
-\contentsline {subsubsection}{\numberline {4.4.2}Maladies Cardio - Vasculaires}{40}
-\contentsline {subsubsection}{\numberline {4.4.3}Score pr\IeC {\'e}carit\IeC {\'e}}{40}
-\contentsline {subsubsection}{\numberline {4.4.4}\IeC {\^A}ge}{40}
-\contentsline {section}{\numberline {5}Perspectives}{41}
-\contentsline {subsection}{\numberline {5.1}Le monde professionnel}{41}
-\contentsline {subsection}{\numberline {5.2}Plus value perso}{41}
-\contentsline {subsection}{\numberline {5.3}Les donn\IeC {\'e}es : th\IeC {\'e}orie vs pratique}{42}
-\contentsline {section}{\numberline {6}Annexes}{45}
-\contentsline {section}{\numberline {7}Bibliographie}{45}
+\contentsline {subsection}{\numberline {4.3}Analyses multivari\IeC {\'e}es}{33}
+\contentsline {subsubsection}{\numberline {4.3.1}R\IeC {\'e}gression logistique}{33}
+\contentsline {subsubsection}{\numberline {4.3.2}S\IeC {\'e}lection et diagnostique du mod\IeC {\`e}le}{36}
+\contentsline {subsection}{\numberline {4.4}Analyse en sous-groupes}{36}
+\contentsline {subsubsection}{\numberline {4.4.1}D\IeC {\'e}pression/Tentative de Suicide}{36}
+\contentsline {subsubsection}{\numberline {4.4.2}Maladies Cardio - Vasculaires}{36}
+\contentsline {subsubsection}{\numberline {4.4.3}Score pr\IeC {\'e}carit\IeC {\'e}}{36}
+\contentsline {subsubsection}{\numberline {4.4.4}\IeC {\^A}ge}{36}
+\contentsline {section}{\numberline {5}Perspectives : Ce que j'ai fait, d\IeC {\'e}couvert, appris}{37}
+\contentsline {section}{\numberline {6}Annexes}{39}
+\contentsline {section}{\numberline {7}Bibliographie}{39}

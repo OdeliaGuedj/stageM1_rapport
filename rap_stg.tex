@@ -34,6 +34,9 @@
 \usepackage[normalem]{ulem}
 \usepackage{makecell}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Pour biblio %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -123,14 +126,14 @@ Je tiens à remercier l'ensemble des personnes ayant contribué au sucés de ce 
 
 \noindent
 Tous d'abord, merci au Dr Jean Philippe Empana de m'avoir fait confiance en m'accueillant dans son équipe. 
-J'y ai énormément appris tant en sur le plan statistique que sur le plan humain. J'ai découvert avec beaucoup de plaisir le monde de la recherche où j'espère un jour me faire une place !
+J'y ai énormément appris tant sur le plan statistique que sur le plan humain. J'ai découvert avec beaucoup de plaisir le monde de la recherche où j'espère un jour me faire une place !
 Merci d'avoir toujours pris le temps de répondre à mes questions et surtout de m'avoir laissé assez de liberté pour que je découvre des choses par moi même.\\
 
 \noindent
 Je tiens également à remercier Marie Lê Hoang, Ingénieur d'étude à l'INSERM qui a gentiment accepté de faire circuler mon CV dans l'unité et grâce à qui j'ai eu la chance d'avoir 3 propositions de stages.\\
 
 \noindent
-Un grand merci à toute l'équipe 4 de l'unité pour ces 5 mois passés ensemble: des heures de discussions méthodologie, statistiques, éthique et médecine. Des heures à dompter des bouts de codes capricieux qui ne font pas ce qu'on leur demande. Merci pour cette ambiance de travail dans la bonne humeur : Bamba Gaye (MD, Phd), Marie-Aude Penet (MD), Prunelle Getten (MD), Willy Sutter (MD, PhD), Delphine Lavignasse (PhD), Anouk Asselin (Ms), Marie-Cécile Perrier(Ms), Lucile Ofredo (Ms), Radia B(ARC) ainsi que tous les apprentis chercheurs de passage.\\
+Un grand merci à toute l'équipe 4 de l'unité pour ces 5 mois passés ensemble: des heures de discussions méthodologie, statistiques, éthique et médecine. Des heures à dompter des bouts de codes capricieux qui ne font pas ce qu'on leur demande. Merci pour cette ambiance de travail dans la bonne humeur : Bamba Gaye (MD, Phd), Marie-Aude Penet (MD, MSc), Prunelle Getten (MD, MSc), Willy Sutter (MD, PhD), Delphine Lavignasse (PhD), Anouk Asselin (MSc), Marie-Cécile Perrier(MSc), Lucile Ofredo (MSc), Radia B(ARC) ainsi que tous les apprentis chercheurs de passage.\\
 
 \noindent
 Enfin, merci à Mme Agathe Guilloux et Mme Marie Luce TAUPIN, Enseignants Chercheurs à l'Université d'Évry Val 
@@ -171,26 +174,32 @@ These questions replace our original, "Can machines think?"}\\
 \begin{center}
 \section*{Introduction}
 \end{center}
-Les retraités : leur nombre, leur âge, le montant de leur pension est un sujet récurrent des derniers mandats présidentiels Français.\\
-Les récentes législations(9)concernant le recul de l'âge légal du départ à la retraite se sont vues opposer de violentes résistances qui posent la question de la santé des individus actifs par rapport à celle des retraités(10).\\
 
-La santé perçu, Self Rated Health en Anglais, est une mesure subjective de la santé des individus souvent utilisée en santé publique.\\
+\noindent
+Les retraités : leur nombre, leur âge, le montant de leur pension sont des sujets récurrents des derniers mandats présidentiels français.\\
+Les récentes législations\cite{noauthor_code_nodate} concernant le recul de l'âge légal du départ à la retraite se sont vues opposer de violentes résistances qui posent la question de la santé des individus actifs par rapport à celle des retraités\cite{fatas_experimental_2007} .\\
+
+\noindent
+La santé perçue, Self Rated Health en anglais, est une mesure subjective de la santé des individus souvent utilisée en santé publique.\\
 Cette mesure est effectuée grâce à une question directe aux individus : Sur une échelle de 0 à 10, comment évaluez vous votre santé (avec 0: très mauvaise et 10 excellente).\\
-La santé perçue est décrite dans la littérature comme un indicateur consistant de mortalité(1-2) ayant des liens fort avec la santé mentale(3) et le contexte socio-économique des individus(4-5).\\
-Si la santé perçue reflète assez bien la santé objective d'individus(6), il est important de souligner que sa nature subjective en fait un outils plus puissant encore puisqu'il permet de prendre en compte des critères psychologiques et sociaux comme les habitudes alimentaires, l'historique familial ou les disposition à la sur/sous évaluation d'un risque.\\
+La santé perçue est décrite dans la littérature comme un indicateur consistant de mortalité\cite{mossey_self-rated_1982} \cite{crossley_reliability_2002} ayant des liens fort avec la santé mentale \cite{millan-calenti_depressive_2012} et le contexte socio-économique des individus \cite{mansyur_social_2008} \cite{alvarez-galvez_impact_2013}.\\
+Si la santé perçue reflète assez bien la santé objective d'individus \cite{wu_relationship_2013} , il est important de souligner que sa nature subjective en fait un outils plus puissant encore puisqu'il permet de prendre en compte des critères psychologiques et sociaux comme les habitudes alimentaires, l'historique familial ou les disposition à la sur/sous évaluation d'un risque.\\
 
-Cet outils a été utilisé dans l'étude de la cohorte GAZEL pour mettre en évidence l'hypothèse suivante(7): les individus actifs voient leur santé perçue augmenter après avoir pris leur retraite. Pour ce faire les investigateurs disposaient de plusieurs points de mesure avant et après la retraite des sujets de la cohorte GAZEL.\\
+\noindent
+Cet outils a été utilisé dans l'étude de la cohorte GAZEL pour mettre en évidence l'hypothèse suivante\cite{westerlund_self-rated_2009}  : les individus actifs voient leur santé perçue augmenter après avoir pris leur retraite. Pour ce faire les investigateurs disposaient de plusieurs points de mesure avant et après la retraite des sujets de la cohorte GAZEL.\\
 
-L'objectif de mon stage était de m'inspirer des hypothèse de l'étude décrite ci-dessus pour montrer que la santé perçu des individus de l'Etude Parisienne Prospective 3(8) est impactée par leur activité professionnelle.\\
+\noindent
+L'objectif de mon stage était de m'inspirer des hypothèse de l'étude décrite ci-dessus pour montrer que la santé perçue des individus de l'Etude Parisienne Prospective 3 \cite{empana_paris_2011} est impactée par leur activité professionnelle.\\
 
 
 
 \newpage
 \section{Contexte}
 \subsection{L'Inserm U970 Équipe 4}
+
 \noindent
-L'INSERM : Institut National de la Santé Et de la Recherche Médicale est un établissement publique de recherche créé en 1964 par le ministre de la Santé Raymond Marcellin dont la Santé Publique et l'Epidémiologie est un des domaine de spécialité.\\
-L'INSERM est constitué de plusieirs dizaines d'unités réparties sur l'ensemble du territoire français et dont le siège se touve rue Tolbiac dans le 13 ème arrondissement de Paris.\\
+L'INSERM : Institut National de la Santé Et de la Recherche Médicale est un établissement publique de recherche créé en 1964 par le ministre de la santé Raymond Marcellin et dont la santé Publique et l'épidémiologie sont un des domaines de spécialité.\\
+L'INSERM est constitué de plusieurs dizaines d'unités réparties sur l'ensemble du territoire français et dont le siège se trouve rue Tolbiac dans le 13 ème arrondissement de Paris.\\
 J'ai effectué mon stage au PARCC (Paris Centre Cardiovasculaire): une unité mixte de recherche de l'INSERM (U970) située dans le bâtiment recherche de l'hôpital George Pompidou (Rue Leblanc Paris 15) depuis 2009.\\
 Cette unité est composée d'une dizaine d'équipes ayant une "vocation\footnote{Site Web de l'Hôpital Européen George Pompidou} internationale dans le domaine de la recherche fondamentale et translationnelle sur les maladies cardiovasculaires, à partir d'approches multiples combinant biochimie, biologie cellulaire et moléculaire, imagerie moléculaire, physiologie intégrative, pharmacologie, génétique et épidémiologie".\\
 
@@ -222,17 +231,17 @@ On y trouve une grande diversité de nationalités, de parcours, de spécialité
 %Beaucoup d'émulsion: ouverture sur méthodes stats, vulgarisation notions de médecine. Équipe humaine, agréable.\\
 \subsection{L'étude Parisienne Prospective 3 (EPP3)}
 \noindent
-EPP3(8) est une étude prospective de cohorte en population générale comptant n = 10157 sujets.\\
+EPP3 \cite{empana_paris_2011} est une étude prospective de cohorte en population générale comptant n = 10157 sujets.\\
 Ces dernier ont été recrutés dans des centres IPC (centres d'examens de santé conventionnés par l'assurance maladie) entre Juin 2008 et Décembre 2011.\\
 Pour entrer dans l'étude, les sujets doivent avoir entre 50 et 75 ans.\\
 \\
-Les donnés sont récoltées via des questionnaires envoyés tous les deux ans qui, à l'exception du questionnaire d'inclusion sont élaborés à l'INSERM U970 équipe 4. \\
-Le questionnaire d'inclusion provient de l'IPC. Il contient une partie socio-admnistrative, des question sur l'environnement professionnel des sujets ainsi que sur leurs habitudes de vie (alimentation, tabac, alcool). 
+Les données sont récoltées via des questionnaires envoyés tous les deux ans qui, à l'exception du questionnaire d'inclusion sont élaborés à l'INSERM U970 équipe 4. \\
+Le questionnaire d'inclusion\footnote{Annexe 1} provient de l'IPC. Il contient une partie socio-admnistrative, des questions sur l'environnement professionnel des sujets ainsi que sur leurs habitudes de vie (alimentation, tabac, alcool). 
 Une autre partie du questionnaire traite des antécédents médicaux des sujets, tant familiaux que personnels, de leur état de santé actuel et de leurs prescriptions médicamenteuses.
 La dernière partie traite du bien-être des sujets: on y trouve des questions sur leur stress perçu, leur équilibre mental ainsi que leur nutrition.\\
 \\
 Le but de l'étude est la recherche de facteurs de risque pour les maladies cardiovasculaires.\\ 
-Dans chacun des questionnaires il est demandé aux sujets de déclarer leurs hospitalisations en détaillant le motif d'hospitalisation, le nom de l'hôpital, du service où ils ont été traités ...
+Dans chacun des questionnaires il est demandé aux sujets de déclarer leurs hospitalisations en détaillant le motif d'hospitalisation, le nom de l'hôpital, du service où ils ont été traités ...\\
 Chaque hospitalisation déclarée est appelée évènement.\\
 \\
 Pour s'assurer de la validité des déclarations des sujets, un protocole de validation d'événement a été mis en place : régulièrement un certain nombre d'événements sont extraits de la base. Pour chaque évènement, on contacte l'hôpital pour qu'il transmette au responsable de l'étude les comptes-rendus hospitaliers (CRH) de l'évènement en question. Ensuite les CRH sont lus par un médecin qui valide, invalide ou corrige le diagnostique déclaré par le sujet.\\
@@ -244,75 +253,116 @@ Elle a déjà donné lieu à la publication de plus d'une vingtaine d'articles d
 \section{Bref aperçu de l'épidémiologie}
 
 \subsection{Histoire et définition}
+
 \noindent
-Épidémiologie vient des mot grecs "epi": au-dessus, "demio": peuple. Ainsi la définition étymologique de l'épidémiologie est l'étude des peuples.\\
+Épidémiologie vient des mots grecs "epi": au-dessus, "demio": peuple. Ainsi la définition étymologique de l'épidémiologie est l'étude des peuples.\\
 Si l'on tente de donner une définition plus précise de ce qu'est l'épidémiologie on se retrouve vite enseveli sous le nombre de possibilités.\\
+
+\noindent
 Le dictionnaire Larousse propose la définition suivante: \textit{Science qui étudie, au sens des populations (humaines, animales voir végétales), la fréquence et la répartition des problèmes de santé dans le temps et dans l'espace, ainsi que le rôle des facteurs qui les déterminent}.\\
+
+\noindent
 Cependant deux autres définition méritent d'être citées pour leur pertinence (préférence subjective bien entendu). Celle Mac Mahon : \textit{Étude de la distribution et des déterminants d'une maladie dans des populations humaines, et application des résultats de cette étude dans la lutte contre cette maladie}, et celle de Jeniceck : \textit{L'épidémiologie est un raisonnement et une méthode propres au travail objectif en médecine et dans d'autres sciences de la santé, appliqués à la description des phénomènes de santé, à l'explication de leur étiologie, et à la recherche des méthodes d'intervention les plus efficaces}.\\
 
-Ce cocasse problème de définition est cependant assez sérieux pour que des épidémiologistes décident de mener leur enquête(11) sur les définitions données à leur discipline entre 1978 et 2017. Ils en répertorient 102 et identifient 5 termes présent dans plus de la moitié des définitions répertoriées: "population", "étude", "santé","maladie" et "distribution".\\
-Ils observent également une augmentation des mots "contrôle" et "santé" dans les définition entre 1978 et 2017. Il est à noté que les définitions autorisées à être inclues dans l'étude sont soit en Anglais soient des définitions nationales traduites en Anglais.\\
+\noindent
+Ce cocasse problème de définition est cependant assez sérieux pour que des épidémiologistes décident de mener leur enquête \cite{frerot_what_2018} sur les définitions données à leur discipline entre 1978 et 2017. Ils en répertorient 102 et identifient 5 termes présent dans plus de la moitié des définitions répertoriées: "population", "étude", "santé","maladie" et "distribution".\\
+Ils observent également une augmentation des mots "contrôle" et "santé" dans les définitions entre 1978 et 2017. Il est à noter que les définitions autorisées à être inclues dans l'étude sont soit en anglais soient des définitions nationales traduites en anglais.\\
+
+\noindent
 Les 5 mots cités précédemment rendent assez bien compte de ce qu'est réellement la discipline, preuve que l'étude menée sur ses définitions n'était pas vaine puisqu'elle permet de comprendre en profondeur ce qu'est l'épidémiologie (santé, maladie, étude), en quoi elle se détache de la médecine (population, distribution) et pourquoi elle est utile (contrôle,maladie).\\
 
+\noindent
 Forts de ces éclaircissements, nous pouvons sans trop nous tromper, faire l'hypothèse que l'épidémiologie est aussi vieille que la médecine. Depuis la discipline a beaucoup évolué, s'adaptant aux nouveaux défis posés par l'apparition de maladies.\\
-Dans un article de médecine science publié en 2016 (12), Philippe Bizouarn identifie 4 aires distinctes de l'épidémiologie.\\
-La première appelée statistiques sanitaires repose sur la théorie des miasmes (émanations fétides du sol, de l'air, de l'eau) et occupe la deuxième moitié du 19 ème siècle.\\
-La seconde, ère des maladies infectieuses, s'étend de la deuxième moitié du 19 ème siècle à la deuxième moitié du 20 ème siècle. Elle rejette la théorie des miasmes au profit de la théorie des germes avec la découverte du microbe. Un exemple historique d'étude épidémiologique de cette ère est celle que J.Snow effectue en 1954 afin de mettre en évidence le mode de propagation du choléra. Il découvre un lien fort entre le nombre de cas de choléra dans une zone et la distribution d'eau qui la dessert. Il arrive à prouver qu'une des pompes d'eau occasionne le plus grand nombre de cas de choléra, la fait retirer et endigue ainsi l'épidémie. L'eau est alors communément admise comme voie de propagation de la maladie.\\
-La troisième ère de l'épidémiologie identifiée par P.Bizouarn (deuxième moitié du 20 ème siècle jusqu'au début du 21 ème) est celle des maladies chroniques dont une des études les plus connues est celle de Dull et Hill datant de 1950 sur le cancer bronchopulmonaire.\\
+
+\noindent
+Dans un article de médecine science publié en 2016  \cite{bizouarn_leco-epidemiologie_2016}, Philippe Bizouarn\footnote{Épidémiologiste, Praticien hospitalier - Service d’Anesthésie-Réanimation de l’Hôpital G et R Laënnec, CHU de Nantes} identifie 4 aires distinctes de l'épidémiologie.\\
+La première appelée statistiques sanitaires repose sur la théorie des miasmes (émanations fétides du sol, de l'air, de l'eau) et occupe la deuxième moitié du XIX$^{ème}$ siècle.\\
+
+\noindent
+La seconde, ère des maladies infectieuses, s'étend de la deuxième moitié du XIX$^{ème}$ siècle à la deuxième moitié du XX$^{ème}$ siècle. Elle rejette la théorie des miasmes au profit de la théorie des germes avec la découverte du microbe.\\
+Un exemple historique d'étude épidémiologique de cette ère est celle que J.Snow effectue en 1954 afin de mettre en évidence le mode de propagation du choléra. Il découvre un lien fort entre le nombre de cas de choléra dans une zone et la distribution d'eau qui la dessert. Il arrive à prouver qu'une des pompes d'eau occasionne le plus grand nombre de cas de choléra, la fait retirer et endigue ainsi l'épidémie. L'eau est alors communément admise comme voie de propagation de la maladie.\\
+
+\noindent
+La troisième ère de l'épidémiologie identifiée par P.Bizouarn (deuxième moitié du XX$^{ème}$ siècle jusqu'au début du XXI$^{ème}$) est celle des maladies chroniques dont une des études les plus connues est celle de Dull et Hill datant de 1950 sur le cancer bronchopulmonaire.\\
+
+\noindent
 Enfin il appelle la dernière ère, l'ère de l'éco-épidémiologie caractérisée par la recherche et l'analyse des associations entre plusieurs "facteurs de risques" (par exemple l'exposition à une maladie, le tabac, l'alcool...) et les "issues" (maladies) sans rechercher systématiquement de "lien causal" entre un des facteurs et les issues.\\
 
 
 \subsection{Notions de base, vocabulaire}
+
+\noindent
 L'épidémiologie utilise des méthodes statistiques afin de décrire une maladie ou d'en rechercher les causes. Cependant, le vocabulaire utilisé diffère quelque peu de celui utilisé en mathématiques.\\
-Ainsi la variable à expliquer $Y$ est souvent appelée variable d'intérêt. 
-De plus en épidémiologie les variables explicatives, ou covariables, sont classées dans plusieurs groupes:\\
+Ainsi la variable à expliquer, $Y$, est souvent appelée variable d'intérêt. \\
+
+\noindent
+De plus, en épidémiologie, les variables explicatives, ou covariables, sont classées dans plusieurs groupes:
+
 \begin{itemize}
 \item Il y a d'une part la variable d'exposition c'est à dire la variable explicative principale. 
-\item Les facteurs de confusions: ce sont les covariables qui sont inclues de façon (quasi) systématiques dans les modèles statistiques pour des raisons cliniques. Ces variables sont décrites dans la littérature et varient selon la branche médicale. On y retrouve souvent l'âge, le sexe, l'indice de masse corporelle des sujets ainsi que leur habitudes de vie: tabac, alcool, score de dépression, statut marital...\\
+\item Les facteurs de confusion: ce sont les covariables qui sont inclues de façon (quasi) systématiques dans les modèles statistiques pour des raisons cliniques. Ces variables sont décrites dans la littérature et varient selon la branche médicale. On y retrouve souvent l'âge, le sexe, l'indice de masse corporelle des sujets ainsi que leur habitudes de vie: tabac, alcool, score de dépression, statut marital...\\
 Les facteurs de confusion sont des variables à la fois liées au facteur de risque et à la variable d'intérêt.
-\item Enfin les autres variables explicatives sont appelées variables d'ajustement: il s'agit d'autres facteur pouvant participer, avec la variable d'exposition, à l'explication de la variable d'intérêt.
+\item Enfin les autres variables explicatives sont appelées variables d'ajustement: il s'agit d'autres facteurs pouvant participer, avec la variable d'exposition, à l'explication de la variable d'intérêt.
 \end{itemize} 
+
+\bigskip 
 
 \noindent
 L'épidémiologie a deux champs principaux d'application:
 \begin{itemize}
-\item L'épidémiologie classique qui décrit et mesure de phénomènes de santé dans une population. Elle a pour but l'élaboration de stratégies de santé publique.
-\item L'épidémiologie clinique dont les études se concentrent sur des populations de patients en vue d'améliorer les connaissances d'une maladie ou de tester l'efficacité d'un traitement.
+\item \textit{L'épidémiologie classique} qui décrit et mesure des phénomènes de santé dans une population. Elle a pour but l'élaboration de stratégies de santé publique.
+\item \textit{L'épidémiologie clinique} dont les études se concentrent sur des populations de patients en vue d'améliorer les connaissances d'une maladie ou de tester l'efficacité d'un traitement.
 \end{itemize}
+
+\newpage
 
 L'épidémiologie se décompose en trois branches:
 \begin{enumerate}
-\item L'épidémiologie descriptive qui consiste en l'étude de la fréquence et de la répartition de phénomènes de santé.  Elle permet de formuler des hypothèses quant aux causes de ces phénomènes.
+\item \textit{L'épidémiologie descriptive} qui consiste en l'étude de la fréquence et de la répartition de phénomènes de santé.  Elle permet de formuler des hypothèses quant aux causes de ces phénomènes.
 \item L'épidémiologie analytique dont le but est de vérifier les hypothèses susmentionnées. Elle recherche les liens entre l'exposition à un facteur et la survenue d'un phénomène de santé.
-\item L'épidémiologie évaluative qui mesure l'efficacité d'une intervention (thérapeutique ou de prévention) sur le phénomène de santé.
+\item \textit{L'épidémiologie évaluative} qui mesure l'efficacité d'une intervention (thérapeutique ou de prévention) sur le phénomène de santé.
 \end{enumerate}
+
+\bigskip
 
 Une étude épidémiologique peut se faire deux manières :
 \begin{itemize}
-\item En observant les effets sur une population de l'exposition de facteurs de risques : on parle d'observation.
-\item En contrôlant les conditions d'exposition à ces facteurs de risque : on parle d'étude expérimentale.\\
-L'étude est dite randomisée si le hasard seul est responsable de l'appartenance d'un sujet à un groupe. On parle d'une étude ouverte quand le traitement est connu des sujets et des investigateurs, en simple aveugle quand seuls les investigateurs connaissent le traitement et en double aveugle lorsque ni les sujets ni les investigateurs ne connaissent le traitement.\\
-Cependant les études expérimentales sont presque toujours irréalisables car non éthiques : une étude expérimentale sur le lien entre le tabac et l'apparition d'un cancer du poumon supposerait en effet d'exposer une partie de la population étudiée au tabac puis d'étudier les conséquences sur leur poumon.\\
+\item En observant les effets sur une population de l'exposition de facteurs de risques : on parle d'\textit{observation}.
+\item En contrôlant les conditions d'exposition à ces facteurs de risque : on parle d'\textit{étude expérimentale}.\\
 \end{itemize}
 
-Lorsque l'on fait de l'épidémiologie descriptive on peut faire deux sortes d'études:\\
+\noindent
+L'étude est dite \textit{randomisée} si le hasard seul est responsable de l'appartenance d'un sujet à un groupe. On parle d'une \textit{étude ouverte} quand le traitement est connu des sujets et des investigateurs, \textit{en simple aveugle} quand seuls les investigateurs connaissent le traitement et \textit{en double aveugle} lorsque ni les sujets ni les investigateurs ne connaissent le traitement.\\
+Cependant les études expérimentales sont presque toujours irréalisables car non éthiques : une étude expérimentale sur le lien entre le tabac et l'apparition d'un cancer du poumon supposerait en effet d'exposer une partie de la population étudiée au tabac puis d'étudier les conséquences sur leur poumon.\\
+
+\bigskip
+
+Lorsque l'on fait de l'épidémiologie descriptive on peut faire deux sortes d'étude:
 \begin{itemize}
 \item Étudier la \textit{prévalence} d'un phénomène de santé, c'est à dire la fréquence de survenue de ce phénomène dans une certaine population à un temps donné. Dans ce type d'étude l'évolution temporelle n'existe pas, c'est une mesure effectuée à un temps donné: on parle d'\textit{étude transversale}.
 \item Étudier l'\textit{incidence} d'un phénomène de santé, c'est à dire étudier les modifications de l'état de santé d'un ou de plusieurs groupes de sujets sur une période donnée. Ici c'est bien l'évolution dans le temps d'un état qui importe: on parle d'\textit{étude longitudinale}.
 \end{itemize}
 
-Par ailleurs lorsque le but de l'étude épidémiologique est à visée étiologique on dénombre deux grandes familles d'étude:\\
+\bigskip
+
+\noindent
+Par ailleurs lorsque le but de l'étude épidémiologique est à visée étiologique on dénombre deux grandes familles d'étude:
 \begin{itemize}
 \item \textit{L'étude de cohorte}: Étude d'un groupe de personnes étant ou pouvant être exposé à un facteur de risque. C'est l'étude épidémiologique la plus exhaustive.
 \item \textit{L'étude cas-témoin}: elle étudie la comparaison entre deux groupes : les malades appelés cas et les non-malades appelés témoins. Le but est de déterminer si la réponse à l'exposition à un facteur est similaire dans les deux sous-groupes et ainsi d'établir un lien facteur/maladie.
 \end{itemize}
 
-Une étude peut être \textit{prospective} si  l'information concernant l'exposition des sujets à un facteur est recueillie avant la survenu d'un phénomène de  santé, ou \textit{rétrospective} si l'information concernant l'exposition des sujets à un facteur est recueillie après  la survenu d'un phénomène de  santé chez certains sujets.
+\bigskip
+
+\noindent
+Enfin, une étude peut être \textit{prospective} si  l'information concernant l'exposition des sujets à un facteur est recueillie avant la survenu d'un phénomène de  santé, ou \textit{rétrospective} si l'information concernant l'exposition des sujets à un facteur est recueillie après  la survenu d'un phénomène de  santé chez certains sujets.
 
 \subsection{Principaux biais de l'épidémiologie}
 \noindent
 Un biais est une erreur de méthodologie commise le plus souvent durant l'inclusion des sujets dans l'étude et conduisant à une mauvaise estimation des paramètres étudiés.\\
-Il en existe 3 principaux:\\
+
+\noindent
+Il en existe 3 principaux:
 \begin{itemize}
 \item Le \textit{biais de sélection}: : Intervient lors de la constitution de l'échantillon d'enquête. C'est le biais induit par la manière dont les sujets sont choisis au sein de la population. 
 \item Le \textit{biais de mesure}: due à une mauvaise mesure du facteur d'exposition.
@@ -321,7 +371,7 @@ Il en existe 3 principaux:\\
 
 \section{Description et explication des données}
 \noindent
-Le but de cette analyse est d'établir l'existence d'un lien entre l'activité professionnelle des sujets d'EPP3 et la manières dont ils perçoivent leur santé. Si cette dernière fait l'objet d'une question claire dans le questionnaire d'inclusion, ce n'est pas le cas de l'activité professionnelle. J'ai ainsi dû créer une nouvelle variable en extrayant de l'information de plusieurs questions grâce à des méthodes de classifications non supervisée.\\
+Le but de cette analyse est d'établir l'existence d'un lien entre l'activité professionnelle des sujets d'EPP3 et la manière dont ils perçoivent leur santé. Si cette dernière fait l'objet d'une question claire dans le questionnaire d'inclusion, ce n'est pas le cas de l'activité professionnelle. J'ai ainsi dû créer une nouvelle variable en extrayant de l'information de plusieurs questions grâce à des méthodes de classifications non supervisées.\\
 La description des méthodes utilisées à la mise en forme de l'ensemble des variables utiles à l'analyse fait l'objet de cette section.
 \subsection{Variable d'exposition : Activité Professionnelle}
 \noindent
@@ -370,7 +420,7 @@ La réponse à cette question est du texte libre. Après la récupération des q
 \end{small}
 
 \noindent
-L'encodage de la variable Adm10 introduit une première source potentielle d'erreur du fait de la difficulté d'interpréter du texte libre d'une part et des possibles erreurs de "classification humaine" d'autre part. Il faut également noter qu'un des sujets a un code travail de 88 et que ce code ne correspond à aucune des professions de la liste IPC (en annexe).\\
+L'encodage de la variable Adm10 introduit une première source potentielle d'erreur du fait de la difficulté d'interpréter du texte libre d'une part et des possibles erreurs de "classification humaine" d'autre part. Il faut également noter qu'un des sujets a un code travail de 88 et que ce code ne correspond à aucune des professions de la liste IPC\footnote{Annexe 2}.\\
 
 \noindent
 Une autre difficulté est due à la possibilité qu'ont les sujet de cocher plusieurs réponses par question. Il en résulte un grand nombre de classes dans chaque variable ce qui a compliqué le codage de la variable activité professionnelle.
@@ -391,37 +441,19 @@ J'ai donc créer une variable catégorielle qui comporte 5 classes:
 
 \noindent
 Pour cela j'ai fait le choix de me baser de manière successive sur les variables Adm12a puis Adm11 puis Adm12 puis Adm10. La raison en est simple : c'est la variables Adm12a qui propose la réponse "Retraités", or c'est la catégorie qu'il m'intéresse le plus d'étudier. Ensuite la variable Adm11 nous indique si le sujet travaille encore OU depuis combien de temps il a cessé de travailler. La variable Adm12 discrimine les chômeurs. Enfin, la variable Adm10 est utile pour vérifier la cohérence des différentes réponse des sujets ou bien de trancher dans des cas où les autres variables ne fournissaient pas d'informations suffisantes.\\
+
+\noindent
 Par exemple, il y a 57 individus pour lesquels les variables Adm12 et Adm12a ne sont pas renseignées et qui déclarent ne plus travailler depuis moins d'un an ou plus (c'est à dire qu'ils ont cochés les cases 1,2,3,4 ou 5 du questionnaire). Il est possible que ces sujets soient au chômage, à la retraite ou qu'ils n'aient jamais travaillé.\\
-\newline
 
-
-\begin{center}
-\begin{tabular}{l|l}
- & Codes \\
- \hline
-Retraités & 71 72 73 74 75 76 77 78\\
-Chômeurs & 91 92 93 94 95 96\\
-Inactifs & 81 82 84 85 86\\
-Ne sait pas & 88\\
-Travailleurs & Le reste
-\end{tabular}
-%\caption{Classification des codes travail IPC}
-\end{center}
-
-\newpage
 \noindent
 \textbf{Règle de décision} : \\
+
 \noindent
 Les sujets indiquant qu'ils sont à la retraite et qu'ils travaillent sont classés en tant que travailleurs et ce, même si leur code travail (c'est à dire la variable Adm10) est de type "Ancien X" (codes 71 à 78 de la liste IPC) car il est possible de percevoir une pension de retraite et de continuer à travailler (par exemple en tant qu'expert). \\
-\noindent
 Or ce qui est intéressant pour l'étude est la santé perçue des sujets ne travaillant plus du tout. Il vaut donc mieux classer ceux qui complètent leur retraite avec un emplois en tant que travailleurs qu'en tant que retraités.\\
-\noindent
 Ainsi, sont étiquetés inactifs les sujets n'aillant jamais travaillé, ou déclarant être au foyer ou ayant un code travail parmi les deux suivants : 85/86. Ces codes correspondent à des individus inactifs non retraités respectivement de moins de 60 ans et de plus de 60 ans.\\
-\noindent
 Si les variables Adm12 OU Adm10 indiquent que le sujet est chômeur (en incluant la simple recherche d'emplois), il est classé en chômeur.\\
-\noindent
 En effet, on peut raisonnablement faire l'hypothèse que la précarité induite par la recherche d'un emplois occasionnera une plus mauvaise santé perçue.\\
-\noindent
 On classe retraités tous les sujets n'ayant aucun indicateur de chômage ou d'activité professionnelle et n'étant pas inactifs.\\
 \noindent
 Enfin, le reste est classé comme travailleurs.\\\\
@@ -436,11 +468,11 @@ Finalement on obtient la répartition suivante : \\
 \end{center}
 
 \noindent
-Pour vérifier la cohérence des classes obtenues on peut tracer les distributions de l'âge dans chaque classe.
+Pour vérifier la cohérence des classes obtenues on peut tracer les distributions de l'âge dans chaque classe.\\
 
 \includegraphics[scale=.5]{plot_grid_hist_age_activproBis.png}\\
 \noindent
-On remarque que 1116 sujets classés Travailleurs ont moins de 60 ans (on peut raisonnablement supposer que l'âge de la retraire est 60 ans car les sujets de la cohorte ont, à l'inclusion, un âge compris entre 50 et 75 ans).
+On remarque que 1116 sujets classés Travailleurs ont moins de 60 ans (on peut raisonnablement supposer que l'âge de la retraite est 60 ans car les sujets de la cohorte ont, à l'inclusion, un âge compris entre 50 et 75 ans).
 De même, 134 sujets sont classés en tant que Retraités et ont moins de 60 ans.\\
 \noindent
 Ceci peut s'expliquer soit par une erreur de classification: ayant effectué cette dernière à la main il y a un risque non négligeable que je n'ai pas appliqué exactement le même critère de jugement pour chacun des cas. Il peut aussi ne pas s'agir d'une erreur, dans ce cas les données sont ainsi et on veillera simplement à garder cela à l'esprit lorsque nous interpréterons les résultats des tests statistiques ultérieurs.
@@ -448,9 +480,12 @@ Ceci peut s'expliquer soit par une erreur de classification: ayant effectué cet
 
 \subsubsection{ACM et CAH}
 \noindent
-Pour vérifier la cohérence des résultats présentés au paragraphe précédent, j'ai effectué une Classification Ascendante Hiérarchique sur une base de données constituée des quatre variables utilisées pour la classification "manuelle" : Adm12a, Adm11, Adm12 et Adm10. \\
-J'ai également veillé à supprimer les individus (n = 29) ayant une valeur manquante pour l'une de ces quatre variables. 
-Les résultats de l'ACM sont rassurants, dans le sens où l'emplacement des quatre variables qui nous intéressent dans le plan factoriel correspond à l'intuition qu'on en avait à savoir : 
+Pour vérifier la cohérence des résultats présentés au paragraphe précédent, j'ai effectué une Classification Ascendante Hiérarchique sur les résultats d'une Analyse des Correspondances Multiples appliquée
+à une base de données constituée des quatre variables utilisées pour la classification "manuelle" : Adm12a, Adm11, Adm12 et Adm10. \\
+J'ai également veillé à supprimer les individus (n = 29) ayant une valeur manquante pour l'une de ces quatre variables. \\
+
+\noindent
+Les résultats de l'ACM sont rassurants, dans le sens où l'emplacement dans le plan factoriel des quatre variables qui nous intéressent correspond à l'intuition qu'on en avait à savoir : 
 \begin{itemize}
 \item Les variables Adm12a et Adm11 apportent globalement la même information, cohérent puisque Adm12a et Adm11 discriminent les retraités et les travailleurs.
 \item Adm12 et Adm10 sont sur le même plan horizontal : elles discriminent les chômeurs (avec les codes travail 91 à 96).
@@ -462,6 +497,7 @@ On s'attend donc à ce que la CAH effectuée sur les résultats de l'ACM produis
 \noindent
 \textbf{NB:}Les faibles pourcentages d'inertie sont tout à fait normaux dans le cadre d'une ACM. En effet, comme l'explique Jérôme Pagès dans son livre "Analyse factorielle multiple avec R", si les variables étaient toutes identiques dans le cas d'une ACP la première dimension aurait 100\% d'inertie alors que dans une ACM la première dimension aurait au maximum $100\over{(nb_modalités - 1)}$ \% d'inertie.\\
 
+\newpage
 \noindent
 Sur le graphe suivant on affiche les individus ainsi que les 15 modalités ayant la plus grande contribution. Ces 15 modalités sont affichées selon un gradient de couleur en fonction de leur $\cos^2$. \\
 
@@ -479,14 +515,20 @@ La deuxième chose à noter est l'absence d'un quatrième groupe qui aurait repr
 
 \noindent
 La question que je me suis ensuite posée est celle de l'allure qu'aurait ma classification si elle était effectuée par un algorithme. De plus, il serait intéressant d'analyser la classification des individus que je n'ai pas su classer.
-Pour cela j'ai effectué une Classification Ascendante Hiérarchique avec le package FactomineR de R en choisissant la distance du chi-deux et le critère d'agrégation de Ward.\\
+Pour cela j'ai effectué une Classification Ascendante Hiérarchique avec le package FactomineR de R en choisissant la distance du $\chi^2$ et le critère d'agrégation de Ward.\\
 
-
+\noindent
+\textbf{Distance du $\chi^2$ :}\\
+\noindent
 La distance entre un individu $i$ et un individus $j$ représentés par $p$ variables ayant $m_1$, $m_2$, $m_P$ modalités est donnée par:
-\begin{equation}
-d_{\chi^2}(i,j) = \sqrt{\sum_k{{np \over n_{.k}} {( {x_{ik}-x_{jk}\over p})^2}}}
-\end{equation}
-La distance du $\chi^2$ traduit le fat que deux individus ayant en commun une modalité rare sont plus proches que deux individus ayant en commun une modalité fréquente.
+\begin{center}
+$d_{\chi^2}(i,j) = \sqrt{\sum_k{{np \over n_{.k}} {( {x_{ik}-x_{jk}\over p})^2}}}$
+\end{center}
+La distance du $\chi^2$ traduit le fait que deux individus ayant en commun une modalité rare sont plus proches que deux individus ayant en commun une modalité fréquente.\\
+
+\noindent
+\textbf{Méthode de Ward:}\\
+C'est la méthode d'agrégation la plus courante. Elle consiste à choisir le réunion de deux groupes qui fera le moins baisser l'inertie entre les groupes, le but étant d'obtenir des groupes les plus "séparés" possible.\\
 
 
 \includegraphics[scale = 1]{dendro_inertie_cah.png}
@@ -507,10 +549,10 @@ $H_0$ : La proportion de la modalité m dans le Cluster $c$ est due au hasard.\\
 $H_1$ : La proportion de la modalité m est anormalement élevée/basse dans le Cluster $c$.\\
 
 \noindent
-Ainsi sous $H_0$ on a : \\
-\begin{equation}
-{{n_{mc}} \over {n_c}} = {{n_m} \over {n}}
-\end{equation} 
+Ainsi sous $H_0$ on a :
+\begin{center}
+${{n_{mc}} \over {n_c}} = {{n_m} \over {n}}$
+\end{center} 
 où :\\
 $n_{mc}$ est le nombre de sujet du Cluster $c$ présentant la modalité $m$,\\
 $n_c$ est le nombre de sujets dans le Cluster $c$,\\
@@ -521,16 +563,16 @@ $n$ est le nombre total d'individus.\\
 Sous $H_0$ : $n_{mc}  = {n_m . n_c \over {n}} $\\
 Or le rapport ${n_m . n_c \over {n}} $ suit une loi hypergéométrique.\\
 Soit $N_{mc}$ la variable aléatoire représentant le nombre d'individus de la modalité $m$ dans le Cluster $c$.
-\begin{equation}
- N_{mc} \underset{H0}{\sim} \mathcal{H}(n, n_c, {{n_m}\over {m}})
-\end{equation}
+\begin{center}
+$ N_{mc} \underset{H0}{\sim} \mathcal{H}(n, n_c, {{n_m}\over {m}})$
+\end{center}
 
 \noindent
-La fonction catdes() du package FactoMineR nous résume les résultats de ce test pour chaque modalité dans chacun des Clusters en classant les modalité dans l'ordre décroissant de leur contribution au Cluster.
+La fonction catdes() du package FactoMineR nous résume les résultats de ce test pour chaque modalité dans chacun des Clusters en classant les modalités dans l'ordre décroissant de leur contribution au Cluster.
 Seuls les test significatifs sont affichés.\\
 
 \noindent
-Dans les résultats affichés juste aprés, la première colonne correspond au nom de la modalité, la deuxième calcule le rapport $n_{mc} \over n_m$, la troisième le rapport $n_m \over n_c$, la quatrième le rapport $n_{mc} \over n$.\\
+Dans les résultats affichés juste après, la première colonne correspond au nom de la modalité, la deuxième calcule le rapport $n_{mc} \over n_m$, la troisième le rapport $n_m \over n_c$, la quatrième le rapport $n_{mc} \over n$.\\
 La cinquième colonne est le calcul de la p-valeur :\\
 \begin{equation}
 \mathbb{P}_{H0}(N_{mc} \geq n_{mc, obs}) =  \mathbb{P}_{\mathcal{H}(n, n_c, {n_m \over n})}(N_{mc} \geq n_{mc, obs})
@@ -538,7 +580,7 @@ La cinquième colonne est le calcul de la p-valeur :\\
 Enfin, la dernière colonne est la valeur de la statistique de test calculée. Lorsqu'elle est positive la modalité à laquelle elle est associée est sur représentée dans le Cluster et lorsqu'elle est négative le modalité en question est sous représentée dans le Cluster.\\*
 
 \noindent
-Par souci de lisibilité nous n'afficheront que les modalités surreprésentée dans chaque cluster:
+Par souci de lisibilité nous n'afficheront que les modalités sur-représentées dans chaque Cluster:
 
 \setlength\arrayrulewidth{2pt}
 \arrayrulecolor{black}
@@ -568,7 +610,7 @@ Adm10=46    & 100 &0.51 & 0.28 & 2.97e-08 &  5.54\\
 \end{tabular}
 
 \noindent
-Les modalités de la variable Adm10 sur représentées dans le \textbf{\textcolor{black}{Cluster 1}} correspondent toutes à des codes travail de sujet qui travaillent. \\
+Les modalités de la variable Adm10 sur représentées dans le \textbf{\textcolor{black}{Cluster 1}} correspondent toutes à des codes travail de sujets qui travaillent. \\
 La modalité la plus présente dans ce Cluster est Adm12a = NNNN, c'est à dire les sujets n'ayant coché aucune modalité de cette variable. Cela fait sens puisqu'aucune des modalités possibles ne traitaient d'une activité professionnelle. \\
 Enfin les modalités de la variable Adm12 représentées dans le Cluster 1 sont NNNNNN c'est à dire ceux n'ayant rien coché et 6NNNNN : en contrat emplois-solidarité / intérim / CDD.\\
 
@@ -608,9 +650,9 @@ Adm12a=JNNN  & 66.67 & 0.24  &0.03  &2.01 e-02  & 2.32\\
 
 \bigskip
 \noindent
-Dans le \textbf{\textcolor{red}{Cluster 2}}, les codes travail présents sont 94/93/94 : ils correspondent aux sujets chômeurs. De plus la modalité la pus représentée dans ce Cluster est Adm12 = N5NNNN : sujes chômeurs depuis plus de 6 mois.\\
+Dans le \textbf{\textcolor{red}{Cluster 2}}, les codes travail présents sont 94/93/94 : ils correspondent aux sujets chômeurs. De plus la modalité la plus représentée dans ce Cluster est Adm12 = N5NNNN : sujets chômeurs depuis plus de 6 mois.\\
 Toutes les autres modalités de Adm12 présentent dans le Cluster concernent également des chômeurs.
-Concernant la variable Adm11, les modalités présentes sont 1,2,3,4 c'est à dire les sujets ne travaillant plus depuis au moins? moins d'un an.\\
+Concernant la variable Adm11, les modalités présentes sont 1,2,3,4 c'est à dire les sujets ne travaillant plus depuis moins d'un an ou plus.\\
 On remarque aussi que certains sujets en formation professionnelle (Adm12a = JNNN) sont inclus dans le Cluster.\\
 
 \bigskip
@@ -664,16 +706,15 @@ Adm10=75     &100.00 & 0.79 &0.27  &1.60 e-13 &  7.38\\
 
 \noindent
 Enfin pour le \textbf{\textcolor{blue}{Cluster 4}} on s'attends à trouver des sujets retraités. En effet, la modalité la plus significativement représentée est Adm12a = NN8N : sujets retraités. \\
-Les codes travail intervenant (Adm10 sont 77/74/78/75 : uniquement des codes de la forme "Ancien \textit{profession}".
-En outre on ne trouve dans ce cluster aucun individu déclarant travailler (Adm11 = 0 ou Adm12 = 6NNNNN).\\
+Les codes travail intervenant (variable Adm10) sont 77/74/78/75 : uniquement des codes de la forme "Ancien \textit{nom de la profession}".
+En outre on ne trouve, dans ce Cluster, aucun individu déclarant travailler (Adm11 = 0 ou Adm12 = 6NNNNN).\\
 
 \noindent
-On peut alors conclure que  \textbf{le Cluster 1 correspond aux travailleurs}, \textbf{\textcolor{red}{le Cluster 2 aux chômeurs}}, \textbf{\textcolor{green}{le Cluster 3 aux inactifs}} et \textbf{\textcolor{blue}{le Cluster 4 aux retraités}}.\\
-On remarque que l'emplacement des Clusters dans le plan factoriel (cf graphe) correspond à l'emplacement des variables dans ce même plan et que nous avons commenté plus haut.
+On peut alors conclure que  \textbf{le Cluster 1 correspond aux travailleurs}, \textbf{\textcolor{red}{le Cluster 2 aux chômeurs}}, \textbf{\textcolor{green}{le Cluster 3 aux inactifs}} et \textbf{\textcolor{blue}{le Cluster 4 aux retraités}}.
 
 \subsubsection{Comparaisons des deux codages}
 \noindent
-Étudions las différences entre la classification manuelle et la Classification Ascendante Hiérarchique.\\
+Étudions les différences entre la classification manuelle et la Classification Ascendante Hiérarchique.\\
 Tout d'abord on classe comme NA tous les sujets qui avaient une valeurs manquante pour au moins une des quatre variables ayant servies à la classification (n = 29).\\
 On a alors : \\
 
@@ -696,10 +737,10 @@ Différence & 206 & -201 &  41 & -146& 113& -13
 
 \noindent
 Il y a 509 sujets pour lesquels les deux classifications ne correspondent pas. Sur un total de 10157 cela représente 5,01 \% des sujets.\\
-On remarque que la classification Ascendante Hiérarchique a tendance à classer plus facilement les sujets en Retraités et en Inactifs et la classification manuelle en Travailleurs. Une raison simple à cette différence est sans doute la volonté d'être le plus restrictifs possible quant à la classification manuelle des retraités.
+On remarque que la classification Ascendante Hiérarchique a tendance à classer plus facilement les sujets en Retraités et en Inactifs et la classification manuelle en Travailleurs. Une raison simple à cette différence est sans doute la volonté d'être le plus restrictifs possible quant à la classification manuelle des retraités.\\
 
 \noindent
-Le nombre de valeurs manquantes n'est pas le même pour les deux classifications pour une raison simple: les 16 NA de la classification manuelle sont des sujets pour lesquels TOUTES les variables nécessaires à la classification (Adm12a, Adm11, Adm12 et Am10) étaient manquantes alors que j'ai dû, pour activproCAH, classer en NA les sujets pour lesquels AU MOINS UNE des 4 variables étaient manquantes afin de pouvoir réaliser l'ACM.
+Le nombre de valeurs manquantes n'est pas le même pour les deux classifications pour une raison simple: les 16 NA de la classification manuelle sont des sujets pour lesquels TOUTES les variables nécessaires à la classification (Adm12a, Adm11, Adm12 et Am10) étaient manquantes alors que j'ai dû, pour la CAH, classer en NA les sujets pour lesquels AU MOINS UNE des 4 variables étaient manquantes afin de pouvoir réaliser l'ACM.\\
 
 \noindent
 Il peut également être intéressant d'étudier la manière dont les sujets classés NSP (n = 113) par la classification manuelle ont été classés par la CAH :\\
@@ -719,6 +760,8 @@ R & I & C & T & Total\\
 \noindent
 Sur quels critères la CAH s'est-elle basée pour classer ces 113 sujets ? 
 Pour le comprendre on s'intéresse aux trois modalités dans lesquels elle a répartis les NSP (I,R,T) en construisant des Tableaux de Burt.\\
+
+\noindent
 Par souci de lisibilité j'ai choisis de n'inclure dans les tableaux de Burt que les modalités contenant un nombre de sujets non nul.\\
 Les cases en rouge correspondent simplement aux tableaux de contingences usuels (croisement des variables deux à deux).\\
 Le tableaux est évidement "symétrique", j'ai choisi de n'en remplir que la partie inférieure.\\
@@ -805,11 +848,14 @@ NNNNNN & 0 & 76 & 76 &0 &\textcolor{red}{$\emptyset$} & \textcolor{red}{76} & & 
 \bigskip
 
 \noindent
-\textbf{1:} 1 sujet déclare être au foyer et à la retraite (Adm12a = "N98N), ne plus tavailler depuis au moins 3 ans(Adm11 = 4) et a un code travail correspondant à un inactif non retraité (Adm10 + 85/86). Le classer en Inactifs a donc du sens. \\
+1 sujet déclare être au foyer et à la retraite (Adm12a = "N98N), ne plus tavailler depuis au moins 3 ans (Adm11 = 4) et a un code travail correspondant à un inactif non retraité (Adm10 + 85/86). Le classer en Inactifs a donc du sens. \\
+
 \noindent
-\textbf{2:}  2 sujets déclarent être au foyer (Adm12a = N9NN), travailler (Adm11 = 0) et ont un code travail correspondant à un retraité (Adm10 = 77 : Ancien employé). Toutes les variables sont contradictoires. Classer ces sujets en Inactifs n'est pas pertinent.\\
+2 sujets déclarent être au foyer (Adm12a = N9NN), travailler (Adm11 = 0) et ont un code travail correspondant à un retraité (Adm10 = 77 : Ancien employé). Toutes les variables sont contradictoires. Classer ces sujets en Inactifs n'est pas pertinent.\\
+
 \noindent
-\textbf{3:} 74 sujets présentent les même caractéristiques que ceux expliqués précédemment à l'exception de la variable Adm10 qui indique que les sujets sont inactifs non retraités. De même, les classer en inactifs n'est pas pertinent.\\
+74 sujets présentent les même caractéristiques que ceux expliqués précédemment à l'exception de la variable Adm10 qui indique que les sujets sont inactifs non retraités. De même, les classer en inactifs n'est pas pertinent.\\
+
 \noindent
 De manière générale on remarque que déclarer être "au foyer" est très discriminant pour la classification en tant qu'inactifs surtout si cette modalité est couplée avec un code travail 85 ou 86.\\
 
@@ -907,9 +953,13 @@ NNNNNN & 1 & 1 & 3 & 2 & 3 & \textcolor{red}{5} & & \\
 \bigskip
 
 \noindent
-\textbf{1}: 1 déclare être à la retraite et au foyer (N98N) avec un code de travail correspondant bien à un retraité (77). Cependant il déclare également travailler (0). La CAH le classe en retraité malgré tout mais ce choix n'est pas judicieux.\\
-\textbf{2}: 3 sujets se déclarent à la retraite (NN8N), ne travaillant plus (Adm11 = 3) et ont un code travail qui correspond à des travailleurs (Adm10 = 32/36). Leur classification en Retraité n'est pas aberrante. Il est possible que ces sujets n'aient pas lu la liste des codes travail jusqu'à la fin (la où ceux concernant les retraités se trouvent) e qui expliquerait qu'ils aient indiqué par ce code qu'ils travaillent (32/36).\\
-\textbf{3}: 1 sujet déclare être retraité et pré retraité (NN87), travailler (Adm11 = 0) et a un code travaille de 77. Il y a une certaine forme de cohérence à l'ensemble des choix de ce sujet mais on ne peux pas le classer en tant que Retraité à cause de Adm11 = 0. 
+1 déclare être à la retraite et au foyer (N98N) avec un code de travail correspondant bien à un retraité (77). Cependant il déclare également travailler (0). La CAH le classe en retraité malgré tout mais ce choix n'est pas judicieux.\\
+
+\noindent
+3 sujets se déclarent à la retraite (NN8N), ne travaillant plus (Adm11 = 3) et ont un code travail qui correspond à des travailleurs (Adm10 = 32/36). Leur classification en Retraité n'est pas aberrante. Il est possible que ces sujets n'aient pas lu la liste des codes travail jusqu'à la fin (la où ceux concernant les retraités se trouvent) ce qui expliquerait qu'ils aient indiqué par ce code qu'ils travaillent (32/36).\\
+
+\noindent
+1 sujet déclare être retraité et pré-retraité (NN87), travailler (Adm11 = 0) et a un code travaille de 77. Il y a une certaine forme de cohérence à l'ensemble des choix de ce sujet mais on ne peux pas le classer en tant que Retraité à cause de Adm11 = 0. 
 
 
 \begin{center}TRAVAILLEURS\end{center}
@@ -1018,20 +1068,25 @@ NNNNNN & 1 & 30 & 12 & 1  & 1 & 171 & \textcolor{red}{31} & &  &\\
 \bigskip
 
 \noindent
-\textbf{1}: 1 sujet se déclare pré retraité (NNN7), travaille (Adl11 = 0) et a un code travail correspondant à quelqu'un ayant encore une activité professionnelle. On peut accepter la classification en travailleur de ce sujet par la CAH.\\
-\textbf{2}: 11 sujets ne cochent aucune case pour Adm12a (soit ils ont oublié cette question soit aucun des choix ne les satisfont ce qui correspondrait à des personnes qui travaillent puisque ce choix n'est pas proposé dans Adm12a).En outre ils déclarent travailler (Adm11 = 0),mais leur code travail est incohérent :85/86 correspond à des inactifs.\\
-\textbf{3}: 1 sujet travaille et a un code travail qui vaut 88. Ce code n'est pas présent dans la liste, il s'agit probablement d'une faute de frappe.\\
-\textbf{4}: Enfin, 18 sujets déclarent ne plus travailler (Adm11 = 1/3/4)mais ont un code travail indiquant qu'ils ont encore une activité professionnelle. Ces sujets ne peuvent pas être classés comme des travailleurs.\\
+1 sujet se déclare pré-retraité (NNN7), travaille (Adl11 = 0) et a un code travail correspondant à quelqu'un ayant encore une activité professionnelle. On peut accepter la classification en travailleur de ce sujet par la CAH.\\
 
-\newpage
+\noindent
+11 sujets ne cochent aucune case pour Adm12a (soit ils ont oublié cette question soit aucun des choix ne les satisfont ce qui correspondrait à des personnes qui travaillent puisque ce choix n'est pas proposé dans Adm12a).En outre ils déclarent travailler (Adm11 = 0) mais leur code travail est incohérent: 85/86 correspond à des inactifs.\\
+
+\noindent
+1 sujet travaille et a un code travail qui vaut 88. Ce code n'est pas présent dans la liste, il s'agit probablement d'une faute de frappe.\\
+
+\noindent
+Enfin, 18 sujets déclarent ne plus travailler (Adm11 = 1/3/4)mais ont un code travail indiquant qu'ils ont encore une activité professionnelle. Ces sujets ne peuvent pas être classés comme des travailleurs.\\
+
 \noindent
 A présent que les deux classifications sont établies et clairement expliquées, il y a lieu de se demander si utiliser l'une ou l'autre dans un futur modèle changera les résultats.\\
-Autrement dit construisons un test permettant de vérifier si les deux distributions de la variable activpro sont similaires.\\
+Autrement dit construisons un test permettant de vérifier si les deux distributions de la variable activité professionnelle sont similaires.\\
 
 \noindent
 \textbf{Test du Khi deux d'ajustement}\\
-Il s'agit de vérifier si les écarts d'effectifs entre activpro et activproCAH sont "trop" importants pour chacune des classes.\\
-Étant donné que la CAH classe TOUS les individus, la classe NSP de activproCAH est vide.
+Il s'agit de vérifier si les écarts d'effectifs entre le codage manuel et la CAH sont "trop" importants pour chacune des classes.\\
+Étant donné que la CAH classe TOUS les individus, la classe NSP de la CAH est vide.
 Or le test du $\chi^2$ d'ajustement n'est applicable que si toutes les classes contiennent au moins 5 sujets.\\
 Puisque nous nous intéressons particulièrement aux Travailleurs, Retraités et Chômeurs, on rassemble les inactifs, les NSP et les NA dans une classe "AUTRE".\\
 \noindent
@@ -1062,30 +1117,29 @@ On a : $\forall i \in \ldbrack 1,k \rdbrack , A_i = n \phi_{hi}$\\
 
 \noindent
 Hypothéses :
-\begin{equation}
-\begin{split}
+\begin{align*}
 H_0 : \forall i \in \ldbrack 1,k \rdbrack ,\phi_i = \phi_{hi}\\
 H_1 : \exists i \in \ldbrack 1,k \rdbrack tq \phi_i \neq \phi_{hi}
-\end{split}
-\end{equation}
+\end{align*}
 
 \noindent
 Statistique de test:
-\begin{equation}
-Q = \sum_{i=1}^k ~{{(O_i - A _i)^2} \over {A_i}}
-\end{equation}
+\begin{center}
+$Q = \sum_{i=1}^k ~{{(O_i - A _i)^2} \over {A_i}}$
+\end{center}
 
 \noindent
-D'aprés le Théorème de pearson : 
-\begin{equation}
-\begin{split}
+D'après le Théorème de Pearson : 
+
+\begin{align*}
 Si ~\forall i  \in \ldbrack 1,k \rdbrack, ~ A_i \geq 5 :\\
 Q \underset {\small{H_0}}{\hookrightarrow} \chi ^{2} (k-1) , ~ n \rightarrow +\infty
-\end{split}
-\end{equation}
+\end{align*}
+
 
 \noindent
-Application numérique: \\
+\textbf{Application numérique:} \\
+\noindent
  $Q_{obs} = 69.52$ 
 Au niveau de confiance 95 \% le $\chi ^2$ à 3 degrés de liberté vaux 12.84.\\
 On rejette donc $H_0$.
@@ -1095,7 +1149,7 @@ On ne peut pas conclure que les deux variables ont une distribution similaire. C
 \subsection{Variable d'intérêt : Self Rated Health (SRH)}
 \noindent
 La santé perçue est décrite dans la littérature comme un bon indicateur de la mortalité. Il s'agit d'une mesure subjective puisque le sujet s'auto-évalue : il est son propre témoin.\\
-Dans le questionnaire d'inclusion il est demandé au sujets d'indiquer par une note comprise entre 0 et 10 leur état de santé tel qu'il le ressente: 0 pour mauvais et 10 pour excellent.\\
+Dans le questionnaire d'inclusion il est demandé aux sujets d'indiquer par une note comprise entre 0 et 10 leur état de santé tel qu'il le ressente: 0 pour mauvais et 10 pour excellent.\\
 \noindent
 Globalement les sujets de la cohorte EPP3 s'estiment en bonne santé avec une médiane à 7.\\ En choisissant ce cut off on crée une variable binaire de santé perçue:
 
@@ -1137,20 +1191,20 @@ On teste $H_0 : X \perp Y $ contre $H_1 = \overline{H_0}$\\
 
 \noindent
 Statistique de test : 
-\begin{equation}
+\begin{align*}
 Q = {\sum _{i = 1} ^l \sum_{j = 1} ^c {{(n_{ij} - {{n_{i.}.n_{.j}}\over{n}})^2}} \over {{n_{i.}.n_{.j}}\over{n}}}
-\end{equation}
+\end{align*}
 
 \noindent
 On a : \\
-\begin{equation}
+\begin{align*}
 Q \underset {\small{H_0}}{\large{\sim}} \chi ^{2} ((l-1)(c-1))
-\end{equation}
+\end{align*}
 \noindent
 On pose :\\
-\begin{equation}
+\begin{align*}
 e_{ij} = { {n_{i.}.n_ {.j} } \over {n} }
-\end{equation}
+\end{align*}
 C'est l'effectif théorique sous $H_0$ c'est à dire le nombre de sujets présentant les modalités i et j (resp. des v.a X et Y) auxquelles on s'attend sous $H_0$.\\
 
 \noindent
@@ -1218,7 +1272,7 @@ On considère qu'un sujet est déprimé si son score de dépression est supérie
 \smallskip
 
 \noindent
-J'ai également choisi d'ajouter quelques autres variables qui m'ont semblé pertinentes: maladie cardiovasculaire, cancer et indice de précarité de vie. \\%ainsi que trois variables permettant de rendre compte des conditions de travail des sujets : la pénibilité due au lieu de travail, celle liée aux horaires de travail et enfin les nuisances chimiques ou sonores auxquelles les sujets peuvent être exposés pendant leurs heures de travail.\\
+J'ai également choisi d'ajouter quelques autres variables qui m'ont semblé pertinentes: maladie indice de précarité (EPICE) de vie et score de stress (PSS4) qui sont deux indicateurs trés utilisés en épidémiologie et que de nombreuses études ont jugés consistants \cite{warttig_new_2013} \cite{sass_comparaison_2006}.
 
 \bigskip
 \noindent
@@ -1251,7 +1305,36 @@ coeff = -7,10
 Lorsque la réponse à une des questions est oui on ajoute le coefficient correspondant au score constant qui vaut 75.14.\\
 On considère un seuil de 30.17 au delà duquel le sujet est considéré comme vulnérable tout âge confondus. Ce seuil n'a évidement de sens que si les 13 questions sont renseignées.\\
 
-\newpage
+\bigskip
+\noindent
+Le score de stress PSS 4 (Perceived Stress Scale) quant à lui est un score à quatre items :\begin{itemize}
+\item Vous a-t-il semblé difficile de contrôler les choses importantes de votre vie? 
+\item Vous êtes-vous senti(e) confiant(e) en vos capacités à prendre en main vos problèmes personnels?
+\item Avez-vous senti que les choses allaient comme vous le vouliez?
+\item Avez-vous trouvé que les difficultés s'accumulaient à tel point que vous ne pouviez les contrôler? 
+\end{itemize}
+
+pour les questions 1 et 4 les coefficients de chaque réponse sont:
+\begin{enumerate}
+\setcounter{enumi}{-1}
+\item Jamais
+\item Presque jamais
+\item Parfois
+\item Assez souvent
+\item Souvent
+\end{enumerate}
+
+Pour les question 2 et 3:
+\begin{enumerate}
+\setcounter{enumi}{-1}
+\item Souvent
+\item Assez souvent
+\item Parfois
+\item Presque jamais
+\item Jamais
+\end{enumerate}
+
+Le score est obtenu en sommant les items et est donc compris entre 0 et 16 (0 pour bon niveau de stress et 16 pour très mauvais).\\
 
 \noindent
 Voici une description visuelle de la cohorte EPP3 en fonction des variables préalablement citées:\\
@@ -1290,7 +1373,7 @@ Cependant une part non négligeable des sujets est hypertendue mais très peu d'
 \bigskip
 \item Variables Santé Psychique
 \begin{center}
-\includegraphics[scale=.45]{tab_var_sante_psy.png}
+\includegraphics[scale=.4]{tab_var_sante_psy.png}
 \end{center}
 Enfin, on observe que très peu d'individus sont dépressifs mais que plus de 20 $\%$ sont en situation de précarité.
 \end{enumerate}
@@ -1339,6 +1422,7 @@ Nb Na & \% NA & Variables\\
 134 & 1.32 & Maladies Cardiovasculaires\\
 119 & 1.17 & Cancer\\
 108 & 1.06 & Niveau d'Education\\
+86 & 0.85 & Score de Stresse Perçu (PSS4)\\
 79 & 0.78 & Hypertension Arterielle\\
 
 46 & 0.45 & Depression\\
@@ -1358,9 +1442,8 @@ Nb Na & \% NA & Variables\\
 \end{tabular}
 \end{center}
 
-Le nombre de données manquantes par variable de dépasse jamais les 20 $\%$, j'ai donc décider d'exclure les individus ayant au oins une des variables ci-dessus non renseignée.\\
-On a dés lors une population de n =  individus.
-Faire test de comparaison des populations avec tt le monde et population sans les exlus
+\noindent
+Le nombre de données manquantes par variable de dépasse jamais les 20 $\%$, j'ai donc décider d'exclure les individus ayant au moins une des variables ci-dessus non renseignée.\\
 
 \newpage
 \section{Statistiques}
@@ -1372,15 +1455,111 @@ Faire test de comparaison des populations avec tt le monde et population sans le
 
 
 \subsection{Analyses univariées}
+
 \noindent
-Afin d'avoir une première idée des variables significativement liées à la santé perçue on effectue une régression logistique entre la santé perçue binarisée des sujets (on coupe à la médiane: si la santé perçue est > à 7 on la considère comme bonne) et chacune des variables explicatives.
-J'ai choisis de catégoriser les 3 variables continues (IMC, âge et score épice de précarité afin de rendre l'interprétation des résultats plus évidente).
-Ainsi l'âge a été découpé en quartiles. Pour l'indice de masse corporelle, après discussion avec des médecins j'ai fixé à 25 le seuil de normalité et à 30 le seuil de sur poids. Au delà de 30 on parle d'obésité.\\
-Enfin, le score de précarité a un seul officiel, comme expliqué plus haut les sujets ayant un score supérieur à 30.17 sont considéré en situation de précarité.\\
+Afin d'avoir une première idée des variables significativement liées à la santé perçue on effectue une régression logistique entre la santé perçue binarisée des sujets (on coupe à la médiane: si la santé perçue est > à 7 on la considère comme bonne) et chacune des variables explicatives.\\
 
 \bigskip
 \noindent
-Ici insérer equations du modèle logit avec rappel sur méthode de calcul de l'estimateur, quels tests sont effectués, interprétation OR ...
+J'ai choisi de catégoriser les 3 variables continues (IMC, âge et score épice de précarité afin de rendre l'interprétation des résultats plus évidente).\\
+Ainsi l'âge a été découpé en quartiles.\\
+Pour l'indice de masse corporelle, après discussion avec des médecins j'ai fixé à 25 le seuil de normalité et à 30 le seuil de sur poids. Au delà de 30 on parle d'obésité.\\
+Enfin, le score de précarité a un seul officiel, comme expliqué plus haut les sujets ayant un score supérieur à 30.17 sont considéré en situation de précarité.\\
+
+\newpage
+
+\noindent
+\textbf{La régression logistique:}
+
+\noindent
+On cherche à modéliser la probabilité qu'une variable prenne une certaine valeur en fonction de variables explicatives.\\
+
+\noindent
+La spécificité de la régression logistique est le caractère dichotomique de la variables à expliquer. Cela permet de modéliser l'appartenance à une classe de la variable à expliquer par une loi de Bernouilli.\\
+
+
+\noindent
+Soit $Y$ la variables à expliquer et  $X_1, X_2,...X_p$ les $p$ variables explicatives.\\
+On note $Y_i$ l'observation de la variable $Y$ pour l'individu $i$, $i \in  \ldbrack 0,n \rdbrack $(où $n$ est le nombre total d'individus) et $X_i = {(X_{i1}, X_{i2}, ..., X_{ip})}^t$ le vecteur des variables explicatives pour le sujet.\\
+On note $\beta = {(\beta_0, \beta_1, \beta_2, ..., \beta_p)}^t$, le vecteur de dimension $p+1$ des paramètres du modèle.\\
+
+\noindent
+Le modèle logistique ne fait qu'une seule hypothèse à priori: \\
+\begin{align*}
+Y_i ~ iid \sim \mathfrak{B} (\pi(X_i))
+\end{align*}
+Où :
+\begin{align*}
+\pi(X_i) =& ~ \mathbb{E}(Y_i|X_i) \\
+=& ~ \mathbb{P}(Y_i = 1|X_i) \\
+=& ~ {e^{(\beta_0 + \sum_{k=1}^p {\beta_k X_{ik}})}} \over {1+{e^{(\beta_0 + \sum_{k=1}^p {\beta_k X_{ik}})}}}\\
+=& ~ sigmoïde({e^{(\beta_0 + \sum_{k=1}^p {\beta_k X_{ik}})}})
+\end{align*}
+Ainsi on peut écrire:
+\begin{align*}
+Logit(\pi(X_i)) = & \log(\pi(X_i)) \over {1- \pi(X_i)} \\
+=& \beta_0 + \sum_{k=1}^p {\beta_k X_{ik}}
+\end{align*}
+
+\noindent
+$\forall k \in \ldbrack 1,p \rdbrack, e^{\beta_k}$ est l'odd ratio de la variable $k$.\\
+\bigskip
+
+\noindent
+L'estimation du vecteur de régression se fait par la méthode du maximum de vraisemblance:
+\begin{align*}
+\mathfrak{L}(\beta) =& ~ \prod_{i=1}^n \left[
+{\left(  {{e^{(\beta_0 + \sum_{k=1}^p {\beta_k X_{ik}})}} \over {1+{e^{(\beta_0 + \sum_{k=1}^p {\beta_k X_{ik}})}}}  } \right)}^{Y_i} {\left( 1 \over {1+ {e^{(\beta_0 + \sum_{k=1}^p {\beta_k X_{ik}})}}}   \right)}^{(1-Y_i)} \right]
+\end{align*}
+Ainsi: 
+\begin{align*}
+\log \left( \mathfrak{L}(\beta) \right)  = 
+\sum_{k=1}^n {\left[ Y_i \left( \beta_0 + \sum_{k=1}^p {\beta_k X_{ik}}  \right) 
+- \log \left( 1 + e^{\beta_0 +  \sum_{k=1}^p {\beta_k X_{ik}}  } \right)
+\right]} \\
+\end{align*}
+Et donc $ \forall k \in \ldbrack 0,p \rdbrack :  $:
+\begin{align*}
+{{\partial  \log \left( \mathfrak{L}(\beta) \right)} \over {\partial \beta_k} }= 
+\sum_{i=1}^n {X_{ik} \left( Y_i - {{e^{X_i^t \beta}} \over {1+ e^{X_i^t \beta}}} \right)}
+\end{align*}
+Avec $X_{i0} = 1 $ et $ X_i^t \beta = \sum_{k = 1}^p {\beta_k X_{ik}} $
+
+\noindent
+L'équation $ {{\partial  \log \left( \mathfrak{L}(\beta) \right)} \over {\partial \beta} } = 0  $, qui permet d'obtenir $\hat{\beta}$, est résolue grâce à des algorithmes itératifs.\\
+
+
+\noindent
+On a de plus $\forall k \in \ldbrack 0,p \rdbrack$ :
+\begin{align*}
+\hat{\beta_k} \underset{n \rightarrow \infty}{\sim} \mathcal{N} \left( \beta_k,\widehat{\mathbb{V}} \left(  \hat{\beta_j}\right) \right)
+\end{align*}
+
+\noindent
+Ainsi au niveau de confiance $-\alpha$ on a :
+\begin{align*}
+IC \left( \beta_k \right) =
+ \left[
+  \hat{\beta_k} \pm |z_{{\alpha} \over {2}}| \sqrt{\widehat{\mathbb{V}}\left( \hat{\beta_k} \right)}
+\right]\\
+\end{align*}
+
+\noindent
+Où $ z_{ {\alpha} \over {2}} $ est t.q $ \mathbb{P}\left( Z <  z_{ {\alpha} \over {2}} \right) = {{\alpha} \over {2}}$ pour $ Z \sim \mathcal{N}(0,1) $
+
+\noindent
+On a alors les intervalles de confiance des odd ration pour chacune des variables:\\
+\begin{align*}
+IC \left( e^{\beta_k} \right)  =& ~ IC \left( OR_k \right) \\
+= & ~ e^{\left[ \hat{\beta_k} \pm |z_{{\alpha} \over {2}}| \sqrt{\widehat{\mathbb{V}}\left( \hat{\beta_k} \right)} \right]} \\
+= & ~
+ \left[
+e^{\hat{\beta_k} - |z_{{\alpha} \over {2}}| \sqrt{\widehat{\mathbb{V}}\left( \hat{\beta_k} \right)}} 
+~;~ 
+e^{\hat{\beta_k} + |z_{{\alpha} \over {2}}| \sqrt{\widehat{\mathbb{V}}\left( \hat{\beta_k} \right)}} 
+\right]
+\end{align*}
+
 
 \newpage
 
@@ -1467,13 +1646,15 @@ $\qquad$3+ & 528 (14.9\%)  & 734 (15.1\%)  & 1.08 [0.95;1.22] &  0.248 \\
 Cancer: &              &              &                  &        \\ 
 $\qquad$Non & 3997 (91.9\%) & 5364 (94.5\%) &       Ref.       &  Ref.  \\ 
 $\qquad$Oui & 354 (8.14\%)  & 315 (5.55\%)  & 0.66 [0.57;0.78] & $<$0.001 \\ 
-Scors EPICE de précarité: &              &              &                  &        \\ 
+Score EPICE de précarité: &              &              &                  &        \\ 
 $\qquad$Situation non précaire & 2827 (69.5\%) & 4230 (79.5\%) &       Ref.       &  Ref.  \\ 
 $\qquad$Situation précaire & 1240 (30.5\%) & 1094 (20.5\%) & 0.59 [0.54;0.65] &  0.000 \\ 
 Dépression: &              &              &                  &        \\ 
 $\qquad$Non & 3533 (80.7\%) & 5344 (93.4\%) &       Ref.       &  Ref.  \\ 
 $\qquad$Oui & 847 (19.3\%)  & 377 (6.59\%)  & 0.29 [0.26;0.33] &  0.000 \\ 
- 
+Score de stresse perçu (PSS4)
+
+ $\qquad$ & .  & .  &0.82 [0.81;  0.84] &  < 2.2e-16 \\ 
     \hline
     \end{longtable} 
 
@@ -1542,12 +1723,8 @@ NA & 3\\
 \subsubsection{Régression logistique}
 
 \noindent
-A présent que les analyses univariées sont faites, construisons un modèle explicatif. On sélectionne les variables pour lesquelles un lien significatif avec la santé perçue a été établi en univarié à savoir toutes sauf les variables pontage et tentative de suicide.\\
-
-\bigskip
-\noindent
-J'ai choisi de construire plusieurs modèle selon un groupement de variable qui faisait sens.\\
-
+On prend en compte dans le modèle l'ensemble des variables décrites dans l'analyse univariée puisque cette dernière montre qu'elles sont toutes significatives.\\
+Nous avions précédemment établi que l'âge était un facteur de confusion évidet pour le lien entre la santé perçue et l'activité professionnelle: la comparaison des deux modèles suivants le montre assez clairement:
 
 \begin{longtable}{lccc|ccc}\caption{Mod}\\
     \hline  
@@ -1592,33 +1769,26 @@ $\qquad$ $\left[63.7 ; 86.2 \right]$&&&&1.13&$\left[0.97 ; 1.31 \right]$&0.11\\
     \hline
     \end{longtable} 
 
+Lorsque l'on n'ajuste pas le modèle sur l'âge, on montre que les retraités ont une meilleurs santé perçue que les travailleurs: augmentation de 15 $\%$ avec une p-valeur de 0.002. Dés lors que l'on ajuste sur l'âge cette information est masquée par l'augmentation de 18 $\%$ de la santé perçue des sujets dont l'âge est compris entre 59 et 64 ans: tranche d'âge de près d'un tiers des retraités (97 $\%$ ont plus de 59 ans).
 
-\noindent
-Le premier modèle ne prend en compte que le sexe comme variable d'ajustement. L'activité professionnelle est toujours significativement liée à la santé perçue : en effet, toute chose égale par ailleurs les chômeurs ont une santé perçue de 20 $\%$ moins bonne tandis que les retraités ont une santé perçue augmentée de prés de 15 $\%$.\\
-On observe également que le lien sexe - santé perçue est maintenu même en ajoutant la variable d'activité professionnelle: il semblerait que les femmes s'estiment en moins bonne santé que les homme (de 40 $\%$).\\
+Les variables considérées par l'étude peuvent être divisée en 3 catégories: celles qui traitent du style de vie des sujets (indice de masse corporelle, statut tabagique, diabète, pratique sportive, hypertension, consommation d'alcool), les variables "socio-administratives" (sexe, statut familiale, âge, niveau d'éducation, catégorie socio-professionnel, activité professionnelle) et celle traitant de la santé psychique des sujets (dépression, stresse).
 
-\bigskip
-\newpage
-\noindent
-Nous avions précédemment établi que l'âge était un facteur de confusion évident pour le lien entre la santé perçue et l'activité professionnelle. Le modèle 2 nous aide à nous en rendre compte.\\
-On observe en effet que si le lien entre la Santé Perçue et le Sexe reste significatif, l'âge semble masquer celui entre la srh et de l'Activité Professionnelle puisque la classe d'âge $\left[59 ; 63\right]$ devient significative (augmentation de 20 $\%$) : précisément la classe d'âge où l'âge de la retraite est susceptible de se trouver. D'ailleurs on constate que plus de 40 $\%$ des sujets de cette classe sont retraités.\\
-
-\bigskip
-
-\noindent
-Le troisième modèle considère toutes les variables traitant du style de vie des sujets.\\
-
-\begin{longtable}{lccc}\caption{Modèle 3}\\
+J'ai fait une selection de variables dans chacun des trois blocs en me basant sur le critère AIC en incluant dans chaque modele l'activité professionelle qui est notre variable d'exposition, l'âge et le sexe. Chacun des trois modèles élimine l'âge et conserve toutes les autres variables.\\
+On inclue ces dernières dans le modèle final:
+  
+    \begin{longtable}{lccc}\caption{Summary descriptives table by groups of `srhBin'}\\
     \hline  
-		& \multirow{2}{*}{OR} & \multirow{2}{*}{IC}& \multirow{2}{*}{p}\\ 
-		 &    				    &    			    &                  \\ 
-   \hline
+     &                \multirow{2}{*}{OR}    & \multirow{2}{*}{IC} & \multirow{2}{*}{p}\\ 
+ &     &                        &         \\ 
+  
+    \hline
     \hline     
     \endfirsthead 
     \multicolumn{4}{l}{\tablename\ \thetable{} \textit{-- continued from previous page}}\\ 
     \hline
-		& \multirow{2}{*}{OR} & \multirow{2}{*}{IC}& \multirow{2}{*}{p}\\ 
-		&    				    &    			    &                  \\ 
+    &                     \multirow{2}{*}{OR}    & \multirow{2}{*}{IC} & \multirow{2}{*}{p}\\ 
+ &     &                     &         \\ 
+
     \hline
     \hline  
     \endhead   
@@ -1626,356 +1796,72 @@ Le troisième modèle considère toutes les variables traitant du style de vie d
     \multicolumn{4}{l}{\textit{continued on next page}} \\ 
     \endfoot   
     \multicolumn{4}{l}{}  \\ 
-    \endlastfoot  
-Intercept & 1.53 & $\left[1.34 ; 1.75 \right]$ & 3.99e-10\\
-Activité Professionnelle: &              &              &	\\ 
-$\qquad$Travailleurs 		&		Ref.		& 	Ref.		&	Ref.\\ 
-$\qquad$Retraités&1.06 &$\left[0.92 ; 1.22 \right]$ & 0.41\\ 
-$\qquad$Chômeurs & 0.84& $\left[0.71 ; 0.99\right]$& 0.034\\ 
-$\qquad$Inactifs  & 0.92& $\left[0.68 ; 1.24\right]$& 0.57\\ 
-$\qquad$Ne Sais Pas & 0.69& $\left[0.44 ; 1.10\right]$ & 0.12 \\ 
-Sexe: &              &              &                          \\ 
-$\qquad$Hommes &Ref. & Ref.& Ref.\\ 
-$\qquad$Femmes & 0.60& $\left[0.55 ; 0.7 \right]$ & <2.2 e-16\\
-Âge: &&&\\
-$\qquad$ <54.5 &Ref.&Ref.&Ref.\\
-$\qquad$ $\left[54.5 ; 59.1 \right]$ &1.01& $\left[0.89 ; 1.15 \right]$& 0.85\\
-$\qquad$ $\left[59.1 ; 63.7\right]$ &1.14&$\left[0.99 ; 1.31 \right]$& 0.077\\
-$\qquad$ $\left[63.7 ; 86.2 \right]$&1.10&$\left[0.93 ; 1.31 \right]$&0.27\\
-Alcool (Nombre de verres quotidiens)&&&\\
-$\qquad$ 0 &Ref.&Ref.&Ref.\\
-$\qquad$1-2 &	1.13	& $\left[1.01 ; 1.27 \right]$	&	0.03\\
-$\qquad$3-5&		1.04& $\left[0.90 ; 1.21 \right]$	&	0.59\\
-$\qquad$5-10&	0.88& $\left[0.65 ; 1.19 \right]$	&	0.39\\
-$\qquad$>10&		0.54& $\left[0.27 ; 1.08 \right]$	&	0.09\\
-Tabac&&&\\
-$\qquad$Non fumeur& Ref.& Ref.&Ref.\\
-$\qquad$Ancien fumeur&1.08&$\left[0.98 ; 1.20 \right]$ &0.14\\
-$\qquad$Arrêt en cours& 0.52 & $\left[0.33 ; 0.80 \right]$&0.004\\
-$\qquad$Fumeur&0.83 & $\left[0.73 ; 0.95 \right]$& 0.007\\
-Diabète&&&\\
-$\qquad$Non &Ref.&Ref.&Ref.\\
-$\qquad$Oui & 0.68 & $\left[0.54 ; 0.86 \right]$ & 0.001\\
-Hypertension Artérielle&&&\\
-$\qquad$Non &Ref.&Ref.&Ref.\\
-$\qquad$Oui&0.75& $\left[0.68 ; 0.83 \right]$&9.8e-09\\
-Indice de Masse Corporelle &&&\\
-$\qquad$Normal&Ref.&Ref.&Ref.\\
-$\qquad$Surpoids&0.81&$\left[0.72 ; 0.89 \right]$ &2.10e-05\\
-$\qquad$Obésité&0.60&$\left[0.51 ; 0.70 \right]$&4.57e-10\\
+    \endlastfoot
+
+Intercepte : &2.90 & [2.42;3.47] &< 2.2e-16 \\    
+Activité professionnelle:  &         &              &                         \\ 
+$\qquad$Travailleurs & Ref.& Ref. & Ref.             \\ 
+$\qquad$Retraités &1.20&[1.08;1.35] &0.001\\
+$\qquad$Chômeurs   & 1.03& [0.42;2.61]& 0.95\\ 
+$\qquad$Inactifs &0.99& [0.56;1.75] &0.99\\
+$\qquad$NSP  &0.73&[0.39;1.34] &0.309\\ 
+
+Sexe&&&\\
+$\qquad$Hommes & Ref.& Ref. & Ref.             \\
+$\qquad$Femmes &0.82 &[0.73;0.91] &0.0004\\
+ 
+Catégorie socio-professionnelle&&&\\
+$\qquad$Intermédiaire&&&\\
+$\qquad$Basse &0.85& [0.52;1.42] &0.54\\ 
+$\qquad$Elevée &0.87& [0.68;1.11] &0.25\\ 
+$\qquad$Inactifs   &0.83& [0.73;0.93] &0.002\\
+$\qquad$Sans Emplois &0.89 &[0.35;2.23] &0.81\\
+
+ 
+Éducation&&&\\
+$\qquad$CAP/Brevet des collèges &Ref.&Ref.&Ref.\\
+$\qquad$Analphabète &1.45& [0.55;3.81] & 0.44 \\   
+$\qquad$Bac+2       &1.04 & [0.88;1.24] & 0.66   \\  
+$\qquad$Baccalauréat   &0.99& [0.86;1.16] & 0.98   \\        
+$\qquad$Licence/Maitrise/+   &1.11 & [0.97;1.27] & 0.12 \\   
+$\qquad$Sans diplôme   &0.77 & [0.60;0.97] & 0.03\\
+
+         
+Situation Familiale
+$\qquad$Couple&Ref.&Ref.&Ref.\\
+$\qquad$Famille&1.01& [0.76;1.35]& 0.95\\    
+$\qquad$Seul&0.94 & [0.84;1.05]& 0.26   \\
+
 Activité Sportive&&&\\
-$\qquad$&Ref.&Ref.&Ref.\\\\
-$\qquad$1-2 fois par semaine&1.56& $\left[1.42 ; 1.72 \right]$& 2.2e-16\\
-$\qquad$ $\geq$ 3 fois par semaine& 2.38& $\left[2.01 ; 2.82 \right]$ & 2.2e-16\\
-    \hline
-    \end{longtable} 
+$\qquad$Jamais & Ref.&Ref.&Ref.\\
+$\qquad$1-2 fois par semaine&1.47& [1.32;1.62]& 1.03e-13\\
+$\qquad$ $\geq$3 fois par semaine &2.38 &[1.99;2.84] &< 2.2e-16\\
+                  
 
-\noindent
-Sans surprise, on observe que les variables d'ajustement usuellement citées par la littérature sont significatif à savoir: être diabétique, avoir de l'hypertension, fumer et ne pas pratiquer régulièrement de sport rends les sujets plus susceptibles de se décrire en mauvaise santé.\\
-Nous retrouvons dans ce modèle l'étonnant résultat de l'augmentation de la santé perçue chez les sujets buvant 1 à 2 verres d'alcool par jour par rapport à ceux qui n'en boivent pas. Plus étonnant encore la classe "boire plus de 10 verres par jour" est aussi significative. Il est hautement probable que les sujets ayant remplis un nombre quotidien de verre d'alcool supérieur à 10 se soient trompés ou aient mal compris la question. \\
-\newpage
-\noindent
-On observe également que le troisième modèle a un critère d'Akaike bien plus bas que les modèles 1 et 2:\\
-\begin{itemize}
-\item Modèle 1: AIC =  13 741.48
-\item Modèle 2: AIC =  13 738.94
-\item Modèle 3: AIC =  10 831.67
-\end{itemize}
-\noindent
-Il semble donc que l'ajout des variables proposés par la littérature permet bien de mieux expliquer la santé perçue.\\
+Indice de Masse Corporelle
+$\qquad$Normal &Ref.&Ref.&Ref.\\
+$\qquad$Sur-poids &0.80 &[0.72;0.89]& 3.07e-05\\ 
+$\qquad$Obésité&0.59& [0.49;0.70]& 1.03e-09\\ 
 
-\bigskip
-\noindent
-Le quatrième modèle ne prends que très peu de variables en compte. Il se veut représentatif de la santé psychologique des sujets qui sont alors décrits par: leur Activité Professionnelle, leur sexe, leur classe d'age et une variable binaire de dépression qui comme expliqué plus haut combine plusieurs sources d'information: la déclaration des sujets (c'est à dire leur réponse à la question avez vous été diagnostiqué comme dépressif), le score de dépression dont le calcul a été expliqué ne détail dans une précédente partie, et la prise ou non d'antidépresseurs.\\
+Hypertension Artérielle&&&\\
+$\qquad$Non& Ref.&Ref.&Ref.\\
+$\qquad$Oui &0.77 &[0.69;0.85]& 2.217e-07\\ 
 
-\begin{longtable}{lccc}\caption{Modèle 4}\\
-    \hline  
-		& \multirow{2}{*}{OR} & \multirow{2}{*}{IC}& \multirow{2}{*}{p}\\ 
-		 &    				    &    			    &                  \\ 
-   \hline
-    \hline     
-    \endfirsthead 
-    \multicolumn{4}{l}{\tablename\ \thetable{} \textit{-- continued from previous page}}\\ 
-    \hline
-		& \multirow{2}{*}{OR} & \multirow{2}{*}{IC}& \multirow{2}{*}{p}\\ 
-		&    				    &    			    &                  \\ 
-    \hline
-    \hline  
-    \endhead   
-    \hline
-    \multicolumn{4}{l}{\textit{continued on next page}} \\ 
-    \endfoot   
-    \multicolumn{4}{l}{}  \\ 
-    \endlastfoot  
-Intercept & 1.57 & $\left[1.44 ; 1.71 \right]$ & <2.2 e-16\\
-Activité Professionnelle: &              &              &	\\ 
-$\qquad$Travailleurs 		&		Ref.		& 	Ref.		&	Ref.\\ 
-$\qquad$Retraités&1.09 &$\left[0.96 ; 1.24 \right]$ & 0.18\\ 
-$\qquad$Chômeurs & 0.86& $\left[0.74 ; 0.99\right]$& 0.04\\ 
-$\qquad$Inactifs  & 0.86& $\left[0.66 ; 1.11\right]$& 0.25\\ 
-$\qquad$Ne Sais Pas & 0.68& $\left[0.46 ; 1.01\right]$ & 0.0 \\ 
-Sexe: &              &              &                          \\ 
-$\qquad$Hommes &Ref. & Ref.& Ref.\\ 
-$\qquad$Femmes & 0.73& $\left[0.67 ; 0.80 \right]$ & <7.04 e-13\\
-Âge: &&&\\
-$\qquad$ <54.5 &Ref.&Ref.&Ref.\\
-$\qquad$ $\left[54.5 ; 59.1 \right]$ &1.04& $\left[0.93 ; 1.16 \right]$& 0.51\\
-$\qquad$ $\left[59.1 ; 63.7\right]$ &1.17&$\left[1.03 ; 1.33 \right]$& 0.02\\
-$\qquad$ $\left[63.7 ; 86.2 \right]$&1.09&$\left[0.94 ; 1.27 \right]$&0.25\\
+Statut Tabagique
+$\qquad$Non fumeurs &Ref.&Ref.&Ref.\\
+$\qquad$Ancien Fumeur &1.09& [0.98;1.21]& 0.12\\    
+$\qquad$Arrêt en cours &0.56 &[0.35;0.88]& 0.01\\ 
+$\qquad$Fumeurs actuels &0.92& [0.80;1.06]& 0.24\\
+
 Dépression&&&\\
 $\qquad$Non&Ref.&Ref.&Ref.\\
-$\qquad$Oui&0.32& $\left[0.28 ; 0.36 \right]$ &<2.2 e-16\\
-    \hline
-    \end{longtable} 
-
-\noindent
-On constate, par la petitesse de la p-valeur, qu'être en état de dépression diminue de prés de 70 $\%$ la façon dont on perçoit notre santé, toutes choses égales par ailleurs.\\
-\noindent
-Nous effectueront dans la section suivante une analyse en sous groupe chez les individus dépressifs et non dépressifs.
-
-
-
-Le modèle 5 quant à lui ne prends en compte que les variables renseignant le niveau social des sujets: quel est leur niveau d'éducation, leur catégorie socio-professionnelle, sont ils en couple, seul, en famille, pratiquent ils une activité sportive régulière,... ?\\
-
-\begin{longtable}{lccc}\caption{Modèle 5}\\
-    \hline  
-		& \multirow{2}{*}{OR} & \multirow{2}{*}{IC}& \multirow{2}{*}{p}\\ 
-		 &    				    &    			    &                  \\ 
-   \hline
-    \hline     
-    \endfirsthead 
-    \multicolumn{4}{l}{\tablename\ \thetable{} \textit{-- continued from previous page}}\\ 
-    \hline
-		& \multirow{2}{*}{OR} & \multirow{2}{*}{IC}& \multirow{2}{*}{p}\\ 
-		&    				    &    			    &                  \\ 
-    \hline
-    \hline  
-    \endhead   
-    \hline
-    \multicolumn{4}{l}{\textit{continued on next page}} \\ 
-    \endfoot   
-    \multicolumn{4}{l}{}  \\ 
-    \endlastfoot  
-Intercept & 0.96 & $\left[0.84 ; 1.09 \right]$ & 0.56\\
-Activité Professionnelle: &              &              &	\\ 
-$\qquad$Travailleurs 		&		Ref.		& 	Ref.		&	Ref.\\ 
-$\qquad$Retraités&1.09 &$\left[0.95 ; 1.24 \right]$ & 0.22\\ 
-$\qquad$Chômeurs & 0.48& $\left[0.71 ; 3.22\right]$& 0.31\\ 
-$\qquad$Inactifs  & 0.84& $\left[0.52 ; 1.35\right]$& 0.47\\ 
-$\qquad$Ne Sais Pas & 0.63& $\left[0.37 ; 1.04\right]$ & 0.07 \\ 
-Sexe: &              &              &                          \\ 
-$\qquad$Hommes &Ref. & Ref.& Ref.\\ 
-$\qquad$Femmes & 0.71& $\left[0.65 ; 0.78 \right]$ & <5.31 e-13\\
-Âge: &&&\\
-$\qquad$ <54.5 &Ref.&Ref.&Ref.\\
-$\qquad$ $\left[54.5 ; 59.1 \right]$ &1.05& $\left[0.94 ; 1.18 \right]$& 0.40\\
-$\qquad$ $\left[59.1 ; 63.7\right]$ &1.15&$\left[1.01 ; 1.31 \right]$& 0.03\\
-$\qquad$ $\left[63.7 ; 86.2 \right]$&1.12&$\left[0.96 ; 1.30 \right]$&0.17\\
-Catégorie Socio-Professionnelle&&&\\
-$\qquad$ Intermédiaire & Ref. & Ref. & Ref.\\
-$\qquad$ Basse & 0.99 & $\left[0.79 ; 1.24 \right]$ &0.91\\
-$\qquad$ Élevée & 1.25 & $\left[1.11 ; 1.41 \right]$ &0.00\\
-$\qquad$ Inactifs &0.99 &   $\left[0.66 ; 1.51 \right]$ & 0.99\\
-$\qquad$ Sans Emplois &0.63 &  $\left[0.29 ; 1.331 \right]$&0.24 \\ 
-Alcool (Nombre de verres quotidiens)&&&\\
-$\qquad$ 0 &Ref.&Ref.&Ref.\\
-$\qquad$1-2 &	1.13	& $\left[1.01 ; 1.27 \right]$	&	0.03\\
-$\qquad$3-5&		1.04& $\left[0.90 ; 1.21 \right]$	&	0.59\\
-$\qquad$5-10&	0.88& $\left[0.65 ; 1.19 \right]$	&	0.39\\
-$\qquad$>10&		0.54& $\left[0.27 ; 1.08 \right]$	&	0.09\\
-Éducation&&&\\
-$\qquad$ CAP/ Brevet des Collèges &Ref.&Ref.&Ref.\\
-$\qquad$Analphabète&0.97&$\left[0.55 ; 1.73 \right]$&0.93\\
-$\qquad$Sans diplômes&0.73& $\left[0.60 ; 0.88 \right]$&0.001\\
-$\qquad$Baccalauréat&1.01&$\left[0.89 ; 1.15 \right]$&0.86\\
-$\qquad$Bac +2&1.13&$\left[0.98 ; 1.32 \right]$&0.09\\
-$\qquad$Licence/Maîtrise/+&1.18& $\left[1.0 ; 1.32 \right]$ &0.006\\
-Entourage&&&\\
-$\qquad$Couple&Ref.&Ref.&Ref.\\
-$\qquad$Famille &1.01&$\left[0.80 ; 1.29 \right]$&0.89\\
-$\qquad$Seul&0.82& $\left[0.74 ; 0.89 \right]$&3.21e-05\\
-Activité Sportive&&&\\
-$\qquad$&Ref.&Ref.&Ref.\\\\
-$\qquad$1-2 fois par semaine&1.60& $\left[1.46 ; 1.74 \right]$& 2.2e-16\\
-$\qquad$ $\geq$ 3 fois par semaine& 2.56& $\left[2.20 ; 2.99 \right]$ & 2.2e-16\\
-    \hline
-    \end{longtable} 
-
-
-\noindent
-Tout d'abord en terme de performance du modèle l'AIC est meilleurs que celui de tous les modèles (AIC = 13 087.79) vus jusqu'à présent sauf le modèle 3 qui comportait les variables "médicales".\\
-Les OR confirment les tendances observées lors des analyses univariées a savoir: être seul abime la perception de notre santé alors qu'avoir des diplôme l'augmente.\\
-
-\bigskip
-\noindent
-Les deux derniers modèles incluent toutes les variables utilisés dans les modèles de 1 à 5 sauf l'âge pour le modéle 7.\\
-\begin{longtable}{lccc}\caption{Modèle 6, AIC  = 10 440.47}\\
-    \hline  
-		& \multirow{2}{*}{OR} & \multirow{2}{*}{IC}& \multirow{2}{*}{p}\\ 
-		 &    				    &    			    &                  \\ 
-   \hline
-    \hline     
-    \endfirsthead 
-    \multicolumn{4}{l}{\tablename\ \thetable{} \textit{-- continued from previous page}}\\ 
-    \hline
-		& \multirow{2}{*}{OR} & \multirow{2}{*}{IC}& \multirow{2}{*}{p}\\ 
-		&    				    &    			    &                  \\ 
-    \hline
-    \hline  
-    \endhead   
-    \hline
-    \multicolumn{4}{l}{\textit{continued on next page}} \\ 
-    \endfoot   
-    \multicolumn{4}{l}{}  \\ 
-    \endlastfoot  
-Intercept & 1.37 & $\left[1.15 ; 1.63 \right]$ & 0.000\\
-Activité Professionnelle: &              &              &	\\ 
-$\qquad$Travailleurs 		&		Ref.		& 	Ref.		&	Ref.\\ 
-$\qquad$Retraités&1.18 &$\left[1.02 ; 1.38 \right]$ & 0.025\\ 
-$\qquad$Chômeurs & 1.25& $\left[0.54 ; 3.05\right]$& 0.61\\ 
-$\qquad$Inactifs  & 0.91& $\left[0.52 ; 0.58\right]$& 0.73\\ 
-$\qquad$Ne Sais Pas & 0.71& $\left[0.39 ; 1.30\right]$ & 0.27 \\ 
-Sexe: &              &              &                          \\ 
-$\qquad$Hommes &Ref. & Ref.& Ref.\\ 
-$\qquad$Femmes & 0.76& $\left[0.68 ; 0.85 \right]$ & <9.55 e-07\\
-Âge: &&&\\
-$\qquad$ <54.5 &Ref.&Ref.&Ref.\\
-$\qquad$ $\left[54.5 ; 59.1 \right]$ &1.01& $\left[0.89 ; 1.16 \right]$& 0.83\\
-$\qquad$ $\left[59.1 ; 63.7\right]$ &1.09&$\left[0.94 ; 1.27 \right]$& 0.23\\
-$\qquad$ $\left[63.7 ; 86.2 \right]$&1.04&$\left[0.87 ; 1.24 \right]$&0.67\\
-Alcool&&&\\
-$\qquad$0 & Ref. & Ref. & Ref.\\
-$\qquad$1-21.10 & $\left[0.ç_ ; 1.24 \right]$ & 0.098\\
-$\qquad$3-5 & 1.04 & $\left[0.89 ; 1.20 \right]$ & 0.64\\
-$\qquad$5-10 & 0.98 & $\left[0.72 ; 1.35 \right]$ &0.92\\
-$\qquad$>10 & 0.98 & $\left[0.72 ; 1.35 \right]$ & 0.92\\
-Tabac&&&\\\
-$\qquad$Non fumeur& Ref.& Ref.&Ref.\\
-$\qquad$Ancien fumeur&1.11&$\left[0.99 ; 1.23 \right]$ &0.06\\
-$\qquad$Arrêt en cours& 0.56 & $\left[0.36 ; 0.88 \right]$&0.012\\
-$\qquad$Fumeur&0.91 & $\left[0.79 ; 1.04 \right]$& 0.17\\
-Diabète&&&\\
-$\qquad$Non &Ref.&Ref.&Ref.\\
-$\qquad$Oui & 0.71 & $\left[0.56 ; 0.89 \right]$ & 0.005\\
-Hypertension Artérielle&&&\\
-$\qquad$Non &Ref.&Ref.&Ref.\\
-$\qquad$Oui&0.77& $\left[0.69 ; 0.85 \right]$&2.88e-07\\
-Indice de Masse Corporelle &&&\\
-$\qquad$Normal&Ref.&Ref.&Ref.\\
-$\qquad$Surpoids&0.82&$\left[0.74 ; 0.91 \right]$ &0.000\\
-$\qquad$Obésité&0.61&$\left[0.52 ; 0.73 \right]$&1.089e-08\\
-Activité Sportive&&&\\
-$\qquad$&Ref.&Ref.&Ref.\\\\
-$\qquad$1-2 fois par semaine&1.46& $\left[1.33 ; 1.62 \right]$& 3.560e-14\\
-$\qquad$ $\geq$ 3 fois par semaine&2.39& $\left[2.01 ; 2.85 \right]$ & <2.2e-16\\
-Dépression&&&\\
-$\qquad$Non & Ref. & Ref. & Ref.\\
-$\qquad$Oui & 0.71 & $\left[0.55 ; 0.89\right]$ & 0.005\\
-Catégorie Socio-Professionnelle&&&\\
-$\qquad$ Intermédiaire & Ref. & Ref. & Ref.\\
-$\qquad$ Basse & 0.99 & $\left[0.79 ; 1.24 \right]$ &0.91\\
-$\qquad$ Élevée & 1.25 & $\left[1.11 ; 1.41 \right]$ &0.00\\
-$\qquad$ Inactifs &1.12 &   $\left[0.69 ; 1.831 \right]$ & 0.64\\
-$\qquad$ Sans Emplois &0.82 &  $\left[0.33 ; 1.951 \right]$&0.66 \\ 
-Éducation&&&\\
-$\qquad$ CAP/ Brevet des Collèges &Ref.&Ref.&Ref.\\
-$\qquad$Analphabète&1.33&$\left[0.50 ; 3.49 \right]$&0.56\\
-$\qquad$Sans diplômes&0.70& $\left[0.55 ; 0.88 \right]$&0.003\\
-$\qquad$Baccalauréat&1.01&$\left[0.88 ; 1.17 \right]$&0.88\\
-$\qquad$Bac +2&1.06&$\left[0.89 ; 1.25 \right]$&0.53\\
-$\qquad$Licence/Maîtrise/+ & 1.12 & $\left[0.99 ; 1.28 \right]$ &0.08\\
-Entourage &&&\\
-$\qquad$Couple&Ref.&Ref.&Ref.\\
-$\qquad$Famille &0.96&$\left[0.73 ; 1.26 \right]$&0.75\\
-$\qquad$Seul&0.87& $\left[0.78 ; 0.98 \right]$& 0.02\\
-    \hline
-    \end{longtable} 
-
-\begin{longtable}{lccc}\caption{Modèle 7, AIC  = 10 437.2}\\
-    \hline  
-		& \multirow{2}{*}{OR} & \multirow{2}{*}{IC}& \multirow{2}{*}{p}\\ 
-		 &    				    &    			    &                  \\ 
-   \hline
-    \hline     
-    \endfirsthead 
-    \multicolumn{4}{l}{\tablename\ \thetable{} \textit{-- continued from previous page}}\\ 
-    \hline
-		& \multirow{2}{*}{OR} & \multirow{2}{*}{IC}& \multirow{2}{*}{p}\\ 
-		&    				    &    			    &                  \\ 
-    \hline
-    \hline  
-    \endhead   
-    \hline
-    \multicolumn{4}{l}{\textit{continued on next page}} \\ 
-    \endfoot   
-    \multicolumn{4}{l}{}  \\ 
-    \endlastfoot  
-Intercept & 1.40 & $\left[1.19 ; 1.64 \right]$ & 5.88e-05\\
-Activité Professionnelle: &              &              &	\\ 
-$\qquad$Travailleurs 		&		Ref.		& 	Ref.		&	Ref.\\ 
-$\qquad$Retraités&1.22 &$\left[1.09 ; 1.36 \right]$ & 0.000\\ 
-$\qquad$Chômeurs & 1.27& $\left[0.54 ; 3.09\right]$& 0.58\\ 
-$\qquad$Inactifs  & 0.93& $\left[0.53 ; 1.60\right]$& 0.79\\ 
-$\qquad$Ne Sais Pas & 0.73& $\left[0.39 ; 1.32\right]$ & 0.29 \\ 
-Sexe: &              &              &                          \\ 
-$\qquad$Hommes &Ref. & Ref.& Ref.\\ 
-$\qquad$Femmes & 0.76& $\left[0.68 ; 0.85 \right]$ & <1.26 e-06\\
-Alcool&&&\\
-$\qquad$0 & Ref. & Ref. & Ref.\\
-$\qquad$1-2 &1.11 & $\left[0.99 ; 1.24 \right]$ & 0.08\\
-$\qquad$3-5 & 1.04 & $\left[0.89 ; 1.21 \right]$ & 0.61\\
-$\qquad$5-10 & 0.99 & $\left[0.72 ; 1.35 \right]$ &0.93\\
-$\qquad$>10 & 0.98 & $\left[0.72 ; 1.35 \right]$ & 0.92\\
-Tabac&&&\\\
-$\qquad$Non fumeur& Ref.& Ref.&Ref.\\
-$\qquad$Ancien fumeur&1.11&$\left[0.99 ; 1.23 \right]$ &0.06\\
-$\qquad$Arrêt en cours& 0.56 & $\left[0.36 ; 0.88 \right]$&0.011\\
-$\qquad$Fumeur&0.90 & $\left[0.79 ; 1.04 \right]$& 0.14\\
-Diabète&&&\\
-$\qquad$Non &Ref.&Ref.&Ref.\\
-$\qquad$Oui & 0.71 & $\left[0.56 ; 0.90 \right]$ & 0.005\\
-Hypertension Artérielle&&&\\
-$\qquad$Non &Ref.&Ref.&Ref.\\
-$\qquad$Oui&0.77& $\left[0.69 ; 0.85 \right]$&3.13e-07\\
-Indice de Masse Corporelle &&&\\
-$\qquad$Normal&Ref.&Ref.&Ref.\\
-$\qquad$Surpoids&0.83&$\left[0.75 ; 0.91 \right]$ &0.000\\
-$\qquad$Obésité&0.61&$\left[0.52 ; 0.73 \right]$&1.12e-08\\
-Activité Sportive&&&\\
-$\qquad$&Ref.&Ref.&Ref.\\\\
-$\qquad$1-2 fois par semaine&1.46& $\left[1.33 ; 1.61 \right]$& 3.74e-14\\
-$\qquad$ $\geq$ 3 fois par semaine&2.39& $\left[2.01 ; 2.85 \right]$ & <2.2e-16\\
-Dépression&&&\\
-$\qquad$Non & Ref. & Ref. & Ref.\\
-$\qquad$Oui & 0.34 & $\left[0.30 ; 0.40\right]$ & <2.2e-16\\
-Catégorie Socio-Professionnelle&&&\\
-$\qquad$ Intermédiaire & Ref. & Ref. & Ref.\\
-$\qquad$ Basse & 0.98 & $\left[0.78 ; 1.24 \right]$ &0.89\\
-$\qquad$ Élevée & 1.25 & $\left[1.11 ; 1.41 \right]$ &0.00\\
-$\qquad$ Inactifs &1.11 &   $\left[0.69 ; 1.831 \right]$ & 0.66\\
-$\qquad$ Sans Emplois &0.82 &  $\left[0.33 ; 1.93 \right]$&0.65 \\ 
-Éducation&&&\\
-$\qquad$ CAP/ Brevet des Collèges &Ref.&Ref.&Ref.\\
-$\qquad$Analphabète&1.33&$\left[0.51 ; 3.51 \right]$&0.56\\
-$\qquad$Sans diplômes&0.70& $\left[0.56 ; 0.89 \right]$&0.003\\
-$\qquad$Baccalauréat&1.01&$\left[0.88 ; 1.17 \right]$&0.88\\
-$\qquad$Bac +2&1.06&$\left[0.89 ; 1.25 \right]$&0.51\\
-$\qquad$Licence/Maîtrise/+ & 1.13 & $\left[0.99 ; 1.29 \right]$ &0.08\\
-Entourage &&&\\
-$\qquad$Couple&Ref.&Ref.&Ref.\\
-$\qquad$Famille &0.95&$\left[0.72 ; 1.26 \right]$&0.71\\
-$\qquad$Seul&0.87& $\left[0.78 ; 0.98 \right]$& 0.02\\
-    \hline
-    \end{longtable} 
-
-\noindent
-On remarque que retirer l'age du modèle fait légèrement baisser l'AIC, cependant nous garderons cette variable dans le modèle car il s'agit d'une variable abondamment documentée et décrite comme indispensable dans la littérature.\\
-Toutes les liaisons significatives sont retrouvées dans ces deux modèles.\\
-Le modèle 6 est donc le modèle final, nous en feront le diagnostique dans la partie suivante.\\
-
+$\qquad$Oui & 0.47 &[0.39;0.55]& < 2.2e-16\\
+Stresse &0.86& [0.85;0.88]& < 2.2e-16\\ 
+\hline
+\end{longtable}
 
 \subsubsection{Sélection et diagnostique du modèle}
-Dans le modele final: on enleve les individus avec verre d'alcool sup à 10 on enleve le gars qui a 86 ans on ajoute une interraction entre csp et activpro car csp est basée sur adm10 (ou alors on fait une reggression ridge)
+Dans le modèle final: on enlève les individus avec verre d'alcool sup à 10 on enleve le gars qui a 86 ans on ajoute une interraction entre csp et activpro car csp est basée sur adm10 (ou alors on fait une reggression ridge)
 les variables obligatoires: activpro evidement, sexe, age, alcool, tabac, diabete, hta; bmi, sporteducation, entourage, csp avec interraction. On ne met pas cancer ni cvd ni depression ni score préarité pour faire les analyses en sous groupe.
 Ensuite on regarde effet levier outliers... avec distances de cook.\\
 
@@ -1988,9 +1874,8 @@ on applique le modele precedent en comprant a caque fois deux populations : cell
 \subsubsection{Âge}
 
 \newpage
-\section{Perspectives}
+\section{Perspectives : Ce que j'ai fait, découvert, appris}
 
-\subsection{Le monde professionnel}
 Comme expliqué plus haut, j'ai effectué mon stage dans l'unité INSERM 970 qui est spécialisée dans les maladies cardiovasculaires.\\
 J'y ait passé cinq mois: du 01/04/2019 au 31/08/2019, durant lesquels j'ai beaucoup appris dans des domaines très variés.\\
 Tout d'abord j'ai découvert le monde de la recherche, qui m'a beaucoup plu. C'était un monde entièrement neuf pour moi et la longue durée de mon stage a été un atout non négligeable dans son succès: en effet j'ai eu le temps de m'adapter à l'environnement, aux us et coutumes, au jargon, à l'équipe.\\
@@ -2003,56 +1888,29 @@ J'ai également participé au recueil de certaines données en appelant les hôp
 J'ai également eu l'occasion de participer au reviewing d'un article (pas officiellement juste pour la pédagogie). J'ai ainsi pu apprendre toutes les étapes de la rédaction d'un article: le travail de recherche, la mise en forme des idée puis la recherche d'une revue susceptible de publier l'article, l'étape de relecture par des pairs et la prise en compte de leurs remarques...\\
 
 Au delà du monde de la recherche, j'ai dû apprendre à m'intégrer dans un groupe où il y avait une grande pluralité des parcours (médecins, statisticiens, attachés de recherches cliniques, ingénieurs...). Cela supposait de se rendre intelligible par tous, et parfois de verser dans une forme de vulgarisation de certains concepts statistiques ce qui m'a beaucoup enrichie\footnote{Voir les chaînes Youtube StatQuest et science4all (notamment la série de vidéo sur la formule de Bayes) qui ne se contentent pas d'expliquer vaguement quelques concepts très connu mais qui vont au fond des choses tout en les rendant accessibles au "grand publique"}.\\
+J'ai également beaucoup profité du savoir des médecins qui m'entouraient notamment sur le fonctionnement de la santé en France ainsi que sur certaines notions médicales élémentaires. Ainsi j'ai pu percevoir la différence entre une "jolie" analyse statistique et une analyse qui avait un sens/intérêt clinique.\\ 
 
 Au niveau des statistiques, plutôt que de me lancer dans de techniques "avancées", mon directeur de stage et moi avons décider de nous concentrer sur les bases comme la visualisation de données et la régression logistique. J'ai pris l'initiative de tenter des méthodes exploratoires comme l'ACM ou la CAH.\\
-Régulièrement l'équipe se réunissait pour des réunions de méthodologie durant lesquelles j'ai ou me familiariser avec d'autres notions dont j'espère étudier le versant mathématiques en M2 (modèles de suivi, méta-analyse, données répétées et GEE...).\\
+Régulièrement l'équipe se réunissait pour des réunions de méthodologie durant lesquelles j'ai pu me familiariser avec d'autres notions dont j'espère étudier le versant mathématiques en M2 (modèles de suivi, méta-analyse, données répétées et GEE...).\\
 Ces réunions avaient pour support un article dont on faisant une lecture critique en tentant de comprendre d'une part les intérêts clinique de l'étude menée et d'autre part les méthodes statistiques mises en œuvre.\\
 
+Profitant du temps que j'avais, je me suis familiarisée avec de nouveaux outils qui se sont révélés trés utils: github pour le versionnage de mon code et de ce rapport, pubmed pour lire ce qui s'était déjà fait sur mon sujet et zotero pour créer ma bibliographie.
 
+Pour conclure, ce stage était une très bonne expérience, très enrichissante qui m'a donné envie de poursuivre dans la recherche en en bio-satistiques.\\
 
-
-\subsection{Plus value perso}
-raisonnement epidemio\\
-pubmed scihub\\
-github\\
-amélioration significative en R et latex \\
-travail d'équipe, collaboration avec médecins, statisticiens...\\
-lecture critique d'articles\\
-esprit plus aiguisé sur la pertinence des choses à faire: ok ce graphe est beau mais donne t il de l'information ?\\
-ggplot2 trop cool mais un peu compliqué à utiliser\\
-Appris l'existence de R shiny: super cool \\
-ait écrit une super fonction pour graphe pour un article !! \\
-récupération des crh: travail compliqué est peu intéressant mais m'a donné l'occasion de comprendre comment marche une étude: doc officiels, cnil, consentement patients: enrichissement de la culture gé !\\
-suis allée au archives\\
-appris l'existence du métier d'arc\\
-recherche en biostat = trop coooollll veut faire ça !!!\\
-Ici décrire perspective d'avenir dans le domaine.\\
-
-\subsection{Les données : théorie vs pratique}
-Traitement des NA très important\\
-il faut apprendre à les gérer\\
-construire des cours théorique dessus!!!\\
-apprendre à la fac à travailler sur des données moins propres\\
-faire le tour des méthodes d'imputation les plus connues\\
-
-\newpage
 \begin{center}
 \section*{Conclusion}
 Conclusion on verra à la fin:
 
 Reste à faire: 
-Intro\\
-Sous partie sur la définition du sujet\\
-Peut-être un peu plus d'histoire sur U970, demander quelques anecdotes "historiques" à Jean Philippe.\\
-Rédiger toute la partie 2, les trois quart sont fait dans le doc word, à compléter.\\
+
 Il faut aussi mettre la méthode maths de l'ACM\\
 Dans la partie sur la CAH: ajouter les equations maths de distance chi2 et critère de ward.\\
 Appliquer consolidation par k means et adapter la rédaction qui suit (la ou on décrit le résultats sur le classf qui vont forcement changer puisqu'on ajoute une autre méthode de classif)\\
 Décrire la méthode des k means. Préciser qu'on perd la hiérarchisation mais que cela permet de rendre la CAH plus stable. Expliquer que utiliser le k means en premier n'était pas une bonne idée car il fallait déterminer x0 et que je n'avais aucune idée de comment faire un choix pertinent. (en plus k means très sensible à l'initialisation: pas cool)\\
-Ajouter dans la description des variables d'ajustement que j'avais l'intention de créer une variable de pénibilité au travail mais qu'il y avait trop de données manquantes pour aller au bout. (peut-être en analyse en sous groupes ?)\\
-Dans la partie gestion des données manquantes, si j'ai le temps, tenter de faire de l'imputation en analyse de sensibilité. De toute façon il faut faire un compareGroups sur la ppo totale et pop-exclus.\\S
-Il faut également, dans la partie statistique inclure un récap sur ce qu'est la régression logistique au niveau maths et aussi le régression ridge)\\
-Il faut aussi rédiger la conclusion et l'intro : en dernier car si plan change légèrement, galère à remanier.\\
+
+Il faut faire un compareGroups sur la ppo totale et pop-exclus.\\S
+Il faut également, dans la partie statistique inclure un récap sur ce qu'est la régression logistique 
 Dernières choses: mettre ne annexe le questionnaire ipc et la feuille d'évaluatoion de Jean Philippe.\\
 Ne pas oublier de rediger la bibliographie.\\
 \end{center}
@@ -2060,4 +1918,7 @@ Ne pas oublier de rediger la bibliographie.\\
 \backmatter
 \section{Annexes}
 \section{Bibliographie}
+
+\bibliographystyle{plain}
+\bibliography{bib_stage}
 \end{document}
