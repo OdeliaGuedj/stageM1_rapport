@@ -236,7 +236,7 @@ Ces dernier ont été recrutés dans des centres IPC (centres d'examens de sant�
 Pour entrer dans l'étude, les sujets doivent avoir entre 50 et 75 ans.\\
 \\
 Les données sont récoltées via des questionnaires envoyés tous les deux ans qui, à l'exception du questionnaire d'inclusion sont élaborés à l'INSERM U970 équipe 4. \\
-Le questionnaire d'inclusion\footnote{Annexe 1} provient de l'IPC. Il contient une partie socio-admnistrative, des questions sur l'environnement professionnel des sujets ainsi que sur leurs habitudes de vie (alimentation, tabac, alcool). 
+Le questionnaire d'inclusion\footnote{Annexe 2} provient de l'IPC. Il contient une partie socio-admnistrative, des questions sur l'environnement professionnel des sujets ainsi que sur leurs habitudes de vie (alimentation, tabac, alcool). 
 Une autre partie du questionnaire traite des antécédents médicaux des sujets, tant familiaux que personnels, de leur état de santé actuel et de leurs prescriptions médicamenteuses.
 La dernière partie traite du bien-être des sujets: on y trouve des questions sur leur stress perçu, leur équilibre mental ainsi que leur nutrition.\\
 \\
@@ -420,7 +420,7 @@ La réponse à cette question est du texte libre. Après la récupération des q
 \end{small}
 
 \noindent
-L'encodage de la variable Adm10 introduit une première source potentielle d'erreur du fait de la difficulté d'interpréter du texte libre d'une part et des possibles erreurs de "classification humaine" d'autre part. Il faut également noter qu'un des sujets a un code travail de 88 et que ce code ne correspond à aucune des professions de la liste IPC\footnote{Annexe 2}.\\
+L'encodage de la variable Adm10 introduit une première source potentielle d'erreur du fait de la difficulté d'interpréter du texte libre d'une part et des possibles erreurs de "classification humaine" d'autre part. Il faut également noter qu'un des sujets a un code travail de 88 et que ce code ne correspond à aucune des professions de la liste IPC\footnote{Annexe 3}.\\
 
 \noindent
 Une autre difficulté est due à la possibilité qu'ont les sujet de cocher plusieurs réponses par question. Il en résulte un grand nombre de classes dans chaque variable ce qui a compliqué le codage de la variable activité professionnelle.
@@ -436,7 +436,7 @@ J'ai donc créer une variable catégorielle qui comporte 5 classes:
 \item T pour travailleur
 \item C pour chômeur
 \item I pour inactif
-\item NSP pour ne sait pas (cas "inclassables")
+\item NSP pour ne sais pas (cas "inclassables")
 \end{itemize}
 
 \noindent
@@ -1565,7 +1565,7 @@ e^{\hat{\beta_k} + |z_{{\alpha} \over {2}}| \sqrt{\widehat{\mathbb{V}}\left( \ha
 
 \bigskip
 \noindent
-Ici la variable $Y$ est la santé perçue binarisée, les autres variables sont $p = 16 $ variables explicatives.
+Ici la variable $Y$ est la santé perçue binarisée, les autres variables sont les $p = 16 $ variables explicatives.
 
 \bigskip
 
@@ -1735,7 +1735,7 @@ NA & 3\\
 \end{center}
 
 \subsection{Analyses multivariées}
-\subsubsection{Régression logistique}
+\subsubsection{Sélection des variables}
 
 \noindent
 On prend en compte dans le modèle l'ensemble des variables décrites dans l'analyse univariée puisque cette dernière montre qu'elles sont toutes significatives.\\
@@ -1745,7 +1745,7 @@ Nous avions précédemment établi que l'âge était un facteur de confusion év
 
 \begin{longtable}{lccc|ccc}\caption{Mise en évidence de l'âge comme facteur de confusion}\\
     \hline  
-    		 & &    Modèle 1 &   &    &   Modèle 2    &\\
+    		 &  &    Modèle 1 &   &    &   Modèle 2    &\\
 		& \multirow{3}{*}{OR} & \multirow{3}{*}{IC}& \multirow{3}{*}{p} & \multirow{3}{*}{OR} & \multirow{3}{*}{IC}& \multirow{3}{*}{p}\\ 
 		 &      &     &    &   	    &  	    &\\
    \hline
@@ -1803,11 +1803,11 @@ J'ai fait une sélection de variables dans chacun des trois blocs en me basant s
 \bigskip
 
 \noindent
-On inclut ces dernières dans le modèle final:
+On inclut ces dernières dans le modèle :
 
 \newpage
 
-    \begin{longtable}{lccc}\caption{Modèle final}\\
+    \begin{longtable}{lccc}\caption{Modèle de sélection de variables}\\
     \hline  
      &                \multirow{2}{*}{OR}    & \multirow{2}{*}{IC} & \multirow{2}{*}{p}\\ 
  &     &                        &         \\ 
@@ -1829,137 +1829,287 @@ On inclut ces dernières dans le modèle final:
     \multicolumn{4}{l}{}  \\ 
     \endlastfoot
 
-Intercepte : &2.90 & [2.42;3.47] &< 2.2e-16 \\    
+Intercepte : &2.41 & [2.00;2.89] &< 2.2e-16 \\    
 Activité professionnelle:  &         &              &                         \\ 
 $\qquad$Travailleurs & Ref.& Ref. & Ref.             \\ 
-$\qquad$Retraités &1.20&[1.08;1.35] &0.001\\
-$\qquad$Chômeurs   & 1.03& [0.42;2.61]& 0.95\\ 
-$\qquad$Inactifs &0.99& [0.56;1.75] &0.99\\
-$\qquad$NSP  &0.73&[0.39;1.34] &0.309\\ 
+$\qquad$Retraités &1.21&[1.08;1.36] &0.001\\
+$\qquad$Chômeurs   & 0.95& [0.37;2.43]& 0.91\\ 
+$\qquad$Inactifs &1.03& [0.57;1.86] &0.92\\
+$\qquad$NSP  &0.74&[0.39;1.40] &0.36\\ 
 
 Sexe&&&\\
 $\qquad$Hommes & Ref.& Ref. & Ref.             \\
-$\qquad$Femmes &0.82 &[0.73;0.91] &0.0004\\
+$\qquad$Femmes &0.81 &[0.72;0.91] &0.0003\\
  
 Catégorie socio-professionnelle&&&\\
-$\qquad$Intermédiaire&&&\\
-$\qquad$Basse &0.85& [0.52;1.42] &0.54\\ 
-$\qquad$Elevée &0.87& [0.68;1.11] &0.25\\ 
-$\qquad$Inactifs   &0.83& [0.73;0.93] &0.002\\
-$\qquad$Sans Emplois &0.89 &[0.35;2.23] &0.81\\
+$\qquad$Intermédiaire& Ref.&Ref.&Ref.\\ 
+$\qquad$Elevée &1.17& [1.04;1.33] &0.01\\ 
+$\qquad$Basse &1.02& [0.80;1.31] &0.87\\
+$\qquad$Inactifs   &1.07& [0.64;1.80] &0.81\\
+$\qquad$Sans Emplois &1.18 &[0.45;3.01] &0.73\\
 
  
 Éducation&&&\\
 $\qquad$CAP/Brevet des collèges &Ref.&Ref.&Ref.\\
-$\qquad$Analphabète &1.45& [0.55;3.81] & 0.44 \\   
-$\qquad$Bac+2       &1.04 & [0.88;1.24] & 0.66   \\  
-$\qquad$Baccalauréat   &0.99& [0.86;1.16] & 0.98   \\        
-$\qquad$Licence/Maitrise/+   &1.11 & [0.97;1.27] & 0.12 \\   
-$\qquad$Sans diplôme   &0.77 & [0.60;0.97] & 0.03\\
+$\qquad$Licence/Maitrise/+   &1.12 & [0.99;1.29] & 0.097 \\   
+$\qquad$Bac+2       &1.05 & [0.88;1.25] & 0.60   \\  
+$\qquad$Baccalauréat   &0.97& [0.84;1.14] & 0.74  \\        
+$\qquad$Sans diplôme   &0.74 & [0.57;0.95] & 0.02\\
+$\qquad$Analphabète &1.60& [0.60;4.37] & 0.35 \\   
 
          
 Situation Familiale&&&\\
 $\qquad$Couple&Ref.&Ref.&Ref.\\
-$\qquad$Famille&1.01& [0.76;1.35]& 0.95\\    
-$\qquad$Seul&0.94 & [0.84;1.05]& 0.26   \\
+$\qquad$Famille&1.08& [0.81;1.46]& 0.60\\    
+$\qquad$Seul&0.93 & [0.83;1.05]& 0.23   \\
 
 Activité Sportive&&&\\
 $\qquad$Jamais & Ref.&Ref.&Ref.\\
-$\qquad$1-2 fois par semaine&1.47& [1.32;1.62]& 1.03e-13\\
-$\qquad$ $\geq$3 fois par semaine &2.38 &[1.99;2.84] &< 2.2e-16\\
+$\qquad$1-2 fois par semaine&1.45& [1.31;1.61]& 1.65e-13\\
+$\qquad$ $\geq$3 fois par semaine &2.37 &[1.97;2.86] &< 2.2e-16\\
                   
 
 Indice de Masse Corporelle&&&\\
 $\qquad$Normal &Ref.&Ref.&Ref.\\
-$\qquad$Sur-poids &0.80 &[0.72;0.89]& 3.07e-05\\ 
-$\qquad$Obésité&0.59& [0.49;0.70]& 1.03e-09\\ 
+$\qquad$Sur-poids &0.80 &[0.72;0.89]& 5.59e-05\\ 
+$\qquad$Obésité&0.61& [0.51;0.72]& 1.67e-09\\ 
 
 Hypertension Artérielle&&&\\
 $\qquad$Non& Ref.&Ref.&Ref.\\
-$\qquad$Oui &0.77 &[0.69;0.85]& 2.217e-07\\ 
+$\qquad$Oui &0.76 &[0.69;0.84]& 2.81e-07\\ 
 
 Statut Tabagique&&&\\
 $\qquad$Non fumeurs &Ref.&Ref.&Ref.\\
-$\qquad$Ancien Fumeur &1.09& [0.98;1.21]& 0.12\\    
-$\qquad$Arrêt en cours &0.56 &[0.35;0.88]& 0.01\\ 
-$\qquad$Fumeurs actuels &0.92& [0.80;1.06]& 0.24\\
+$\qquad$Ancien Fumeurs &1.10& [0.98;1.22]& 0.11\\    
+$\qquad$Arrêt en cours &0.50 &[0.31;0.79]& 0.004\\ 
+$\qquad$Fumeurs actuels &0.94& [0.81;1.08]& 0.39\\
 
 Dépression&&&\\
 $\qquad$Non&Ref.&Ref.&Ref.\\
-$\qquad$Oui & 0.47 &[0.39;0.55]& < 2.2e-16\\
-Stresse &0.86& [0.85;0.88]& < 2.2e-16\\ 
+$\qquad$Oui & 0.47 &[0.40;0.56]& < 2.2e-16\\
+Stresse &&&\\
+&0.87& [0.85;0.88]& < 2.2e-16\\ 
 \hline
 \end{longtable}
 
 \subsubsection{Diagnostique du modèle}
 
 \noindent
-Tout d'abord, vérifions le linéarité du lien entre la santé perçue binarisée est le stresse (unique covariable quantitative).\\
-\includegraphics[scale=.7]{linearite_stresse.png}
-Le Logit semble baisser lorsque le score de tresse augmente ce qui est logique puisque plus le PSS4 est élevé plus le sujet est considéré comme stressé.\\
+\textbf{Lien linéaire des variables quantitatives}\\
+\includegraphics[scale=.5]{linearite_stresse.png}\\
+Le Logit semble baisser lorsque le score de stresse augmente ce qui est logique puisque plus le PSS4 est élevé plus le sujet est considéré comme stressé.\\
+\bigskip
+
+\noindent
+\textbf{Adéquation du modèle: test des résidus de Pearson}\\
 
 \bigskip
 \noindent
-%Le modèle final établi précédemment est adéquat. en effet on a: $deviance(modèle final) \over %ddl.deviance(modèle final)} = 1.28$ qui est assez proche de 1.
-\textbf{test des résidus de Pearson}\
-$\forall i \in \ldbrack 1,n \lrbrack $ on a :
+$\forall i \in \ldbrack 1,n \rdbrack$:\\
 \begin{align*}
-e_i = {  {Y_i - \widehat{\pi(X_i)}} \over {}  }
+e_i^{\textsuperscript{o}} = {
+{Y_i - \hat{\pi}\left(X_i\right)} 
+\over 
+{\sqrt{\hat{\pi}\left(X_i\right)\left(1-\hat{\pi}\left(X_i\right)\right)}}
+}
 \end{align*}
-$H_0$: Le modèle est adéquat.\\
-$H_1$: Le modèle n'est pas adéquat.\
+
+\noindent
+$\left( H_0 \right)$: Le modèle est pertinent : $\pi\left(X_i\right) = sigmoïde\left(\beta_0 + \sum_{k=1}^p {\beta_k X_{ik}}\right)$\\
+$\left( H_1 \right)$: Le modèle n'est pas pertinent : $\pi\left(X_i\right) \neq sigmoïde\left(\beta_0 + \sum_{k=1}^p {\beta_k X_{ik}}\right)$\\
+%\underset{H_0}{\sim} \chi ^2 \left(n-\left( p+1 \right)\right)
+Statistique de test : \\
+\begin{align*}
+S^2 = \sum_{i = 1}^n {{\left(e_i^{\textsuperscript{o}}\right)}^2} 
+\underset{\tiny{H_0}}{\sim}
+\chi ^2 \left(n-\left( p+1 \right)\right)
+\\
+\end{align*}
+
+\noindent
+Application numérique:\\
+
+\noindent
+On a $S^2_{obs} = 7495.388,~ n = 7501,~ p = 11$\\
+
+\noindent
+On obtient donc $\left(n-\left(p+1\right)\right) = 7489 ~et~ pvaleur = 0.43$.\\
+
+\noindent
+Le modèle est donc adéquat aux données.\\
+
+\bigskip
+
+\noindent
+\textbf{Observations atypiques}
+
+\bigskip
+
+\noindent
+On utilise la distance de Cook et les résidus standardisés de Pearson pour detecter les observations atypiques.\\
+$\forall i \in \ldbrack 1,n \rdbrack$ les résidus standardisés de Pearson sont donnés par:\\
+\begin{align*}
+{e_i}^{\textsuperscript{*}} = { 
+{{e_i}^\textsuperscript{o}} 
+ \over
+{\sqrt{1 - \left[ W^{1 \over 2}X {\left( X^t WX \right)}^{-1} X^t W^{1 \over 2} \right]_{i,i}   }}
+        }
+\end{align*}
+
+Où $W = diag \left(
+\pi\left(X_1\right) \left(1- \pi\left(X_1\right)\right)
+,...,
+\pi\left(X_n\right) \left(1- \pi\left(X_n\right)\right)
+\right)$
+\bigskip
+
+
+
+
+\noindent 
+et les distances de Cook par:\\
+\begin{align*}
+d_i = 
+{{\left[W^{1 \over 2} X {\left(X^t WX \right) }^{-1} X^tW^{1 \over 2} \right]_{i,i}} 
+\over 
+{  \left( p+1 \right) \left( 1 - {\left[ W^{1 \over 2} X {\left(X^t WX \right) }^{-1} X^t W^{1 \over 2} \right]_{i,i}} \right)     }}
+\end{align*}
+
+%\left( p+1 \right) \left( 1 - {\left[ W^{1 \over 2} X {\left(X^t WX \right) }^{-1} X^t W^{1 \over 2} \right]_{i,i}} 
+%{\left(e_i^{textsuperscript{*}}\right)}^2
+
+
+\noindent
+On choisit ${4 \over {n - \left( p+1 \right)} }= {4 \over 8016} = 0.0004$ comme seuil pour la distance de Cook.\\
+On élimine les individus ayant une distance de Cook supérieure à ce seuil et des résidus inférieurs à |2| (57 individus).\\
+
+\includegraphics[scale=.4]{cooks_distance.png}
+
+Les résultats de l'analyse multivariée ainsi effectuée sont similaires à ceux du modèle explicité plus haut.\\
 
 \subsection{Analyse en sous-groupes}
-on applique le modele precedent en comprant a caque fois deux populations : celle qui possede un certain critere et celle qui ne le posse de pas.
-\subsubsection{Pathologies lourdes}
-\subsubsection{Score précarité}
-\subsubsection{Âge}
+
+\noindent
+Dans cette partie, nous appliquons le modèle précédent dans deux sous populations différentes.\\
+
+\bigskip
+
+\noindent
+Dans la population composée des sujets ayant déclaré avoir un cancer ou une maladie cardiovasculaire, on observe que la variable d'hypertension devient significative ($OR = 0.76)$ ce qui est logique puisque l'hypertension artérielle est un facteur de risque connu des maladies cardiovasculaires.\\
+
+\noindent
+De plus la variable dépression a un OR beaucoup plus bas : population générale 0.47 vs sous population 0.28. Résultat qui ne surprend pas puisqu'il est aisé d'imaginer que les individus souffrant d'une pathologie lourde comme le cancer et une CVD ont une moindre santé psychique.\\
+
+\noindent
+On remarque également que dans cette sous population , aucune des catégories de la variable activité professionnelle n'a un lien significatif sur la santé perçue.\\
+
+\noindent
+Enfin, les individus dont la catégorie socio-professionnelle est "inactifs" présentent un OR à 3.89 $(p = 0.06)$ alors que dans la population globale cette catégorie n'était pas significative.\\
+
+\bigskip
+
+\noindent
+Lorsque l'on effectue la même démarche ans la sous population des individus en situation de précarité on remarque plusieurs choses.\\
+\linebreak
+\noindent
+Tout d'abord comme dans la sous population précédente, l'activité professionnelle n'est plus significativement liée à la santé perçue.\\
+
+\noindent
+En deuxième lieu nous remarquons que la baisse de santé perçue des femmes est accentuée : population générale 0.81 vs sous population 0.76.\\
+
+\noindent
+Enfin, on observe également qu'avoir une activité sportive plus de 3 fois par semaine améliore plus la santé perçue des individus en situation de précarité $(OR = 2.68)$ que les individus de la population globale $(OR = 2.37)$.\\
+\subsection{Analyse de sensibilité}
+Comme nous l'avons vu dans les parties précédente j'ai construit deux variables traitant de l'activité professionnelle des sujets: la première manuellement (au cas par cas) et la deuxième avec un algorithme( Classification Ascendante Hiérarchique).\\
+Un test du $\chi ^2$ avait montrer que les deux classifications n'étaient pas assez similaires pour être considérées comme significativement identiques: que donne le modèle finalement choisi lorsque la variable d'exposition est la CAH de l'activité professionnelle ?
+En effectuant la même régression logistique on retrouve des résultats similaires.\\
 
 \newpage
 \section{Perspectives : Ce que j'ai fait, découvert, appris}
 
-Comme expliqué plus haut, j'ai effectué mon stage dans l'unité INSERM 970 qui est spécialisée dans les maladies cardiovasculaires.\\
+\noindent
+Comme expliqué dans la première partie, j'ai effectué mon stage dans l'unité INSERM 970 qui est spécialisée dans les maladies cardiovasculaires.\\
 J'y ait passé cinq mois: du 01/04/2019 au 31/08/2019, durant lesquels j'ai beaucoup appris dans des domaines très variés.\\
 Tout d'abord j'ai découvert le monde de la recherche, qui m'a beaucoup plu. C'était un monde entièrement neuf pour moi et la longue durée de mon stage a été un atout non négligeable dans son succès: en effet j'ai eu le temps de m'adapter à l'environnement, aux us et coutumes, au jargon, à l'équipe.\\
 
+\noindent
 Cela m'a également donné le temps de me documenter sur l'épidémiologie: domaine qui m'était inconnu et qui, malgré sa ressemblance avec les statistique a ses propres règles, son propre vocabulaire.\\
 
+\noindent
 En m'intégrant dans l'équipe, j'ai découvert le travail de groupe nécessaire à la rédaction de chaque article scientifique et l'émulsion que cela occasionne.
 J'ai pu apprendre les grandes étapes de l'élaboration d'une étude épidémiologique, le cadre légal, le recrutement des individus, leur suivi ainsi que la saisie et le nettoyage des données.\\
 J'ai également participé au recueil de certaines données en appelant les hôpitaux pour récupérer des comptes redus hospitaliers de sujets de l'étude qui étaient utiles aux médecins investigateurs pour confirmer une pathologie déclarée par lesdits sujets dans les questionnaires de suivis. J'ai ainsi pu me confronter à l'épineux problème de la confidentialité des données de santé.\\
 J'ai également eu l'occasion de participer au reviewing d'un article (pas officiellement juste pour la pédagogie). J'ai ainsi pu apprendre toutes les étapes de la rédaction d'un article: le travail de recherche, la mise en forme des idée puis la recherche d'une revue susceptible de publier l'article, l'étape de relecture par des pairs et la prise en compte de leurs remarques...\\
 
+\noindent
 Au delà du monde de la recherche, j'ai dû apprendre à m'intégrer dans un groupe où il y avait une grande pluralité des parcours (médecins, statisticiens, attachés de recherches cliniques, ingénieurs...). Cela supposait de se rendre intelligible par tous, et parfois de verser dans une forme de vulgarisation de certains concepts statistiques ce qui m'a beaucoup enrichie\footnote{Voir les chaînes Youtube StatQuest et science4all (notamment la série de vidéo sur la formule de Bayes) qui ne se contentent pas d'expliquer vaguement quelques concepts très connu mais qui vont au fond des choses tout en les rendant accessibles au "grand publique"}.\\
 J'ai également beaucoup profité du savoir des médecins qui m'entouraient notamment sur le fonctionnement de la santé en France ainsi que sur certaines notions médicales élémentaires. Ainsi j'ai pu percevoir la différence entre une "jolie" analyse statistique et une analyse qui avait un sens/intérêt clinique.\\ 
 
+\noindent
 Au niveau des statistiques, plutôt que de me lancer dans de techniques "avancées", mon directeur de stage et moi avons décider de nous concentrer sur les bases comme la visualisation de données et la régression logistique. J'ai pris l'initiative de tenter des méthodes exploratoires comme l'ACM ou la CAH.\\
 Régulièrement l'équipe se réunissait pour des réunions de méthodologie durant lesquelles j'ai pu me familiariser avec d'autres notions dont j'espère étudier le versant mathématiques en M2 (modèles de suivi, méta-analyse, données répétées et GEE...).\\
 Ces réunions avaient pour support un article dont on faisant une lecture critique en tentant de comprendre d'une part les intérêts clinique de l'étude menée et d'autre part les méthodes statistiques mises en œuvre.\\
 
+\noindent
 Profitant du temps que j'avais, je me suis familiarisée avec de nouveaux outils qui se sont révélés trés utils: github pour le versionnage de mon code et de ce rapport, pubmed pour lire ce qui s'était déjà fait sur mon sujet et zotero pour créer ma bibliographie.
 
-Pour conclure, ce stage était une très bonne expérience, très enrichissante qui m'a donné envie de poursuivre dans la recherche en en bio-satistiques.\\
+
 
 \begin{center}
 \section*{Conclusion}
-Conclusion on verra à la fin:
-
-Reste à faire: 
-
-Il faut aussi mettre la méthode maths de l'ACM\\
-Dans la partie sur la CAH: ajouter les equations maths de distance chi2 et critère de ward.\\
-Appliquer consolidation par k means et adapter la rédaction qui suit (la ou on décrit le résultats sur le classf qui vont forcement changer puisqu'on ajoute une autre méthode de classif)\\
-Décrire la méthode des k means. Préciser qu'on perd la hiérarchisation mais que cela permet de rendre la CAH plus stable. Expliquer que utiliser le k means en premier n'était pas une bonne idée car il fallait déterminer x0 et que je n'avais aucune idée de comment faire un choix pertinent. (en plus k means très sensible à l'initialisation: pas cool)\\
-
-Il faut faire un compareGroups sur la ppo totale et pop-exclus.\\S
-Il faut également, dans la partie statistique inclure un récap sur ce qu'est la régression logistique 
-Dernières choses: mettre ne annexe le questionnaire ipc et la feuille d'évaluatoion de Jean Philippe.\\
-Ne pas oublier de rediger la bibliographie.\\
+\noindent
+Pour conclure, ce stage était une très bonne expérience, très enrichissante qui m'a donné envie de poursuivre dans la recherche en en bio-satistiques.\\
 \end{center}
 
 \backmatter
 \section{Annexes}
-\section{Bibliographie}
+
+
+\subsection{Annexe 1: Fiche d'appréciation de l'employeur}
+\includegraphics[scale=1.5]{appreciation_JPE.jpg}
+
+
+
+\subsection{Annexe 2: Questionnaire IPC}
+\includegraphics[scale=.25]{quest_ipc-1.png}
+\newpage
+\includegraphics[scale=.28]{quest_ipc-2.png}
+\newpage
+\includegraphics[scale=.28]{quest_ipc-3.png}
+\newpage
+\includegraphics[scale=.28]{quest_ipc-4.png}
+\newpage
+\includegraphics[scale=.28]{quest_ipc-5.png}
+\newpage
+\includegraphics[scale=.28]{quest_ipc-6.png}
+\newpage
+\includegraphics[scale=.28]{quest_ipc-7.png}
+\newpage
+\includegraphics[scale=.29]{quest_ipc-8.png}
+
+
+
+\subsection{Annexe 3: Codes travail IPC}
+\includegraphics[scale=.25]{codesIPC_1.png}
+\newpage
+\includegraphics[scale=.3]{codesIPC_2.png}
+\newpage
+\includegraphics[scale=.3]{codesIPC_3.png}
+\newpage
+\includegraphics[scale=.3]{codesIPC_4.png}
+
+
+\subsection{Annexe 4: Classification des codes IPC par activité professionnelle}
+\includegraphics[scale=.4]{tab_codes_Adm10.png}
+\newpage
+
+
+
+\subsection{Annexe 5: Graphes des résidus du modèle de sélection de variables}
+\includegraphics[scale=.8]{residuals_plot.png}
+
+
+
 
 \bibliographystyle{plain}
 \bibliography{bib_stage}
