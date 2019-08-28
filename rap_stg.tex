@@ -1450,18 +1450,68 @@ Le nombre de données manquantes par variable de dépasse jamais les 20 $\%$, j'
 \subsection{Flowchart}
 
 \begin{center}
-\includegraphics[scale=.25]{flowchart.png}
+\includegraphics[scale=.45]{flowchart.png}
 \end{center}
 
+\noindent
+\textbf{Légende}\\
 
+\bigskip
+\noindent
+\begin{tikzpicture}
+\draw (0,0) -- (2,0) -- (2,0.3) -- (0,0.3) -- (0,0);
+\end{tikzpicture} : Taille population d'étude, exclusions\\
+
+\noindent
+\begin{tikzpicture}
+\draw (0,0) ellipse (1cm and 0.15cm);
+\end{tikzpicture} : Type d'analyse\\
+
+\noindent
+\begin{tikzpicture}
+\draw (0,0) -- (1,.15) -- (2,0) -- (1,-.15) -- (0,0);
+\end{tikzpicture} : Sous groupes\\
+
+\noindent
+\begin{tikzpicture}
+\draw (2,2) circle (.3cm);
+\end{tikzpicture} : Modèles \\
+
+\bigskip
+
+\noindent
+Modèles 1 et 2 : Mise en évidence de l'âge comme facteur de confusion\\
+
+\bigskip
+\noindent
+AIC 1 : Sélection des variables de santé mentale\\
+
+\bigskip
+\noindent
+AIC 2 : Sélection des variables de style de vie\\
+
+\bigskip
+\noindent
+AIC 3 Sélection des variables socio-administratives\\
+
+\bigskip
+\noindent
+Modèle 3 : Contenant les variables issues des 3 AIC précédents\\
+
+\bigskip
+\noindent
+Modèle propre : Modèle 3 sans les observations atypiques\\
+
+\bigskip
+\noindent
+Modèle CAH : Modèle propre avec la Classification Ascendante Hiérarchique de l'activité professionnelle comme variable d'exposition\\
 \subsection{Analyses univariées}
 
 \noindent
 Afin d'avoir une première idée des variables significativement liées à la santé perçue on effectue une régression logistique entre la santé perçue binarisée des sujets (on coupe à la médiane: si la santé perçue est > à 7 on la considère comme bonne) et chacune des variables explicatives.\\
 
 
-\newpage
-
+\bigskip
 \noindent
 \textbf{La régression logistique:}
 \bigskip
@@ -1995,30 +2045,19 @@ Dans cette partie, nous appliquons le modèle précédent dans deux sous populat
 \bigskip
 
 \noindent
-Dans la population composée des sujets ayant déclaré avoir un cancer ou une maladie cardiovasculaire, on observe que la variable d'hypertension devient significative ($OR = 0.76)$ ce qui est logique puisque l'hypertension artérielle est un facteur de risque connu des maladies cardiovasculaires.\\
+Dans la population composée des sujets en situation de précarité l'activité professionnelle n'est plus significativement liée à la santé perçue alors que dans la population des non précaires on retrouve le résultat de la population globale à savoir : les retraités ont une santé perçue supérieure de 20 $\%$.\\
 
 \noindent
-De plus la variable dépression a un OR beaucoup plus bas : population générale 0.47 vs sous population 0.28. Résultat qui ne surprend pas puisqu'il est aisé d'imaginer que les individus souffrant d'une pathologie lourde comme le cancer et une CVD ont une moindre santé psychique.\\
+En deuxième lieu nous remarquons que la baisse de santé perçue des femmes est accentuée : population précaire $OR = 0.76 ~ (p = 0.024)$ vs population non précaire, $OR = 0.81 ~ (p = 0.002)$.\\
 
 \noindent
-On remarque également que dans cette sous population , aucune des catégories de la variable activité professionnelle n'a un lien significatif sur la santé perçue.\\
+Il est intéressant de remarquer que le fait d'avoir un diplôme de licence (ou un diplôme supérieur) augmente sensiblement la santé perçue des individus en situation de précarité $(OR = 1.44, ~p = 0.015)$ alors que chez les non précaires ces diplômes n'ont pas d'effet significatif. On peut iimaginer que dans une situation précarisante, avoir des diplôme est un avantage considérable puisqu'ils donnent accès à des postes mieux rémunérés.\\
 
 \noindent
-Enfin, les individus dont la catégorie socio-professionnelle est "inactifs" présentent un OR à 3.89 $(p = 0.06)$ alors que dans la population globale cette catégorie n'était pas significative.\\
+Enfin, on observe également qu'avoir une activité sportive bi-hebdomadaire améliore moins la santé perçue des précaires $(OR = 1.26, ~p = 0.04)$ que des non précaires $(OR = 1.49, ~p = 4.55e-11)$.\\
 
-\bigskip
-
-\noindent
-Lorsque l'on effectue la même démarche ans la sous population des individus en situation de précarité on remarque plusieurs choses.\\
-\linebreak
-\noindent
-Tout d'abord comme dans la sous population précédente, l'activité professionnelle n'est plus significativement liée à la santé perçue.\\
-
-\noindent
-En deuxième lieu nous remarquons que la baisse de santé perçue des femmes est accentuée : population générale 0.81 vs sous population 0.76.\\
-
-\noindent
-Enfin, on observe également qu'avoir une activité sportive plus de 3 fois par semaine améliore plus la santé perçue des individus en situation de précarité $(OR = 2.68)$ que les individus de la population globale $(OR = 2.37)$.\\
+La deuxième analyse en sous groupes sépare la population entre individus atteint ou ayant été traité pour une pathologie grave (cancer et/ou maladies cardiovasculaires\footnote{Infarctus du myocarde, Angine de poitrine, fibrillation auriculaire, fibrillation atriale, flutter, maladie des artères, phlébite, embolie pulmonaire, accident vasculaire cérébral.}) et les autres.\\
+Cependant le nombre d'individus dans le groupe "malade" n'est pas assez grand pour effectuer une régression logistique, on peut tout de même regarder le proportion d'individus les differentes catégories de chaque variable.\\
 \subsection{Analyse de sensibilité}
 Comme nous l'avons vu dans les parties précédente j'ai construit deux variables traitant de l'activité professionnelle des sujets: la première manuellement (au cas par cas) et la deuxième avec un algorithme( Classification Ascendante Hiérarchique).\\
 Un test du $\chi ^2$ avait montrer que les deux classifications n'étaient pas assez similaires pour être considérées comme significativement identiques: que donne le modèle finalement choisi lorsque la variable d'exposition est la CAH de l'activité professionnelle ?
@@ -2038,6 +2077,7 @@ Cela m'a également donné le temps de me documenter sur l'épidémiologie: doma
 \noindent
 En m'intégrant dans l'équipe, j'ai découvert le travail de groupe nécessaire à la rédaction de chaque article scientifique et l'émulsion que cela occasionne.
 J'ai pu apprendre les grandes étapes de l'élaboration d'une étude épidémiologique, le cadre légal, le recrutement des individus, leur suivi ainsi que la saisie et le nettoyage des données.\\
+\noindent
 J'ai également participé au recueil de certaines données en appelant les hôpitaux pour récupérer des comptes redus hospitaliers de sujets de l'étude qui étaient utiles aux médecins investigateurs pour confirmer une pathologie déclarée par lesdits sujets dans les questionnaires de suivis. J'ai ainsi pu me confronter à l'épineux problème de la confidentialité des données de santé.\\
 J'ai également eu l'occasion de participer au reviewing d'un article (pas officiellement juste pour la pédagogie). J'ai ainsi pu apprendre toutes les étapes de la rédaction d'un article: le travail de recherche, la mise en forme des idée puis la recherche d'une revue susceptible de publier l'article, l'étape de relecture par des pairs et la prise en compte de leurs remarques...\\
 
@@ -2046,19 +2086,47 @@ Au delà du monde de la recherche, j'ai dû apprendre à m'intégrer dans un gro
 J'ai également beaucoup profité du savoir des médecins qui m'entouraient notamment sur le fonctionnement de la santé en France ainsi que sur certaines notions médicales élémentaires. Ainsi j'ai pu percevoir la différence entre une "jolie" analyse statistique et une analyse qui avait un sens/intérêt clinique.\\ 
 
 \noindent
-Au niveau des statistiques, plutôt que de me lancer dans de techniques "avancées", mon directeur de stage et moi avons décider de nous concentrer sur les bases comme la visualisation de données et la régression logistique. J'ai pris l'initiative de tenter des méthodes exploratoires comme l'ACM ou la CAH.\\
-Régulièrement l'équipe se réunissait pour des réunions de méthodologie durant lesquelles j'ai pu me familiariser avec d'autres notions dont j'espère étudier le versant mathématiques en M2 (modèles de suivi, méta-analyse, données répétées et GEE...).\\
-Ces réunions avaient pour support un article dont on faisant une lecture critique en tentant de comprendre d'une part les intérêts clinique de l'étude menée et d'autre part les méthodes statistiques mises en œuvre.\\
+Au niveau des statistiques, plutôt que de me lancer dans de techniques "avancées", mon directeur de stage et moi avons décidé de nous concentrer sur les bases comme la visualisation de données et la régression logistique. J'ai pris l'initiative de tenter des méthodes exploratoires comme l'ACM ou la CAH.\\
+Régulièrement l'équipe se réunissait pour des réunions de méthodologie durant lesquelles j'ai pu me familiariser avec d'autres notions dont j'espère étudier le versant mathématiques en M2 (modèles de survie, méta-analyse, données répétées et GEE...).\\
+Ces réunions avaient pour support un article dont on faisant une lecture critique en tentant de comprendre d'une part les intérêts cliniques de l'étude menée et d'autre part les méthodes statistiques mises en œuvre.\\
 
 \noindent
-Profitant du temps que j'avais, je me suis familiarisée avec de nouveaux outils qui se sont révélés trés utils: github pour le versionnage de mon code et de ce rapport, pubmed pour lire ce qui s'était déjà fait sur mon sujet et zotero pour créer ma bibliographie.
+Profitant du temps que j'avais, je me suis familiarisée avec de nouveaux outils qui se sont révélés très utiles: github pour le versionnage de mon code et de ce rapport, pubmed pour lire ce qui s'était déjà fait sur mon sujet et zotero pour créer ma bibliographie.
 
 
 
 \begin{center}
 \section*{Conclusion}
 \noindent
-Pour conclure, ce stage était une très bonne expérience, très enrichissante qui m'a donné envie de poursuivre dans la recherche en en bio-satistiques.\\
+Durant mon stage, j'ai effectué une étude épidémiologique sur l'impacte de l'activité professionnelle sur la santé perçue des sujets de EPP3. Comme nous l'avons expliqué la santé perçue est un outils puissant, très bon indicateur de mortalité et capable de rendre compte de la santé globale d'un individus en incluant une part de subjectivité non mesurable par de variables cliniques.\\
+
+\bigskip
+\noindent
+Durant cette étude, nous avons pu observer que les retraités ont effectivement une santé perçue meilleurs que les autres. Nous avons également montrer que la santé perçue des femmes, des dépressifs et des fumeurs qui tentent d'arrêter de fumer était moindre que celle des hommes, non dépressifs et non fumeurs.\\
+
+\bigskip
+\noindent
+Enfin nous avons effectué une analyse en sous groupe qui montre que les résultats cités précédemment sont accentués chez les individus en situation de précarité.\\
+
+\bigskip
+\noindent
+Ces cinq derniers mois m'ont beaucoup enrichie. Cette immersion dans le monde de la recherche m'a permis de pénétrer dans les coulisses d'une étude statistiques et donc de mieux en comprendre la teneur.\\
+J'ai pu observer le rôle central du statisticien dans une équipe d'épidémiologie ainsi que ses limites: la compréhension des données sans laquelle aucune étude n'a de pertinence.\\
+
+\bigskip
+\noindent
+Un statisticien pur (de formation mathématiques, informatique ou issu d'une école d'ingénieur) a une démarche très différente d'un médecin de santé publique (ou d'un épidémiologiste).\\
+Ce qui importe à celui qui effectue l'analyse (au niveau des statistiques) c'est sa faisabilité au sens stricte: a t-on le droit de, le modèle converge t-il, les résidus vérifient-ils les hypothèses a-priori...? \\
+C'était la démarche que j'avais en débutant. Cependant les médecins de santé publique sont bien plus préoccupés par la pertinence clinique de l'étude que par la distribution normale ou non de leurs variables.\\
+C'est en confrontant mes impressions(très enthousiastes) sur un article avec celles d'un collègue (beaucoup moins...) que je me suis rendue compte de cet écart: je voyais un super modèle plein d'équations, mon collègue un raisonnement inutile car inexploitable au niveau clinique.\\
+
+\bigskip
+\noindent
+Ainsi, au delà des outils statistiques, d'une expérience dans un laboratoire de recherche ou de l'apprentissage du travail d'équipe, c'est cela qui, dans on stage, m'aura le plus enrichie: confronter mon regard à celui d'autres disciplines.\\
+
+\bigskip
+\noindent
+Je maintiens que la rigueur mathématiques légèrement abstraite de nos modèles n'est pas négociable, cependant ces modèles sont censés expliquer (voir prédire) des phénomènes beaucoup moins abstraits et, lorsque l'on mène une étude, cette donnée est tout aussi importante que celles des sujets.\\
 \end{center}
 
 \backmatter

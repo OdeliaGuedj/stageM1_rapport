@@ -19,16 +19,16 @@
 \contentsline {subsection}{\numberline {3.4}Donn\IeC {\'e}es Manquantes}{27}
 \contentsline {section}{\numberline {4}Statistiques}{28}
 \contentsline {subsection}{\numberline {4.1}Flowchart}{28}
-\contentsline {subsection}{\numberline {4.2}Analyses univari\IeC {\'e}es}{28}
-\contentsline {subsection}{\numberline {4.3}Analyses multivari\IeC {\'e}es}{33}
-\contentsline {subsubsection}{\numberline {4.3.1}S\IeC {\'e}lection des variables}{33}
-\contentsline {subsubsection}{\numberline {4.3.2}Diagnostique du mod\IeC {\`e}le}{36}
-\contentsline {subsection}{\numberline {4.4}Analyse en sous-groupes}{38}
-\contentsline {subsection}{\numberline {4.5}Analyse de sensibilit\IeC {\'e}}{38}
-\contentsline {section}{\numberline {5}Perspectives : Ce que j'ai fait, d\IeC {\'e}couvert, appris}{40}
-\contentsline {section}{\numberline {6}Annexes}{42}
-\contentsline {subsection}{\numberline {6.1}Annexe 1: Questionnaire IPC}{42}
-\contentsline {subsection}{\numberline {6.2}Annexe 2: Codes travail IPC}{50}
-\contentsline {subsection}{\numberline {6.3}Annexe 3: Classification des codes IPC par activit\IeC {\'e} professionnelle}{54}
-\contentsline {subsection}{\numberline {6.4}Annexe 4: Graphes des r\IeC {\'e}sidus du mod\IeC {\`e}le de s\IeC {\'e}lection de variables}{55}
-\contentsline {subsection}{\numberline {6.5}Annexe 5: Fiche d'appr\IeC {\'e}ciation de l'employeur}{56}
+\contentsline {subsection}{\numberline {4.2}Analyses univari\IeC {\'e}es}{29}
+\contentsline {subsection}{\numberline {4.3}Analyses multivari\IeC {\'e}es}{34}
+\contentsline {subsubsection}{\numberline {4.3.1}S\IeC {\'e}lection des variables}{34}
+\contentsline {subsubsection}{\numberline {4.3.2}Diagnostique du mod\IeC {\`e}le}{37}
+\contentsline {subsection}{\numberline {4.4}Analyse en sous-groupes}{39}
+\contentsline {subsection}{\numberline {4.5}Analyse de sensibilit\IeC {\'e}}{39}
+\contentsline {section}{\numberline {5}Perspectives : Ce que j'ai fait, d\IeC {\'e}couvert, appris}{41}
+\contentsline {section}{\numberline {6}Annexes}{44}
+\contentsline {subsection}{\numberline {6.1}Annexe 1: Fiche d'appr\IeC {\'e}ciation de l'employeur}{44}
+\contentsline {subsection}{\numberline {6.2}Annexe 2: Questionnaire IPC}{45}
+\contentsline {subsection}{\numberline {6.3}Annexe 3: Codes travail IPC}{53}
+\contentsline {subsection}{\numberline {6.4}Annexe 4: Classification des codes IPC par activit\IeC {\'e} professionnelle}{57}
+\contentsline {subsection}{\numberline {6.5}Annexe 5: Graphes des r\IeC {\'e}sidus du mod\IeC {\`e}le de s\IeC {\'e}lection de variables}{58}

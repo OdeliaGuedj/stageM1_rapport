@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.9.20)  28 AUG 2019 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.9.20)  28 AUG 2019 17:37
 entering extended mode
 **./rap_stg.tex
 (rap_stg.tex
@@ -2384,20 +2384,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 1445--1447
  []
 
 [27]
-<flowchart.png, id=156, 1411.52344pt x 895.09406pt>
+<flowchart.png, id=156, 1019.30812pt x 1218.05063pt>
 File: flowchart.png Graphic file (type png)
 <use flowchart.png>
 Package pdftex.def Info: flowchart.png  used on input line 1453. on input line 
 1453.
-Package pdftex.def Info: Requested size: 352.87999pt x 223.77296pt on input lin
+Package pdftex.def Info: Requested size: 458.68442pt x 548.11772pt on input lin
 e 1453.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1459--1461
+Overfull \hbox (28.6798pt too wide) in paragraph at lines 1453--1454
+ [] 
+ []
+
+
+Overfull \vbox (34.00204pt too high) has occurred while \output is active []
+
+
+[28 <./flowchart.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1456--1458
 
  []
 
-[28 <./flowchart.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1469--1472
+
+Underfull \hbox (badness 10000) in paragraph at lines 1460--1464
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1465--1469
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1470--1474
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1475--1479
 
  []
 
@@ -2406,273 +2430,320 @@ Underfull \hbox (badness 10000) in paragraph at lines 1482--1484
 
  []
 
-LaTeX Font Info:    Try loading font information for U+euf on input line 1486.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1486--1488
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1490--1492
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1494--1496
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1498--1500
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1502--1504
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1506--1508
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1510--1512
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1519--1522
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1532--1534
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+euf on input line 1536.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\ueuf.fd"
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 
-LaTeX Warning: Command \" invalid in math mode on input line 1493.
+LaTeX Warning: Command \" invalid in math mode on input line 1543.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 1493.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1526--1528
-
- []
+LaTeX Warning: Command \" invalid in math mode on input line 1543.
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 1553--1555
+Underfull \hbox (badness 10000) in paragraph at lines 1576--1578
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1572--1577
+Underfull \hbox (badness 10000) in paragraph at lines 1603--1605
 
  []
 
 [30]
-Overfull \hbox (9.55124pt too wide) in alignment at lines 1581--1588
+Underfull \hbox (badness 10000) in paragraph at lines 1622--1627
+
+ []
+
+[31]
+Overfull \hbox (9.55124pt too wide) in alignment at lines 1631--1638
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (9.55124pt too wide) in alignment at lines 1588--1596
+Overfull \hbox (9.55124pt too wide) in alignment at lines 1638--1646
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (9.55124pt too wide) in alignment at lines 1596--1599
+Overfull \hbox (9.55124pt too wide) in alignment at lines 1646--1649
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (9.55124pt too wide) in alignment at lines 1599--1601
+Overfull \hbox (9.55124pt too wide) in alignment at lines 1649--1651
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (9.55124pt too wide) in alignment at lines 1601--1622
+Overfull \hbox (9.55124pt too wide) in alignment at lines 1651--1672
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (9.55124pt too wide) in alignment at lines 1622--1642
+Overfull \hbox (9.55124pt too wide) in alignment at lines 1672--1692
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (9.55124pt too wide) in alignment at lines 1642--1662
+Overfull \hbox (9.55124pt too wide) in alignment at lines 1692--1712
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (9.55124pt too wide) in alignment at lines 1662--1674
+Overfull \hbox (9.55124pt too wide) in alignment at lines 1712--1724
  [] [] [] [] [] 
  []
 
-[31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 1740--1742
+[32] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 1790--1792
 
  []
 
-[33]
+[34]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 1801.
+(Font)              <8> on input line 1851.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 1801.
- [34] [35]
-<linearite_stresse.png, id=192, 745.28438pt x 463.7325pt>
+(Font)              <6> on input line 1851.
+ [35] [36]
+<linearite_stresse.png, id=195, 745.28438pt x 463.7325pt>
 File: linearite_stresse.png Graphic file (type png)
 <use linearite_stresse.png>
-Package pdftex.def Info: linearite_stresse.png  used on input line 1899. on inp
-ut line 1899.
+Package pdftex.def Info: linearite_stresse.png  used on input line 1949. on inp
+ut line 1949.
 Package pdftex.def Info: Requested size: 372.64128pt x 231.86568pt on input lin
-e 1899.
+e 1949.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1903--1905
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1907--1909
+Underfull \hbox (badness 10000) in paragraph at lines 1953--1955
 
  []
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 1918.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 1919.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1917--1922
+Underfull \hbox (badness 10000) in paragraph at lines 1957--1959
 
  []
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1927.
+LaTeX Warning: Command \" invalid in math mode on input line 1968.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 1927.
-
-[36 <./linearite_stresse.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1929--1931
-
- []
+LaTeX Warning: Command \" invalid in math mode on input line 1969.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1932--1934
+Underfull \hbox (badness 10000) in paragraph at lines 1967--1972
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1935--1937
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1977.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1977.
+
+[37 <./linearite_stresse.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1979--1981
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1938--1940
+Underfull \hbox (badness 10000) in paragraph at lines 1982--1984
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1948--1951
+Underfull \hbox (badness 10000) in paragraph at lines 1985--1987
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1969--1971
+Underfull \hbox (badness 10000) in paragraph at lines 1988--1990
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1982--1985
+Underfull \hbox (badness 10000) in paragraph at lines 1998--2001
 
  []
 
-<cooks_distance.png, id=197, 1129.21875pt x 526.96875pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 2019--2021
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2032--2035
+
+ []
+
+<cooks_distance.png, id=201, 1129.21875pt x 526.96875pt>
 File: cooks_distance.png Graphic file (type png)
 <use cooks_distance.png>
-Package pdftex.def Info: cooks_distance.png  used on input line 1986. on input 
-line 1986.
+Package pdftex.def Info: cooks_distance.png  used on input line 2036. on input 
+line 2036.
 Package pdftex.def Info: Requested size: 451.6795pt x 210.78375pt on input line
- 1986.
+ 2036.
 
-Overfull \hbox (36.67488pt too wide) in paragraph at lines 1986--1987
+Overfull \hbox (36.67488pt too wide) in paragraph at lines 2036--2037
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
-Underfull \hbox (badness 10000) in paragraph at lines 1988--1989
+ [38]
+Underfull \hbox (badness 10000) in paragraph at lines 2038--2039
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1992--1994
+Underfull \hbox (badness 10000) in paragraph at lines 2042--2044
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1997--1999
+Underfull \hbox (badness 10000) in paragraph at lines 2047--2049
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2000--2002
+Underfull \hbox (badness 10000) in paragraph at lines 2050--2052
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2003--2005
+Underfull \hbox (badness 10000) in paragraph at lines 2053--2055
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2006--2008
+Underfull \hbox (badness 10000) in paragraph at lines 2056--2058
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2011--2016
+Underfull \hbox (badness 10000) in paragraph at lines 2059--2061
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2011--2016
+Underfull \hbox (badness 10000) in paragraph at lines 2062--2065
+
+ []
+
+[39 <./cooks_distance.png>] [40]
+Underfull \hbox (badness 10000) in paragraph at lines 2069--2073
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2017--2019
+Underfull \hbox (badness 10000) in paragraph at lines 2074--2076
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2020--2022
+Underfull \hbox (badness 10000) in paragraph at lines 2077--2083
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2023--2026
-
- []
-
-[38 <./cooks_distance.png>] [39]
-Underfull \hbox (badness 10000) in paragraph at lines 2030--2034
+Underfull \hbox (badness 10000) in paragraph at lines 2084--2087
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2035--2037
+Underfull \hbox (badness 10000) in paragraph at lines 2088--2092
 
  []
 
+[41] [42]
+<appreciation_JPE.jpg, id=218, 304.13625pt x 433.11812pt>
+File: appreciation_JPE.jpg Graphic file (type jpg)
+<use appreciation_JPE.jpg>
+Package pdftex.def Info: appreciation_JPE.jpg  used on input line 2137. on inpu
+t line 2137.
+Package pdftex.def Info: Requested size: 456.20325pt x 649.6756pt on input line
+ 2137.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2038--2043
-
+Overfull \hbox (41.19862pt too wide) in paragraph at lines 2137--2138
+[][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2044--2047
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2048--2052
-
- []
-
-[40]
-<quest_ipc-1.png, id=212, 1660.2025pt x 2345.76375pt>
-File: quest_ipc-1.png Graphic file (type png)
-<use quest_ipc-1.png>
-Package pdftex.def Info: quest_ipc-1.png  used on input line 2068. on input lin
-e 2068.
-Package pdftex.def Info: Requested size: 415.0496pt x 586.4395pt on input line 
-2068.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41
+ [43
 
 ]
-Overfull \vbox (73.65714pt too high) has occurred while \output is active []
+Overfull \vbox (136.89323pt too high) has occurred while \output is active []
 
 
-[42 <./quest_ipc-1.png>]
-<quest_ipc-2.png, id=220, 1659.19875pt x 2345.76375pt>
+[44 <./appreciation_JPE.jpg>]
+<quest_ipc-1.png, id=226, 1660.2025pt x 2345.76375pt>
+File: quest_ipc-1.png Graphic file (type png)
+<use quest_ipc-1.png>
+Package pdftex.def Info: quest_ipc-1.png  used on input line 2142. on input lin
+e 2142.
+Package pdftex.def Info: Requested size: 415.0496pt x 586.4395pt on input line 
+2142.
+
+Overfull \vbox (49.75449pt too high) has occurred while \output is active []
+
+
+[45 <./quest_ipc-1.png>]
+<quest_ipc-2.png, id=231, 1659.19875pt x 2345.76375pt>
 File: quest_ipc-2.png Graphic file (type png)
 <use quest_ipc-2.png>
-Package pdftex.def Info: quest_ipc-2.png  used on input line 2070. on input lin
-e 2070.
+Package pdftex.def Info: quest_ipc-2.png  used on input line 2144. on input lin
+e 2144.
 Package pdftex.def Info: Requested size: 464.5725pt x 656.80939pt on input line
- 2070.
+ 2144.
 
-Overfull \hbox (49.56787pt too wide) in paragraph at lines 2070--2071
+Overfull \hbox (49.56787pt too wide) in paragraph at lines 2144--2145
 [][] 
  []
 
@@ -2680,16 +2751,16 @@ Overfull \hbox (49.56787pt too wide) in paragraph at lines 2070--2071
 Overfull \vbox (100.33282pt too high) has occurred while \output is active []
 
 
-[43 <./quest_ipc-2.png>]
-<quest_ipc-3.png, id=226, 1660.2025pt x 2345.76375pt>
+[46 <./quest_ipc-2.png>]
+<quest_ipc-3.png, id=236, 1660.2025pt x 2345.76375pt>
 File: quest_ipc-3.png Graphic file (type png)
 <use quest_ipc-3.png>
-Package pdftex.def Info: quest_ipc-3.png  used on input line 2072. on input lin
-e 2072.
+Package pdftex.def Info: quest_ipc-3.png  used on input line 2146. on input lin
+e 2146.
 Package pdftex.def Info: Requested size: 464.85353pt x 656.80939pt on input lin
-e 2072.
+e 2146.
 
-Overfull \hbox (49.8489pt too wide) in paragraph at lines 2072--2073
+Overfull \hbox (49.8489pt too wide) in paragraph at lines 2146--2147
 [][] 
  []
 
@@ -2697,16 +2768,16 @@ Overfull \hbox (49.8489pt too wide) in paragraph at lines 2072--2073
 Overfull \vbox (100.33282pt too high) has occurred while \output is active []
 
 
-[44 <./quest_ipc-3.png>]
-<quest_ipc-4.png, id=231, 1660.2025pt x 2345.76375pt>
+[47 <./quest_ipc-3.png>]
+<quest_ipc-4.png, id=241, 1660.2025pt x 2345.76375pt>
 File: quest_ipc-4.png Graphic file (type png)
 <use quest_ipc-4.png>
-Package pdftex.def Info: quest_ipc-4.png  used on input line 2074. on input lin
-e 2074.
+Package pdftex.def Info: quest_ipc-4.png  used on input line 2148. on input lin
+e 2148.
 Package pdftex.def Info: Requested size: 464.85353pt x 656.80939pt on input lin
-e 2074.
+e 2148.
 
-Overfull \hbox (49.8489pt too wide) in paragraph at lines 2074--2075
+Overfull \hbox (49.8489pt too wide) in paragraph at lines 2148--2149
 [][] 
  []
 
@@ -2714,16 +2785,16 @@ Overfull \hbox (49.8489pt too wide) in paragraph at lines 2074--2075
 Overfull \vbox (100.33282pt too high) has occurred while \output is active []
 
 
-[45 <./quest_ipc-4.png>]
-<quest_ipc-5.png, id=236, 1660.2025pt x 2345.76375pt>
+[48 <./quest_ipc-4.png>]
+<quest_ipc-5.png, id=246, 1660.2025pt x 2345.76375pt>
 File: quest_ipc-5.png Graphic file (type png)
 <use quest_ipc-5.png>
-Package pdftex.def Info: quest_ipc-5.png  used on input line 2076. on input lin
-e 2076.
+Package pdftex.def Info: quest_ipc-5.png  used on input line 2150. on input lin
+e 2150.
 Package pdftex.def Info: Requested size: 464.85353pt x 656.80939pt on input lin
-e 2076.
+e 2150.
 
-Overfull \hbox (49.8489pt too wide) in paragraph at lines 2076--2077
+Overfull \hbox (49.8489pt too wide) in paragraph at lines 2150--2151
 [][] 
  []
 
@@ -2731,16 +2802,16 @@ Overfull \hbox (49.8489pt too wide) in paragraph at lines 2076--2077
 Overfull \vbox (100.33282pt too high) has occurred while \output is active []
 
 
-[46 <./quest_ipc-5.png>]
-<quest_ipc-6.png, id=241, 1660.2025pt x 2345.76375pt>
+[49 <./quest_ipc-5.png>]
+<quest_ipc-6.png, id=252, 1660.2025pt x 2345.76375pt>
 File: quest_ipc-6.png Graphic file (type png)
 <use quest_ipc-6.png>
-Package pdftex.def Info: quest_ipc-6.png  used on input line 2078. on input lin
-e 2078.
+Package pdftex.def Info: quest_ipc-6.png  used on input line 2152. on input lin
+e 2152.
 Package pdftex.def Info: Requested size: 464.85353pt x 656.80939pt on input lin
-e 2078.
+e 2152.
 
-Overfull \hbox (49.8489pt too wide) in paragraph at lines 2078--2079
+Overfull \hbox (49.8489pt too wide) in paragraph at lines 2152--2153
 [][] 
  []
 
@@ -2748,16 +2819,16 @@ Overfull \hbox (49.8489pt too wide) in paragraph at lines 2078--2079
 Overfull \vbox (100.33282pt too high) has occurred while \output is active []
 
 
-[47 <./quest_ipc-6.png>]
-<quest_ipc-7.png, id=246, 1659.19875pt x 2345.76375pt>
+[50 <./quest_ipc-6.png>]
+<quest_ipc-7.png, id=257, 1659.19875pt x 2345.76375pt>
 File: quest_ipc-7.png Graphic file (type png)
 <use quest_ipc-7.png>
-Package pdftex.def Info: quest_ipc-7.png  used on input line 2080. on input lin
-e 2080.
+Package pdftex.def Info: quest_ipc-7.png  used on input line 2154. on input lin
+e 2154.
 Package pdftex.def Info: Requested size: 464.5725pt x 656.80939pt on input line
- 2080.
+ 2154.
 
-Overfull \hbox (49.56787pt too wide) in paragraph at lines 2080--2081
+Overfull \hbox (49.56787pt too wide) in paragraph at lines 2154--2155
 [][] 
  []
 
@@ -2765,16 +2836,16 @@ Overfull \hbox (49.56787pt too wide) in paragraph at lines 2080--2081
 Overfull \vbox (100.33282pt too high) has occurred while \output is active []
 
 
-[48 <./quest_ipc-7.png>]
-<quest_ipc-8.png, id=251, 1660.2025pt x 2345.76375pt>
+[51 <./quest_ipc-7.png>]
+<quest_ipc-8.png, id=262, 1660.2025pt x 2345.76375pt>
 File: quest_ipc-8.png Graphic file (type png)
 <use quest_ipc-8.png>
-Package pdftex.def Info: quest_ipc-8.png  used on input line 2082. on input lin
-e 2082.
+Package pdftex.def Info: quest_ipc-8.png  used on input line 2156. on input lin
+e 2156.
 Package pdftex.def Info: Requested size: 481.4464pt x 680.25407pt on input line
- 2082.
+ 2156.
 
-Overfull \hbox (66.44177pt too wide) in paragraph at lines 2082--2083
+Overfull \hbox (66.44177pt too wide) in paragraph at lines 2156--2157
 [][] 
  []
 
@@ -2782,28 +2853,28 @@ Overfull \hbox (66.44177pt too wide) in paragraph at lines 2082--2083
 Overfull \vbox (123.77751pt too high) has occurred while \output is active []
 
 
-[49 <./quest_ipc-8.png>]
-<codesIPC_1.png, id=257, 1657.19125pt x 2339.74126pt>
+[52 <./quest_ipc-8.png>]
+<codesIPC_1.png, id=267, 1657.19125pt x 2339.74126pt>
 File: codesIPC_1.png Graphic file (type png)
 <use codesIPC_1.png>
-Package pdftex.def Info: codesIPC_1.png  used on input line 2086. on input line
- 2086.
+Package pdftex.def Info: codesIPC_1.png  used on input line 2161. on input line
+ 2161.
 Package pdftex.def Info: Requested size: 414.2968pt x 584.93388pt on input line
- 2086.
+ 2161.
 
 Overfull \vbox (45.91556pt too high) has occurred while \output is active []
 
 
-[50 <./codesIPC_1.png>]
-<codesIPC_2.png, id=262, 1657.19125pt x 2339.74126pt>
+[53 <./codesIPC_1.png>]
+<codesIPC_2.png, id=272, 1657.19125pt x 2339.74126pt>
 File: codesIPC_2.png Graphic file (type png)
 <use codesIPC_2.png>
-Package pdftex.def Info: codesIPC_2.png  used on input line 2088. on input line
- 2088.
+Package pdftex.def Info: codesIPC_2.png  used on input line 2163. on input line
+ 2163.
 Package pdftex.def Info: Requested size: 497.16122pt x 701.92781pt on input lin
-e 2088.
+e 2163.
 
-Overfull \hbox (82.1566pt too wide) in paragraph at lines 2088--2089
+Overfull \hbox (82.1566pt too wide) in paragraph at lines 2163--2164
 [][] 
  []
 
@@ -2811,16 +2882,16 @@ Overfull \hbox (82.1566pt too wide) in paragraph at lines 2088--2089
 Overfull \vbox (145.45125pt too high) has occurred while \output is active []
 
 
-[51 <./codesIPC_2.png>]
-<codesIPC_3.png, id=267, 1656.1875pt x 2339.74126pt>
+[54 <./codesIPC_2.png>]
+<codesIPC_3.png, id=277, 1656.1875pt x 2339.74126pt>
 File: codesIPC_3.png Graphic file (type png)
 <use codesIPC_3.png>
-Package pdftex.def Info: codesIPC_3.png  used on input line 2090. on input line
- 2090.
+Package pdftex.def Info: codesIPC_3.png  used on input line 2165. on input line
+ 2165.
 Package pdftex.def Info: Requested size: 496.86009pt x 701.92781pt on input lin
-e 2090.
+e 2165.
 
-Overfull \hbox (81.85547pt too wide) in paragraph at lines 2090--2091
+Overfull \hbox (81.85547pt too wide) in paragraph at lines 2165--2166
 [][] 
  []
 
@@ -2828,16 +2899,16 @@ Overfull \hbox (81.85547pt too wide) in paragraph at lines 2090--2091
 Overfull \vbox (145.45125pt too high) has occurred while \output is active []
 
 
-[52 <./codesIPC_3.png>]
-<codesIPC_4.png, id=272, 1656.1875pt x 2339.74126pt>
+[55 <./codesIPC_3.png>]
+<codesIPC_4.png, id=283, 1656.1875pt x 2339.74126pt>
 File: codesIPC_4.png Graphic file (type png)
 <use codesIPC_4.png>
-Package pdftex.def Info: codesIPC_4.png  used on input line 2092. on input line
- 2092.
+Package pdftex.def Info: codesIPC_4.png  used on input line 2167. on input line
+ 2167.
 Package pdftex.def Info: Requested size: 496.86009pt x 701.92781pt on input lin
-e 2092.
+e 2167.
 
-Overfull \hbox (81.85547pt too wide) in paragraph at lines 2092--2093
+Overfull \hbox (81.85547pt too wide) in paragraph at lines 2167--2168
 [][] 
  []
 
@@ -2845,54 +2916,35 @@ Overfull \hbox (81.85547pt too wide) in paragraph at lines 2092--2093
 Overfull \vbox (145.45125pt too high) has occurred while \output is active []
 
 
-[53 <./codesIPC_4.png>]
-<tab_codes_Adm10.png, id=277, 904.1278pt x 485.56406pt>
+[56 <./codesIPC_4.png>]
+<tab_codes_Adm10.png, id=288, 904.1278pt x 485.56406pt>
 File: tab_codes_Adm10.png Graphic file (type png)
 <use tab_codes_Adm10.png>
-Package pdftex.def Info: tab_codes_Adm10.png  used on input line 2096. on input
- line 2096.
+Package pdftex.def Info: tab_codes_Adm10.png  used on input line 2171. on input
+ line 2171.
 Package pdftex.def Info: Requested size: 361.64471pt x 194.22217pt on input lin
-e 2096.
- [54 <./tab_codes_Adm10.png>]
-<residuals_plot.png, id=281, 604.50844pt x 465.99094pt>
+e 2171.
+ [57 <./tab_codes_Adm10.png>]
+<residuals_plot.png, id=292, 604.50844pt x 465.99094pt>
 File: residuals_plot.png Graphic file (type png)
 <use residuals_plot.png>
-Package pdftex.def Info: residuals_plot.png  used on input line 2102. on input 
-line 2102.
+Package pdftex.def Info: residuals_plot.png  used on input line 2177. on input 
+line 2177.
 Package pdftex.def Info: Requested size: 483.6074pt x 372.79324pt on input line
- 2102.
+ 2177.
 
-Overfull \hbox (68.60278pt too wide) in paragraph at lines 2102--2103
+Overfull \hbox (68.60278pt too wide) in paragraph at lines 2177--2178
 [][] 
  []
 
-<appreciation_JPE.jpg, id=282, 304.13625pt x 433.11812pt>
-File: appreciation_JPE.jpg Graphic file (type jpg)
-<use appreciation_JPE.jpg>
-Package pdftex.def Info: appreciation_JPE.jpg  used on input line 2107. on inpu
-t line 2107.
-Package pdftex.def Info: Requested size: 456.20325pt x 649.6756pt on input line
- 2107.
+(rap_stg.bbl [58 <./residuals_plot.png>] [59
 
-Overfull \hbox (41.19862pt too wide) in paragraph at lines 2107--2108
-[][] 
- []
-
-(rap_stg.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [55 <./residuals_plot.png>]
-Overfull \vbox (112.99059pt too high) has occurred while \output is active []
-
-
-[56 <./appreciation_JPE.jpg>] [57
-
-]) [58] (rap_stg.aux) ) 
+]) [60] (rap_stg.aux) ) 
 Here is how much of TeX's memory you used:
- 17880 strings out of 493323
- 323867 string characters out of 3139066
+ 17903 strings out of 493323
+ 324577 string characters out of 3139066
  394046 words of memory out of 3000000
- 20911 multiletter control sequences out of 15000+200000
+ 20934 multiletter control sequences out of 15000+200000
  85162 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,54p,691b,524s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2928,9 +2980,9 @@ type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
 sy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb
 >
-Output written on rap_stg.pdf (64 pages, 8876017 bytes).
+Output written on rap_stg.pdf (66 pages, 8865872 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
+ 482 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  173 words of extra memory for PDF output out of 10000 (max. 10000000)
 
