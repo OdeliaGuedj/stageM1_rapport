@@ -12,8 +12,8 @@
 \contentsline {section}{\numberline {3}Description et explication des donn\IeC {\'e}es}{7}
 \contentsline {subsection}{\numberline {3.1}Variable d'exposition : Activit\IeC {\'e} Professionnelle}{7}
 \contentsline {subsubsection}{\numberline {3.1.1}Codage manuel}{8}
-\contentsline {subsubsection}{\numberline {3.1.2}ACM et CAH}{10}
-\contentsline {subsubsection}{\numberline {3.1.3}Comparaisons des deux codages}{17}
+\contentsline {subsubsection}{\numberline {3.1.2}Analyse des Correspondances Multiples (ACM) et Classification Ascendante Hi\IeC {\'e}rarchique (CAH)}{10}
+\contentsline {subsubsection}{\numberline {3.1.3}Comparaison des deux codages}{17}
 \contentsline {subsection}{\numberline {3.2}Variable d'int\IeC {\'e}r\IeC {\^e}t : Self Rated Health (SRH)}{22}
 \contentsline {subsection}{\numberline {3.3}Variables d'ajustement et facteurs de confusion}{23}
 \contentsline {subsection}{\numberline {3.4}Donn\IeC {\'e}es Manquantes}{27}
@@ -24,11 +24,11 @@
 \contentsline {subsubsection}{\numberline {4.3.1}S\IeC {\'e}lection des variables}{34}
 \contentsline {subsubsection}{\numberline {4.3.2}Diagnostique du mod\IeC {\`e}le}{37}
 \contentsline {subsection}{\numberline {4.4}Analyse en sous-groupes}{39}
-\contentsline {subsection}{\numberline {4.5}Analyse de sensibilit\IeC {\'e}}{39}
-\contentsline {section}{\numberline {5}Perspectives : Ce que j'ai fait, d\IeC {\'e}couvert, appris}{41}
-\contentsline {section}{\numberline {6}Annexes}{44}
-\contentsline {subsection}{\numberline {6.1}Annexe 1: Fiche d'appr\IeC {\'e}ciation de l'employeur}{44}
-\contentsline {subsection}{\numberline {6.2}Annexe 2: Questionnaire IPC}{45}
-\contentsline {subsection}{\numberline {6.3}Annexe 3: Codes travail IPC}{53}
-\contentsline {subsection}{\numberline {6.4}Annexe 4: Classification des codes IPC par activit\IeC {\'e} professionnelle}{57}
-\contentsline {subsection}{\numberline {6.5}Annexe 5: Graphes des r\IeC {\'e}sidus du mod\IeC {\`e}le de s\IeC {\'e}lection de variables}{58}
+\contentsline {subsection}{\numberline {4.5}Analyse de sensibilit\IeC {\'e}}{41}
+\contentsline {section}{\numberline {5}Perspectives : Ce que j'ai fait, d\IeC {\'e}couvert, appris}{42}
+\contentsline {section}{\numberline {6}Annexes}{45}
+\contentsline {subsection}{\numberline {6.1}Annexe 1: Fiche d'appr\IeC {\'e}ciation de l'employeur}{45}
+\contentsline {subsection}{\numberline {6.2}Annexe 2: Questionnaire IPC}{46}
+\contentsline {subsection}{\numberline {6.3}Annexe 3: Codes travail IPC}{54}
+\contentsline {subsection}{\numberline {6.4}Annexe 4: Classification des codes IPC par activit\IeC {\'e} professionnelle}{58}
+\contentsline {subsection}{\numberline {6.5}Annexe 5: Graphes des r\IeC {\'e}sidus du mod\IeC {\`e}le de s\IeC {\'e}lection de variables}{59}
